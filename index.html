@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Background Slider</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <style>
+        
+    </style> -->
+</head>
+
+<body>
+    <main class="main-back"></main>
+    <div class="black-overlay"></div>
+    <div class="slider">
+
+
+        <!-- ------------------1 screen ------------------------>
+        <div class="content active" id="content1">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(-1, 'content1', 'content2')" disabled
+                        class="img-fluid" alt=""></div>
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenav')" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="middle_part">
+                <h1>Baby's <span>Name</span> </h1>
+                <input type="text" placeholder="Enter Baby Name">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenav')">&times;</a>
+                    <div>
+                        <h2>Baby's name</h2>
+                        <p>Type your Baby's full name in the given field</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <button >Previous</button> -->
+            <!-- <button>Next</button> -->
+            <div class="next-btn-container"><img src="./right-arrow.png"
+                    onclick="changeContent(1, 'content1', 'content2')" class="img-fluid" alt=""></div>
+        </div>
+
+        <!-- ------------------2 screen ------------------------>
+
+
+        <div class="content" id="content2">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content2', 'content1')" disabled
+                        class="img-fluid" alt=""></div>
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavtwo')" class="img-fluid"
+                        alt=""></div>
+            </div>
+            <div class="input-fields">
+                <h1>Sample of your modal <span>Name</span> </h1>
+                <div id="mySidenavtwo" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavtwo')">&times;</a>
+                    <div>
+                        <h2>Outfit Modal</h2>
+                        <p>You can explore our Baby Boy's gallery to select a design and share it with us or if you have
+                            any other design please upload the image in the Choose file option</p>
+                    </div>
+                    <!-- <a href="#">Clients</a>
+                    <a href="#">Contact</a> -->
+                </div>
+                <!-- <input type="text" placeholder="Enter Baby Name"> -->
+                <div>
+                    <a href="#popup1" class="gallery-btn">Gallery</a>
+                    <div id="popup1" class="overlay">
+                        <div class="popup">
+                            <a class="close" href="#">&times;</a>
+                            <div>
+                                <img src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt="">
+                                <img src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt=""> <img
+                                    src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt=""> <img
+                                    src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt=""> <img
+                                    src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt=""> <img
+                                    src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt=""> <img
+                                    src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <input type="file" id="myfile" name="myfile">
+                </div>
+
+            </div>
+            <div class="next-btn-container"><img src="./right-arrow.png"
+                    onclick="changeContent(1, 'content2', 'content3')" class="img-fluid" alt=""></div>
+
+            <!-- <button onclick="changeContent(-1, 'content2', 'content1')">Previous</button>
+            <button onclick="changeContent(1, 'content2', 'content3')">Next</button> -->
+        </div>
+
+        <!-- ------------------3 screen ------------------------>
+
+
+        <div class="content" id="content3">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content3', 'content2')" disabled
+                        class="img-fluid" alt=""></div>
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavthree')" class="img-fluid"
+                        alt=""></div>
+            </div>
+            <div id="mySidenavthree" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavthree')">&times;</a>
+                <div>
+                    <h2>Embroidery Work</h2>
+                    <p>This is an additional service we provide like, the name will be embroidered in the Quilt or in
+                        Dress. <br> Please click the checkbox to avail this service</p>
+                </div>
+
+            </div>
+            <div class="check-boxes">
+                <h1>Embroidary <span>Work</span> </h1>
+                <span>(Name will be embroidered in the cloths)</span>
+                <div>
+                    <h2>On Dress</h2>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <!-- <label for="vehicle1"></label> -->
+                </div>
+
+                <div>
+                    <h2>On Quilt</h2>
+                    <input type="checkbox">
+                    <!-- <label for="vehicle2"></label> -->
+                </div>
+            </div>
+            <!-- <button onclick="changeContent(-1, 'content3', 'content2')">Previous</button> -->
+            <!-- <button onclick="changeContent(1, 'content3', 'content1')">Next</button> -->
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <span onclick="changeContent(1, 'content3', 'content4')">Skip</span><img src="./right-arrow.png"
+                    onclick="changeContent(1, 'content3', 'content4')" class="img-fluid" alt="">
+            </div>
+
+        </div>
+
+
+        <!-- ------------------ 4 screen ------------------------>
+
+        <div class="content" id="content4">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content4', 'content3')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div>
+                    <img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavfour')" class="img-fluid"
+                        alt="">
+                </div>
+
+
+            </div>
+            <div class="middle_part">
+                <div id="mySidenavfour" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavfour')">&times;</a>
+                    <div>
+                        <h2>Embroidery Work</h2>
+                        <p>This is an additional service we provide like, the name will be embroidered in the Quilt or
+                            in Dress. <br> Please click the checkbox to avail this service</p>
+                    </div>
+
+                </div>
+                <h1>Select a <span>Dress Color</span></h1>
+                <div class="color-heading">
+                    <h1 onclick="changeContent(1, 'content4', 'content5')">Pure White</h1>
+                    <h1 onclick="changeContent(1, 'content4', 'content5')">Off White</h1>
+                </div>
+            </div>
+
+
+            <!-- <button onclick="changeContent(-1, 'content3', 'content2')">Previous</button> -->
+            <!-- <button onclick="changeContent(1, 'content3', 'content1')">Next</button> -->
+            <!-- <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <a href="" style="text-decoration: none; color: white;">Skip</a><img src="./right-arrow.png"
+                    onclick="changeContent(1, 'content4', 'content1')" class="img-fluid" alt="">
+            </div> -->
+        </div>
+
+        <!-- -------------------- 5 screen---------------- -->
+
+        <div class="content" id="content5">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content5', 'content4')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavfive')" class="img-fluid"
+                        alt=""></div>
+
+
+            </div>
+            <div class="middle_part">
+                <div id="mySidenavfive" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavfive')">&times;</a>
+                    <div>
+                        <h2>Colour Theme</h2>
+                        <p>Please select a secondary color for your dress.</p>
+                    </div>
+
+                </div>
+                <h1>Select a <span>Highlight Color</span></h1>
+                <div>
+
+                    <a href="#popup2"><input type="text" id="myInput"></a>
+                    <div id="popup2" class="overlay">
+                        <div class="popup">
+                            <a class="close" href="#">&times;</a>
+                            <div>
+                                <ul id="myList1">
+                                    <li>Select</li>
+                                    <li>Enter Manually</li>
+                                    <li>Pink</li>
+                                    <li>Light Yellow</li>
+                                    <li>Peach</li>
+                                    <li>Lavender</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <img src="./download-removebg-preview.png" type="file" id="myfile" name="myfile" alt="">
+                </div>
+                <!-- <div class="color-heading">
+                    <h1 onclick="changeContent(1, 'content5', 'content6')">Pure White</h1>
+                    <h1 onclick="changeContent(1, 'content5', 'content6')">Off White</h1>
+                </div> -->
+            </div>
+
+
+            <!-- <button onclick="changeContent(-1, 'content3', 'content2')">Previous</button> -->
+            <!-- <button onclick="changeContent(1, 'content3', 'content1')">Next</button> -->
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <span onclick="changeContent(1, 'content5', 'content6')"
+                    style="text-decoration: none; color: white;">Skip</span><img src="./right-arrow.png"
+                    onclick="changeContent(1, 'content5', 'content6')" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 6 screen---------------- -->
+
+
+        <div class="content" id="content6">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content6', 'content5')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavfive')" class="img-fluid"
+                        alt=""></div>
+
+
+            </div>
+            <div id="mySidenavsix" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavsix')">&times;</a>
+                <div>
+                    <h2>Agr of your baby</h2>
+                    <p>Please share the exact age in months</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+                <h1>Age of <br><span>Baby Girl</span></h1>
+                <input type="text" placeholder="months">
+
+
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <span onclick="changeContent(1, 'content6', 'content7')">Skip</span><img src="./right-arrow.png"
+                    onclick="changeContent(1, 'content6', 'content7')" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 7 screen---------------- -->
+
+        <div class="content" id="content7">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content7', 'content6')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavseven')" class="img-fluid"
+                        alt=""></div>
+
+
+            </div>
+            <div id="mySidenavseven" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavseven')">&times;</a>
+                <div>
+                    <h2>Age of your baby</h2>
+                    <p>please select the age range of your baby</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+                <h1>Size Required <br>For the<span> Dress</span></h1>
+                <a href="#popup3"><input type="text" placeholder="months" id="myInput2"></a>
+                <div id="popup3" class="overlay">
+                    <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <div>
+                            <ul id="myList2">
+                                <li>select</li>
+                                <li>0-3 Months</li>
+                                <li>3-6 Months</li>
+                                <li>6-12 Months</li>
+                                <li>12-18 Months</li>
+                                <li>18-24 Months</li>
+                                <li>custom Measurement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content7', 'content8')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 8 screen---------------- -->
+
+        <div class="content" id="content8">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content8', 'content7')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavseven')" class="img-fluid"
+                        alt=""></div>
+
+
+            </div>
+            <div id="mySidenaveight" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenaveight')">&times;</a>
+                <div>
+                    <h2>Head Circumference</h2>
+                    <p>Step by step method to measure the shoulder to shoulder lengh of your baby</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Head<span> Circumference</span></h1>
+                <input type="text">
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content8', 'content9')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 9 screen---------------- -->
+
+        <div class="content" id="content9">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content9', 'content8')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavnine')" class="img-fluid"
+                        alt=""></div>
+
+
+            </div>
+            <div id="mySidenavnine" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavnine')">&times;</a>
+                <div>
+                    <h2>Chest Circumference</h2>
+                    <p>Step by step method to measure the shoulder to shoulder lengh of your baby</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Chest<span> Circumference</span></h1>
+                <input type="text">
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content9', 'content10')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 10 screen---------------- -->
+
+        <div class="content" id="content10">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content10', 'content9')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavten')" class="img-fluid"
+                        alt=""></div>
+
+
+            </div>
+            <div id="mySidenavten" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavten')">&times;</a>
+                <div>
+                    <h2>Shoulder to shoulder length</h2>
+                    <p>Step by step method to measure the shoulder to shoulder length of your baby</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Shoulder to<span> Shoulder Lenght</span></h1>
+                <input type="text">
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content10', 'content11')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 11 screen---------------- -->
+
+        <div class="content" id="content11">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content11', 'content10')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenaveleven')" class="img-fluid"
+                        alt=""></div>
+
+
+            </div>
+            <div id="mySidenaveleven" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenaveleven')">&times;</a>
+                <div>
+                    <h2>Shoulder to foot length</h2>
+                    <p>Step by step method to measure the shoulder to shoulder length of your baby.</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Shoulder to<span> Foot Lenght</span></h1>
+                <input type="text">
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content11', 'content12')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 12 screen---------------- -->
+
+        <div class="content" id="content12">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content12', 'content11')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavtwele')" class="img-fluid"
+                        alt=""></div>
+
+
+            </div>
+            <div id="mySidenavtwele" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavtwele')">&times;</a>
+                <div>
+                    <h2>Foot length</h2>
+                    <p>Step by step method to measure the shoulder to shoulder length of your baby.</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Foot <span>Lenght</span></h1>
+                <input type="text">
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content12', 'content13')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 13 screen---------------- -->
+
+        <div class="content" id="content13">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content13', 'content12')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavthirteen')"
+                        class="img-fluid" alt=""></div>
+
+
+            </div>
+            <div id="mySidenavthirteen" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavthirteen')">&times;</a>
+                <div>
+                    <h2>Expected Delivery</h2>
+                    <p>Please provude a date in which you're expecting the order to be delivered.</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Expected <span>Delivery Date</span></h1>
+                <input type="text">
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content13', 'content14')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 14 screen---------------- -->
+
+        <div class="content" id="content14">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content14', 'content13')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavfourteen')"
+                        class="img-fluid" alt=""></div>
+
+
+            </div>
+            <div id="mySidenavfourteen" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavfourteen')">&times;</a>
+                <div>
+                    <h2>Fuction Date</h2>
+                    <p>Please provide the Exact date of the function</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Function <span>Date</span></h1>
+                <input type="text">
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content14', 'content15')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+
+        <!-- -------------------- 15 screen---------------- -->
+
+        <div class="content" id="content15">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content15', 'content14')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavfifteen')"
+                        class="img-fluid" alt=""></div>
+
+
+            </div>
+            <div id="mySidenavfifteen" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavfifteen')">&times;</a>
+                <div>
+                    <h2>Combo</h2>
+                    <p>Thisef will be a combo Purchase, including the selected outfit for your baby and a complimentary
+                        we provide the following items for you. <br>If you want to remove a specific product you can
+                        just click the clear button and the item will be automatically removed.</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Our <span>package</span></h1>
+                <div class="parent">
+                    <div class="child-container">
+                        <img src="https://picsum.photos/200" alt="">
+                        <h2>Heading 1</h2>
+                    </div>
+
+
+                    <div class="child-container">
+                        <img src="https://picsum.photos/200" alt="">
+                        <h2>Heading 2</h2>
+                    </div>
+
+
+                    <div class="child-container">
+
+                        <img src="https://picsum.photos/200" alt="Demo Image">
+                        <h2>Heading 3</h2>
+
+                    </div>
+
+                    <div class="child-container">
+
+                        <img src="https://picsum.photos/200" alt="Demo Image">
+                        <h2>Heading 4</h2>
+
+                    </div>
+
+                    <div class="child-container">
+
+                        <img src="https://picsum.photos/200" alt="Demo Image">
+                        <h2>Heading 5</h2>
+
+                    </div>
+
+                    <div class="child-container">
+
+                        <img src="https://picsum.photos/200" alt="Demo Image">
+                        <h2>Heading 6</h2>
+
+                    </div>
+
+                    <div class="child-container">
+
+                        <img src="https://picsum.photos/200" alt="Demo Image">
+                        <h2>Heading 7</h2>
+
+                    </div>
+
+                    <div class="child-container">
+
+                        <img src="https://picsum.photos/200" alt="Demo Image">
+                        <h2>Heading 8</h2>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content15', 'content16')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 16 screen---------------- -->
+
+        <div class="content" id="content16">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content16', 'content15')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavsixteen')" class="img-fluid"
+                        alt=""></div>
+
+
+            </div>
+            <div id="mySidenavsixteen" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavsixteen')">&times;</a>
+                <div>
+                    <h2>Other Accessories</h2>
+                    <p>If you want any other accessories for you baby's baptism other than the dress, we provide these
+                        ready to used products. <br>Please select the item from the screen and it automatically added to
+                        the list. </p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Optional <span>accessories</span></h1>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 1"></div>
+                        <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 2"></div>
+                        <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 3"></div>
+                        <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 4"></div>
+                        <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 5"></div>
+                        <!-- Repeat these divs for more images -->
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button onclick="prevSlide()">Previous</button>
+                    <button onclick="nextSlide()">Next</button>
+                </div>
+
+
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content16', 'content17')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 17 screen---------------- -->
+
+        <div class="content" id="content17">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content17', 'content16')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavseventeen')"
+                        class="img-fluid" alt=""></div>
+
+
+            </div>
+            <div id="mySidenavseventeen" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavseventeen')">&times;</a>
+                <div>
+                    <h2>Other Requirement</h2>
+                    <p>Apart from the services we provide, Do you want any special Requirement for you baby's baptism to
+                        make it more beautiful please share with us.</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Other <span>Requirement</span></h1>
+                <input type="text" placeholder="Enter Requirement">
+
+
+
+
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content17', 'content18')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 18 screen---------------- -->
+
+        <div class="content" id="content18">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content18', 'content17')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenaveighteen')"
+                        class="img-fluid" alt=""></div>
+
+
+            </div>
+            <div id="mySidenaveighteen" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenaveighteen')">&times;</a>
+                <div>
+                    <h2>Mode of Delivery</h2>
+                    <p>We provide to type of delivery option for our customers. Please select on eout of them.</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Courier</h1>
+                <h1>Direct collection</h1>
+
+
+
+
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content18', 'content19')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- -------------------- 19 screen---------------- -->
+
+        <div class="content" id="content19">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content19', 'content18')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavnineteen')"
+                        class="img-fluid" alt=""></div>
+
+
+            </div>
+            <div id="mySidenavnineteen" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavnineteen')">&times;</a>
+                <div>
+                    <h2>Reminder</h2>
+                    <p>Please provide the Whatsapp number to get instant reminders about the order confirmation
+                        tracking, delivery etc.</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Get Reminder <br><span>WhatsApp No.</span></h1>
+                <input type="text" placeholder="Enter a number">
+
+
+
+
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content19', 'content20')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+
+        <!-- -------------------- 20 screen---------------- -->
+
+        <div class="content" id="content20">
+            <div class="top-bar">
+                <div><img src="./left-arrow.png" onclick="changeContent(0, 'content20', 'content21')" disabled
+                        class="img-fluid" alt=""></div>
+
+
+                <div><img src="./information-icon-white-4.jpg" onclick="openNav('mySidenavtwenty')" class="img-fluid"
+                        alt=""></div>
+
+
+            </div>
+            <div id="mySidenavtwenty" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavtwenty')">&times;</a>
+                <div>
+                    <h2>Request confirmation</h2>
+                    <p>Select YES if you proceeding with customer order. <br>
+                        No to go back. Otherwise Save the details for future use.</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>Confirm <br><span>Order Request</span></h1>
+                <div class="options">
+                    <a href="">
+                        <h2>Yes</h2>
+                    </a>
+                    <a href="">
+                        <h2>No</h2>
+                    </a>
+                    <a href="">
+                        <h2>Save</h2>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <img src="./right-arrow.png" onclick="changeContent(1, 'content21', 'content22')" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+        <!-- Add more content divs as needed -->
+    </div>
+
+    <script>
+        function showContent(contentId) {
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function (content) {
+                content.classList.remove('active');
+            });
+
+            var currentContentElement = document.getElementById(contentId);
+            if (currentContentElement) {
+                currentContentElement.classList.add('active');
+            }
+        }
+
+        function changeContent(direction, currentContentId, targetContentId) {
+            showContent(targetContentId);
+
+            // Enable/disable buttons based on the current content
+            var prevButton = document.getElementById(currentContentId).querySelector('button:first-child');
+            var nextButton = document.getElementById(currentContentId).querySelector('button:last-child');
+
+            var currentIndex = parseInt(currentContentId.replace('content', ''), 10);
+
+            prevButton.disabled = currentIndex === 1;
+            nextButton.disabled = currentIndex === document.querySelectorAll('.content').length;
+        }
+
+        // ---------------------rightside nav js-------------------
+
+        // ----------------------------- first right side slide bar
+        // Function to open the sidebar
+        function openNav(sidebarId) {
+            document.getElementById(sidebarId).style.width = "360px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        // Function to close the sidebar
+        function closeNav(sidebarId) {
+            document.getElementById(sidebarId).style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        // Close all sidebars when the page loads
+        document.addEventListener("DOMContentLoaded", function () {
+            closeNav('mySidenav');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavtwo');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavthree');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavfour');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavfive');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavsix');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavseven');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenaveight');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavnine');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavten');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenaveleven');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavtwele');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavthirteen');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavfourteen');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavfifteen');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavsixteen');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavseventeen');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenaveighteen');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavnineteen');
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+
+            closeNav('mySidenavtwety');
+
+        });
+      
+
+
+
+
+
+        // ---------------------rightside nav js closed-------------------
+
+        document.addEventListener("DOMContentLoaded", function () {
+            function handleModal(modalId, inputId) {
+                var inputBox = document.getElementById(inputId);
+                var listItems = document.getElementById(modalId).querySelectorAll("ul li");
+                var popup = document.getElementById(modalId);
+
+                // Close the modal by default
+                popup.style.display = "none";
+
+                // Open the modal when clicking on the input field
+                inputBox.addEventListener("click", function () {
+                    popup.style.display = "block";
+                });
+
+                for (var i = 0; i < listItems.length; i++) {
+                    listItems[i].addEventListener("click", function () {
+                        inputBox.value = this.innerText;
+                        // Close the modal
+                        popup.style.display = "none";
+                    });
+                }
+
+                // Close the modal when clicking the close button
+                popup.querySelector(".close").addEventListener("click", function () {
+                    popup.style.display = "none";
+                });
+            }
+
+            handleModal("popup2", "myInput");
+            handleModal("popup3", "myInput2");
+        });
+
+
+        let currentIndex = 0;
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        const items = document.querySelectorAll('.slider-item');
+
+        function showSlide(index) {
+            const newPosition = -index * 20; // 20% width per slide
+            sliderWrapper.style.transform = `translateX(${newPosition}%)`;
+        }
+
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % items.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            showSlide(currentIndex);
+        }
+
+    </script>
+</body>
+
+</html>
