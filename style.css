@@ -299,7 +299,11 @@ button[disabled] {
     display: block;
     transition: 0.3s;
 }
-
+.sidenav img{
+    width: 60%;
+    display: flex;
+    margin: auto;
+}
 .sidenav a:hover {
     color: #f1f1f1;
 }
