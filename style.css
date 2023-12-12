@@ -180,9 +180,10 @@ button[disabled] {
 .popup {
     margin: 70px auto;
     padding: 20px;
-    background: #383838;
+    background-color: #1111116d;
+    backdrop-filter: blur(90px);
     border-radius: 5px;
-    width: 70%;
+    width: 50%;
     position: relative;
     transition: all 5s ease-in-out;
     text-align: center;
@@ -283,6 +284,7 @@ button[disabled] {
     top: 0;
     right: 0;
     background-color: #11111183;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     backdrop-filter: blur(90px);
     overflow-x: hidden;
     transition: 0.5s;
