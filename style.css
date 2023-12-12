@@ -282,7 +282,8 @@ button[disabled] {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: #11111183;
+    backdrop-filter: blur(90px);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
