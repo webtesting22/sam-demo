@@ -550,8 +550,9 @@ button[disabled] {
 
 .offcanvas-body{
     display: flex;
-    align-items: center;
+    align-items: center; backdrop-filter: blur(90px);
 }
 .offcanvas-body img{
     width: 60%;
 }
+
