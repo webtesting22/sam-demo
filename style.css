@@ -560,3 +560,29 @@ button[disabled] {
     display: flex;
     justify-content: space-between;
 }
+
+.popupnew {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 10px;
+    z-index: 500;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popupnew .close{
+    position: absolute;
+    color: black;
+    right: 0;
+    top: 0px;
+    font-size: 19px;
+    background: red;
+    height: 39px;
+    width: 34px;
+    border-radius: 13%;
+
+}
