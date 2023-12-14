@@ -556,3 +556,7 @@ button[disabled] {
     width: 60%;
 }
 
+.pack-content{
+    display: flex;
+    justify-content: space-between;
+}

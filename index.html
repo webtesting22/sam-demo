@@ -795,22 +795,42 @@
                 <br><br>
                 <div class="parent">
                     <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <h5>Hello</h5>
+
+                        <div class="form-check d-flex justify-content-between">
+                            <h5>Hello</h5> 
+                            <input class="form-check-input" type="checkbox" value=""
+                                id="flexCheckChecked" checked>
+                        </div>
                     </div>
                     <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <h5>Hello</h5>
+                        <div class="form-check d-flex justify-content-between">
+                            <h5>Hello</h5> <input class="form-check-input" type="checkbox" value=""
+                                id="flexCheckChecked" checked>
+                        </div>
                     </div>
                     <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <h5>Hello</h5>
+                        <div class="form-check d-flex justify-content-between">
+                            <h5>Hello</h5> <input class="form-check-input" type="checkbox" value=""
+                                id="flexCheckChecked" checked>
+                        </div>
                     </div>
                     <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <h5>Hello</h5>
+                        <div class="form-check d-flex justify-content-between">
+                            <h5>Hello</h5> <input class="form-check-input" type="checkbox" value=""
+                                id="flexCheckChecked" checked>
+                        </div>
                     </div>
                     <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <h5>Hello</h5>
+                        <div class="form-check d-flex justify-content-between">
+                            <h5>Hello</h5> <input class="form-check-input" type="checkbox" value=""
+                                id="flexCheckChecked" checked>
+                        </div>
                     </div>
                     <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <h5>Hello</h5>
+                        <div class="form-check d-flex justify-content-between">
+                            <h5>Hello</h5> <input class="form-check-input" type="checkbox" value=""
+                                id="flexCheckChecked" checked>
+                        </div>
                     </div>
                 </div>
 
@@ -1192,11 +1212,11 @@
 
 
             </div>
-            
+
         </div>
 
         <!-- --------------------save order screen ---------------->
-        
+
 
         <div class="content" id="content27">
             <div class="top-bar">
@@ -1231,16 +1251,17 @@
 
             <div class="middle_part">
 
-              <p><i class="bi bi-save-fill"></i>Your details of custom design has been saved. you can continue the request in the future.</p>
-              <div style="display: flex;
+                <p><i class="bi bi-save-fill" style="font-size: 15px;"></i>Your details of custom design has been saved.
+                    you can continue the request in the future.</p>
+                <div style="display: flex;
               justify-content: space-evenly;">
-              <h3 href="javascript:void(0);" onclick="handleOptionClick('yes', 'content23')">Place another <br>
-                  Other</h3>
-              <h3>Home</h3>
-          </div>
+                    <h3 href="javascript:void(0);" onclick="handleOptionClick('yes', 'content23')">Place another <br>
+                        Other</h3>
+                    <h3>Home</h3>
+                </div>
 
             </div>
-            
+
         </div>
         <!-- ----------------------place another order screen--------------------------- -->
 
@@ -1285,7 +1306,7 @@
                 <h3 href="javascript:void(0);" onclick="handleOptionClick('yes', 'content26')">Previous Order</h3>
 
             </div>
-           
+
         </div>
 
 
@@ -1322,10 +1343,10 @@
 
 
             <div class="middle_part">
-               
+
                 <h1> Save <span>Orders</span></h1>
             </div>
-           
+
         </div>
 
         <!-- -------------------New Order Screen----------------------- -->
@@ -1361,10 +1382,10 @@
 
 
             <div class="middle_part">
-               
+
                 <h1> New <span>Orders</span></h1>
             </div>
-           
+
         </div>
 
         <!-- -------------------Previos Order Screen----------------------- -->
@@ -1400,10 +1421,10 @@
 
 
             <div class="middle_part">
-               
+
                 <h1> Previous <span>Orders</span></h1>
             </div>
-           
+
         </div>
 
 
@@ -1473,52 +1494,52 @@
 
         // hightcolor input javascript
         document.addEventListener("DOMContentLoaded", function () {
-    var inputBox = document.getElementById("myInput");
-    var openPopup = document.getElementById("openPopup");
-    var listItems = document.querySelectorAll("#myList1 li");
-    var popup = document.getElementById("popup2");
+            var inputBox = document.getElementById("myInput");
+            var openPopup = document.getElementById("openPopup");
+            var listItems = document.querySelectorAll("#myList1 li");
+            var popup = document.getElementById("popup2");
 
-    // Close the popup by default
-    popup.style.display = "none";
+            // Close the popup by default
+            popup.style.display = "none";
 
-    // Open the popup when clicking on the "Choose" anchor
-    openPopup.addEventListener("click", function () {
-        popup.style.display = "block";
-    });
+            // Open the popup when clicking on the "Choose" anchor
+            openPopup.addEventListener("click", function () {
+                popup.style.display = "block";
+            });
 
-    // Handle clicks on each list item in the popup
-    for (var i = 0; i < listItems.length; i++) {
-        listItems[i].addEventListener("click", function () {
-            if (this.innerText === "Enter Manually") {
-                // Enable input for manual entry
-                inputBox.removeAttribute("readonly");
-            } else {
-                // Fill the input box with the selected option
-                inputBox.value = this.innerText;
-                // Disable input for non-manual options
-                inputBox.setAttribute("readonly", true);
+            // Handle clicks on each list item in the popup
+            for (var i = 0; i < listItems.length; i++) {
+                listItems[i].addEventListener("click", function () {
+                    if (this.innerText === "Enter Manually") {
+                        // Enable input for manual entry
+                        inputBox.removeAttribute("readonly");
+                    } else {
+                        // Fill the input box with the selected option
+                        inputBox.value = this.innerText;
+                        // Disable input for non-manual options
+                        inputBox.setAttribute("readonly", true);
+                    }
+
+                    // Close the popup
+                    popup.style.display = "none";
+                });
             }
 
-            // Close the popup
-            popup.style.display = "none";
+            // Close the popup when clicking the close button
+            popup.querySelector(".close").addEventListener("click", function () {
+                popup.style.display = "none";
+            });
+
+            // Clear the input box when needed
+            function clearInputBox() {
+                inputBox.value = "";
+                inputBox.removeAttribute("readonly");
+            }
+
+            // Example: You can call this function whenever you want to clear the input box
+            // For example, add a button or event listener that triggers this function
+            document.getElementById("clearButton").addEventListener("click", clearInputBox);
         });
-    }
-
-    // Close the popup when clicking the close button
-    popup.querySelector(".close").addEventListener("click", function () {
-        popup.style.display = "none";
-    });
-
-    // Clear the input box when needed
-    function clearInputBox() {
-        inputBox.value = "";
-        inputBox.removeAttribute("readonly");
-    }
-
-    // Example: You can call this function whenever you want to clear the input box
-    // For example, add a button or event listener that triggers this function
-    document.getElementById("clearButton").addEventListener("click", clearInputBox);
-});
 
         // ------------------------------------------
 
