@@ -207,7 +207,7 @@
                             <div>
                                 <ul id="myList1">
                                     <li>Select</li>
-                                    <li>Enter Manually</li>
+                                    <!-- <li>Enter Manually</li> -->
                                     <li>Pink</li>
                                     <li>Light Yellow</li>
                                     <li>Peach</li>
@@ -284,7 +284,7 @@
             </div>
             <div class="middle_part">
                 <h1>Size Required <br>For the<span> Dress</span></h1>
-                <a href="#popup3"><input type="text" placeholder="months" id="myInput2"></a>
+                <a href="#popup3" id="openPopup3"><input type="text" placeholder="months" id="myInput2"></a>
                 <div id="popup3" class="overlay">
                     <div class="popup">
                         <a class="close" href="#">&times;</a>
@@ -301,8 +301,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
                 <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
@@ -550,10 +548,10 @@
             <div class="middle_part">
 
                 <h1>Our <span>package</span></h1>
-               <br><br> 
+                <br><br>
                 <div class="parent">
                     <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                    <h5>Hello</h5>
+                        <h5>Hello</h5>
                     </div>
                     <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
                         <h5>Hello</h5>
@@ -624,12 +622,11 @@
             <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
                 <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
                 <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content16', 'conten17')"></i>
+                    onclick="changeContent(1, 'content16', 'content17')"></i>
             </div>
         </div>
 
         <!-- -------------------- 17 screen---------------- -->
-
         <div class="content" id="content17">
             <div class="top-bar">
                 <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content17', 'content16')"></i>
@@ -755,16 +752,17 @@
 
                 <h1>Confirm <br><span>Order Request</span></h1>
                 <div class="options">
-                    <a href="">
+                    <a href="javascript:void(0);" onclick="handleOptionClick('yes', 'content21')">
                         <h2>Yes</h2>
                     </a>
-                    <a href="">
+                    <a href="javascript:void(0);" onclick="handleOptionClick('no', 'content22')">
                         <h2>No</h2>
                     </a>
-                    <a href="">
+                    <a href="javascript:void(0);" onclick="handleOptionClick('save', 'content21')">
                         <h2>Save</h2>
                     </a>
                 </div>
+            
 
 
 
@@ -797,8 +795,9 @@
             </div>
             <div class="middle_part">
 
-                <h1>Function <span>Date</span></h1>
-                <input type="text">
+                <p>Your request for Custom designs has been received, we will reach back you within 24 hours.</p>
+                 <h3>Place another Other</h3>
+                 <h3>Home</h3>
             </div>
             <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
                 <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
@@ -806,16 +805,90 @@
                     onclick="changeContent(1, 'content21', 'content22')"></i>
             </div>
         </div>
+
+        <div class="content" id="content22">
+            <div class="top-bar">
+                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content22', 'content21')"></i>
+                </div>
+                <div><i class="bi bi-info-circle-fill" onclick="openNav('mySidenavtwentyone')"></i></div>
+
+
+            </div>
+            <div id="mySidenavtwentyone" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenavtwentyone')">&times;</a>
+                <div>
+                    <h2> Date</h2>
+                    <p>Please provide the Exact date of the function</p>
+                </div>
+
+            </div>
+            <div class="middle_part">
+
+                <h1>no  <span>demo</span></h1>
+                <input type="text">
+            </div>
+            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
+                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
+                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
+                    onclick="changeContent(1, 'content22', 'content21')"></i>
+            </div>
+        </div>
+
+
+
+
         <!-- Add more content divs as needed -->
     </div>
 
     <script>
+  function handleOptionClick(option, nextContentId) {
+        if (option === 'save') {
+            // Handle 'Save' option logic if needed
+            // You can add custom logic here
+        } else {
+            // Handle 'Yes' and 'No' options
+            changeContent(1, 'content20', nextContentId);
+        }
+    }
+        document.addEventListener("DOMContentLoaded", function () {
+            var inputBox2 = document.getElementById("myInput2");
+            var openPopup3 = document.getElementById("openPopup3");
+            var listItems2 = document.querySelectorAll("#myList2 li");
+            var popup3 = document.getElementById("popup3");
+
+            // Close popup3 by default
+            popup3.style.display = "none";
+
+            // Open popup3 when clicking on the input box
+            inputBox2.addEventListener("click", function () {
+                popup3.style.display = "block";
+            });
+
+            // Handle clicks on each list item in popup3
+            for (var i = 0; i < listItems2.length; i++) {
+                listItems2[i].addEventListener("click", function () {
+                    if (this.innerText !== "select") {
+                        // Fill the input box with the selected option
+                        inputBox2.value = this.innerText;
+                    }
+
+                    // Close popup3
+                    popup3.style.display = "none";
+                });
+            }
+
+            // Close popup3 when clicking the close button
+            popup3.querySelector(".close").addEventListener("click", function () {
+                popup3.style.display = "none";
+            });
+        });
         // hightcolor input javascript
         document.addEventListener("DOMContentLoaded", function () {
             var inputBox = document.getElementById("myInput");
             var openPopup = document.getElementById("openPopup");
             var listItems = document.querySelectorAll("#myList1 li");
             var popup = document.getElementById("popup2");
+
 
             // Close the popup by default
             popup.style.display = "none";
@@ -853,7 +926,7 @@
         // ------------------------------------------
 
 
-        
+
 
         function showContent(contentId) {
             var contents = document.querySelectorAll('.content');
