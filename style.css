@@ -509,6 +509,13 @@ button[disabled] {
 .slider .content i{
     font-size: 30px;
     cursor: pointer;
+    transition: 0.5s;
+}
+.slider .content i:hover{
+    font-size: 30px;
+    cursor: pointer;
+    transform: translate(10px);
+    transition: 0.5s;
 }
 .slider .content .top-bar{
     margin-bottom: 30px;
@@ -550,7 +557,8 @@ button[disabled] {
 
 .offcanvas-body{
     display: flex;
-    align-items: center; backdrop-filter: blur(90px);
+    align-items: center;
+     /* backdrop-filter: blur(90px); */
 }
 .offcanvas-body img{
     width: 60%;
