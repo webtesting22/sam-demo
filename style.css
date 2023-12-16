@@ -338,7 +338,7 @@ input[type=checkbox]:checked:disabled+label:before {
 
 .custom-dropdown-options {
     position: absolute;
-    top: 20%;
+    top: -193%;
     left: 0;
     width: 100%;
     z-index: 1000;
