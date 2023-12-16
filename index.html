@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Background Slider</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -12,1724 +12,1423 @@
 </head>
 
 <body>
-    <main class="main-back"></main>
-    <div class="black-overlay"></div>
-    <div class="slider">
+    <!-- ===================sidenav================== -->
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarone"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
 
 
-        <!-- ------------------1 screen ------------------------>
-        <div class="content active" id="content1">
-            <div class="top-bar">
-                <div><i onclick="changeContent(0, 'content1', 'content2')"></i></div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-                        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation"></i></div>
-            </div>
-            <div class="middle_part">
-                <h1>Baby's <span>Name</span> </h1>
-                <input type="text" placeholder="Enter Baby Name">
-                <!-- <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenav')">&times;</a>
                     <div>
-                        <h2>Baby's name</h2>
-                        <p>Type your Baby's full name in the given field</p>
+                        <h2>Baby's Name</h2>
+                        <p>Type your baby's full name in the given field</p>
                     </div>
-                </div> -->
-                <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                    <div class="container-fluid">
-
-                        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                            aria-labelledby="offcanvasDarkNavbarLabel">
-                            <div class="offcanvas-header">
-
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <div>
-                                    <h2>Baby's Name</h2>
-                                    <p>Type your Baby's full name in the given filed</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <!-- <button >Previous</button> -->
-            <!-- <button>Next</button> -->
-            <div class="next-btn-container"><i class="bi bi-arrow-right-circle-fill"
-                    onclick="changeContent(1, 'content1', 'content2')"></i>
+                </div>
             </div>
         </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
 
-        <!-- ------------------2 screen ------------------------>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbartwo"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
 
-
-        <div class="content" id="content2">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content2', 'content1')"></i>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbartwo" aria-controls="offcanvasDarkNavbartwo"
-                        aria-label="Toggle navigation"></i></div>
-            </div>
-            <div class="input-fields">
-                <h1>Sample of your modal <span>Name</span> </h1>
-                <br><br>
-                <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                    <div class="container-fluid">
-
-                        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbartwo"
-                            aria-labelledby="offcanvasDarkNavbarLabel">
-                            <div class="offcanvas-header">
-
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <div>
-                                    <h2>Outfit Modal</h2>
-                                    <p>You can explore our Baby Boy's gallery to select a design and share it with us or
-                                        if you have
-                                        any other design please upload the image in the Choose file option</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <h2>Outfit Modal</h2>
+                        <p>You can explore our Baby Boy's gallery to select a design and share it with us or if you have
+                            any other design please upload the image in the Choose file option</p>
                     </div>
-                </nav>
 
 
-
-                <!-- <input type="text" placeholder="Enter Baby Name"> -->
-                <div>
-                    <a href="#popup1" class="gallery-btn">Gallery</a>
-
-                    <input type="file" id="myfile" name="myfile">
-                    <div id="popup1" class="overlay">
-                        <div class="popup">
-                            <a class="close" href="#">&times;</a>
-                            <div>
-                                <img src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt="">
-                                <img src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt=""> <img
-                                    src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt=""> <img
-                                    src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt=""> <img
-                                    src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt=""> <img
-                                    src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt=""> <img
-                                    src="./daniel-thomas-_tYNzEqehMk-unsplash.jpg" alt="">
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
-
-            </div>
-            <div class="next-btn-container"><i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content2', 'content3')"></i></div>
-
-            <!-- <button onclick="changeContent(-1, 'content2', 'content1')">Previous</button>
-            <button onclick="changeContent(1, 'content2', 'content3')">Next</button> -->
-        </div>
-
-        <!-- ------------------3 screen ------------------------>
-
-
-        <div class="content" id="content3">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content3', 'content2')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarthree"></i></div>
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarthree"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h2>Embroidery Work</h2>
-                                <p>This is an additional service we provide like, the name will be embroidered in the
-                                    Quilt or in
-                                    Dress. <br> Please click the checkbox to avail this service</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="check-boxes">
-                <h1>Embroidary <span>Work</span> </h1>
-                <span>(Name will be embroidered in the cloths)</span>
-                <br><br>
-                <div>
-                    <h2>On Dress</h2>&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <!-- <label for="vehicle1"></label> -->
-                </div>
-
-                <div>
-                    <h2>On Quilt</h2>&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox">
-                    <!-- <label for="vehicle2"></label> -->
-                </div>
-            </div>
-            <!-- <button onclick="changeContent(-1, 'content3', 'content2')">Previous</button> -->
-            <!-- <button onclick="changeContent(1, 'content3', 'content1')">Next</button> -->
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <span onclick="changeContent(1, 'content3', 'content4')">Skip</span><i
-                    class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content3', 'content4')"></i>
-            </div>
-
-        </div>
-
-
-        <!-- ------------------ 4 screen ------------------------>
-
-        <div class="content" id="content4">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content4', 'content3')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarfour"></i></div>
-
-
-            </div>
-            <div class="middle_part">
-                <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                    <div class="container-fluid">
-
-                        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarfour"
-                            aria-labelledby="offcanvasDarkNavbarLabel">
-                            <div class="offcanvas-header">
-
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-
-                                <div>
-                                    <h2>Embroidery Work</h2>
-                                    <p>This is an additional service we provide like, the name will be embroidered in
-                                        the Quilt or
-                                        in Dress. <br> Please click the checkbox to avail this service</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-
-
-
-                <h1>Select a <span>Dress Color</span></h1>
-                <br><br>
-                <div class="color-heading">
-                    <h1 onclick="changeContent(1, 'content4', 'content5')">Pure White</h1>
-                    <h1 onclick="changeContent(1, 'content4', 'content5')">Off White</h1>
-                </div>
-            </div>
-
-
-            <!-- <button onclick="changeContent(-1, 'content3', 'content2')">Previous</button> -->
-            <!-- <button onclick="changeContent(1, 'content3', 'content1')">Next</button> -->
-            <!-- <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <a href="" style="text-decoration: none; color: white;">Skip</a><img src="./right-arrow.png"
-                    onclick="changeContent(1, 'content4', 'content1')" class="img-fluid" alt="">
-            </div> -->
-        </div>
-
-        <!-- -------------------- 5 screen---------------- -->
-
-        <div class="content" id="content5">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content5', 'content4')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarfive"></i></div>
-
-
-            </div>
-            <div class="middle_part">
-                <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                    <div class="container-fluid">
-
-                        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarfive"
-                            aria-labelledby="offcanvasDarkNavbarLabel">
-                            <div class="offcanvas-header">
-
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-
-                                <div>
-                                    <h2>Color Theme</h2>
-                                    <p>Please select a secondary color for your dress</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <h1>Select a <span>Highlight Color</span></h1>
-                <div>
-                    <input type="text" id="myInput" placeholder="Enter Manually">
-                    <a href="#popup2" id="openPopup" class="gallery-btn">Choose</a>
-                    <i class="bi bi-file-earmark-plus-fill"></i>
-
-                    <div id="popup2" class="overlay">
-                        <div class="popup">
-                            <a class="close" href="#">&times;</a>
-                            <div>
-                                <ul id="myList1">
-                                    <li>Select</li>
-                                    <!-- <li>Enter Manually</li> -->
-                                    <li>Pink</li>
-                                    <li>Light Yellow</li>
-                                    <li>Peach</li>
-                                    <li>Lavender</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="color-heading">
-                    <h1 onclick="changeContent(1, 'content5', 'content6')">Pure White</h1>
-                    <h1 onclick="changeContent(1, 'content5', 'content6')">Off White</h1>
-                </div> -->
-            </div>
-
-
-            <!-- <button onclick="changeContent(-1, 'content3', 'content2')">Previous</button> -->
-            <!-- <button onclick="changeContent(1, 'content3', 'content1')">Next</button> -->
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <span onclick="changeContent(1, 'content5', 'content6')"
-                    style="text-decoration: none; color: white;">Skip</span><i class="bi bi-arrow-right-circle-fill"
-                    style="font-size: 30px;" onclick="changeContent(1, 'content5', 'content6')"></i>
             </div>
         </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
 
-        <!-- -------------------- 6 screen---------------- -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarthree"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
 
-
-        <div class="content" id="content6">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content6', 'content5')"></i>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarsix"></i></div>
+                <div class="offcanvas-body">
 
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarsix"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-
-                            <div>
-                                <h2>Age of your baby</h2>
-                                <p>Please share the exact age in months</p>
-                            </div>
-
-                        </div>
+                    <div>
+                        <h2>Embroidery Work</h2>
+                        <p>This is an additional service we provide like, the name will be embroidered in the Quilt or
+                            in
+                            Dress. <br> Please click the checkbox to avail this service</p>
                     </div>
+
                 </div>
-            </nav>
-            <div class="middle_part">
-                <h1>Age of <br><span>Baby Girl</span></h1>
-                <input type="text" placeholder="months">
-
-
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <span onclick="changeContent(1, 'content6', 'content7')">Skip</span><i
-                    class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content6', 'content7')"></i>
             </div>
         </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
 
-        <!-- -------------------- 7 screen---------------- -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarfour"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
 
-        <div class="content" id="content7">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content7', 'content6')"></i>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarseven"></i></div>
+                <div class="offcanvas-body">
 
+                    <div>
+                        <h2>Embroidery Work</h2>
+                        <p>This is an additional service we provide like, the name will be embroidered in the Quilt or
+                            in Dress. <br> Please click the checkbox to avail this service</p>
+                    </div>
 
+                </div>
             </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
 
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarseven"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarfive"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
 
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
 
-                            <div>
-                                <h2>Age of your baby</h2>
-                                <p>please select the age range of your baby</p>
-                            </div>
+                    <div>
+                        <h2>Colour Theme</h2>
+                        <p>Please select a secondary color for your dress.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarsix"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <h2>Agr of your baby</h2>
+                        <p>Please share the exact age in months</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarseven"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <h2>Age of your baby</h2>
+                        <p>please select the age range of your baby</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbareight"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <h2>Head Circumference</h2>
+                        <img src="./1.png" alt="">
+                        <p>Step by step method to measure the shoulder to shoulder lengh of your baby</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarnine"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <h2>Chest Circumference</h2>
+                        <img src="./Chest_72-removebg-preview.png" alt="">
+                        <p>Step by step method to measure the shoulder to shoulder lengh of your baby</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarten"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <h2>Shoulder to shoulder length</h2>
+                        <img src="./image 5.jpg" alt="">
+                        <p>Step by step method to measure the shoulder to shoulder length of your baby</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbareleven"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <h2>Shoulder to foot length</h2>
+                        <img src="./image 5.jpg" alt="">
+                        <p>Step by step method to measure the shoulder to shoulder length of your baby.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbartwele"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <h2>Foot length</h2>
+                        <img src="./image 5 (2).jpg" alt="">
+                        <p>Step by step method to measure the shoulder to shoulder length of your baby.</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarthirteen"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <h2>Expected Delivery</h2>
+                        <p>Please provude a date in which you're expecting the order to be delivered.</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarfourteen"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <h2>Fuction Date</h2>
+                        <p>Please provide the Exact date of the function</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarfifteen"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <h2>Combo</h2>
+                        <p>Thisef will be a combo Purchase, including the selected outfit for your baby and a
+                            complimentary
+                            we provide the following items for you. <br>If you want to remove a specific product you can
+                            just click the clear button and the item will be automatically removed.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarsixteen"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <h2>Other Accessories</h2>
+                        <p>If you want any other accessories for you baby's baptism other than the dress, we provide
+                            these
+                            ready to used products. <br>Please select the item from the screen and it automatically
+                            added to
+                            the list. </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarseventeen"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <h2>Other Requirement</h2>
+                        <p>Apart from the services we provide, Do you want any special Requirement for you baby's
+                            baptism to
+                            make it more beautiful please share with us.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbareighteen"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <h2>Mode of Delivery</h2>
+                        <p>We provide to type of delivery option for our customers. Please select on eout of them.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarnineteen"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <h2>Reminder</h2>
+                        <p>Please provide the Whatsapp number to get instant reminders about the order confirmation
+                            tracking, delivery etc.</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbartwenty"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <h2>Request confirmation</h2>
+                        <p>Select YES if you proceeding with customer order. <br>
+                            No to go back. Otherwise Save the details for future use.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbartwentyone"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbartwetytwo"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbartwentythree"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- ===================sidenav================== -->
+
+
+    <section id="main-container">
+        <div class="container">
+            <div class="slider">
+
+                <!------------------- Slide 1---------------------- -->
+
+                <div class="slide-container active" id="content1">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"></i>
+
+                            <!-- ------------Info Button------------>
+
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarone"></i>
+
 
                         </div>
                     </div>
+                    <div class="Content-container">
+                        <h1>Baby's <span>Name</span> </h1>
+                        <input type="text" placeholder="Enter Baby Name">
+                        <div class="next-btn-container mt-4">
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content1', 'content2')"></i>
+                        </div>
+                    </div>
                 </div>
-            </nav>
 
+                <!------------------- Slide 2---------------------- -->
 
+                <div class="slide-container" id="content2">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill" onclick="toggleSlides('content2', 'content1')"></i>
 
-            <div class="middle_part">
-                <h1>Size Required <br>For the<span> Dress</span></h1>
-                <a href="#popup3" id="openPopup3"><input type="text" placeholder="months" id="myInput2"></a>
-                <div id="popup3" class="overlay">
-                    <div class="popup">
-                        <a class="close" href="#">&times;</a>
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbartwo"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container">
+                        <h1>Sample of your<span> modal</span> </h1>
                         <div>
-                            <ul id="myList2">
-                                <li>select</li>
-                                <li>0-3 Months</li>
-                                <li>3-6 Months</li>
-                                <li>6-12 Months</li>
-                                <li>12-18 Months</li>
-                                <li>18-24 Months</li>
-                                <li>custom Measurement</li>
+                            <!-- ------------gallery modal --------------------->
+
+                            <!-- Button trigger modal -->
+                            <button class="gallery-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Gallery
+                            </button>
+                            <input type="file" id="myFile" name="filename">
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="false">
+                                <div class="modal-dialog  modal-dialog-scrollable"
+                                    style="z-index: 1050; max-width: 900px;">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
+                                                        src="https://picsum.photos/200" alt=""></div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
+                                                        src="https://picsum.photos/200" alt=""></div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
+                                                        src="https://picsum.photos/200" alt=""></div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
+                                                        src="https://picsum.photos/200" alt=""></div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
+                                                        src="https://picsum.photos/200" alt=""></div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
+                                                        src="https://picsum.photos/200" alt=""></div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
+                                                        src="https://picsum.photos/200" alt=""></div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
+                                                        src="https://picsum.photos/200" alt=""></div>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
+                                                        src="https://picsum.photos/200" alt=""></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- ------------gallery modal --------------------->
+
+                        </div>
+                        <div class="next-btn-container mt-4">
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content2', 'content3')"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!------------------- Slide 3---------------------- -->
+
+                <div class="slide-container" id="content3">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill" onclick="toggleSlides('content3', 'content2')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarthree"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container">
+                        <h1>Embroidery Work</h1>
+                        <span>(Name will be embroidered in the cloths)</span>
+                        <div class="mt-5">
+                            <input type="checkbox" id="weekday-1" name="weekday-1" value="Friday" checked>
+                            <label for="weekday-1">On Dress</label>
+                            <input type="checkbox" id="weekday-2" name="weekday-2" value="Friday" checked>
+                            <label for="weekday-2">On Quilt</label>
+                        </div>
+                        <div class="next-btn-container mt-4 d-flex justify-content-between align-items-center">
+                            <span onclick="toggleSlides('content3', 'content4')">Skip</span>
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content3', 'content4')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 4---------------------- -->
+
+                <div class="slide-container" id="content4">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill" onclick="toggleSlides('content4', 'content3')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarfour"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container">
+                        <h1>Select a <span>Dress Color</span></h1>
+                        <div class="Dress-color-heading">
+                            <h4 onclick="toggleSlides('content4', 'content5')">Pure White</h4>
+                            <h4 onclick="toggleSlides('content4', 'content5')">Off White</h4>
+                        </div>
+
+                        <div class="next-btn-container mt-4 ">
+                            <!-- <span onclick="toggleSlides('content3', 'content4')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content4', 'content5')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 5---------------------- -->
+
+                <div class="slide-container" id="content5">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill" onclick="toggleSlides('content5', 'content4')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarfive"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container">
+                        <h1>Select a <span>Highlight Color</span></h1>
+                        <div>
+                            <input type="text" id="colorInput" placeholder="Select Color" data-bs-toggle="modal"
+                                data-bs-target="#exampleModaltwo">
+                            <i class="bi bi-folder-plus"></i>
+                            <div class="modal fade" id="exampleModaltwo" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="true"
+                                data-bs-keyboard="false">
+                                <div class="modal-dialog" style="z-index: 1050;">
+                                    <div class="modal-content" style="background-color: rgb(49, 49, 49);">
+                                        <div class="modal-header" style="border: none;">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li onclick="selectColor('Select');">Select</li>
+                                                <li onclick="selectColor('Enter Manually');">Enter Manually</li>
+                                                <li onclick="selectColor('Pink');">Pink</li>
+                                                <li onclick="selectColor('Light Yellow');">Light Yellow</li>
+                                                <li onclick="selectColor('Peach');">Peach</li>
+                                                <li onclick="selectColor('Lavender');">Lavender</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="next-btn-container mt-4 ">
+                            <!-- <span onclick="toggleSlides('content3', 'content4')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content5', 'content6')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 6---------------------- -->
+
+                <div class="slide-container" id="content6">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill" onclick="toggleSlides('content6', 'content5')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarsix"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container">
+                        <h1>Age of <br><span>Baby Girl</span></h1>
+                        <input type="text" placeholder="Select Age">
+
+                        <div class="next-btn-container mt-4">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content6', 'content7')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 7---------------------- -->
+
+                <div class="slide-container" id="content7">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill" onclick="toggleSlides('content7', 'content6')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarseven"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+                        <h1>Size Required <br>For the<span> Dress</span></h1>
+                        <input type="text" placeholder="Select Size">
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content7', 'content8')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 8---------------------- -->
+
+                <div class="slide-container" id="content8">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill" onclick="toggleSlides('content8', 'content7')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbareight"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+                        <h1>Head<span> Circumference</span></h1>
+                        <input type="text" placeholder="Enter Your text">
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content8', 'content9')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 9---------------------- -->
+
+                <div class="slide-container" id="content9">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill" onclick="toggleSlides('content9', 'content8')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarnine"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+                        <h1>Chest<span> Circumference</span></h1>
+                        <input type="text" placeholder="Enter Your text">
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content9', 'content10')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 10---------------------- -->
+
+                <div class="slide-container" id="content10">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill" onclick="toggleSlides('content10', 'content9')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarten"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+                        <h1>Shoulder to<span> Shoulder Lenght</span></h1>
+                        <input type="text" placeholder="Enter Your text">
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content10', 'content11')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 11---------------------- -->
+
+                <div class="slide-container" id="content11">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content11', 'content10')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbareleven"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+                        <h1>Shoulder to<span> Foot Lenght</span></h1>
+                        <input type="text" placeholder="Enter Your text">
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content11', 'content12')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 12---------------------- -->
+
+                <div class="slide-container" id="content12">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content12', 'content11')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbartwele"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+                        <h1>Foot <span>Lenght</span></h1>
+                        <input type="text" placeholder="Enter Your text">
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content12', 'content13')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 13---------------------- -->
+
+                <div class="slide-container" id="content13">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content13', 'content12')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarthirteen"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+                        <h1>Expected <span>Delivery Date</span></h1>
+                        <input type="text" placeholder="Enter Your text">
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content13', 'content14')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 14---------------------- -->
+
+                <div class="slide-container" id="content14">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content14', 'content13')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarfourteen"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+                        <h1>Function <span>Date</span></h1>
+                        <input type="text" placeholder="Enter Your text">
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content14', 'content15')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 15---------------------- -->
+
+                <div class="slide-container" id="content15">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content15', 'content14')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarfifteen"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+                        <h1>Our <span>package</span></h1>
+
+                        <div class="row w-50 justify-content-center m-auto img-gallery">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-2" name="weekday-2" value="Friday" checked><label for="weekday-2">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-2" name="weekday-2" value="Friday" checked><label for="weekday-2">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-2" name="weekday-2" value="Friday" checked><label for="weekday-2">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-2" name="weekday-2" value="Friday" checked><label for="weekday-2">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-2" name="weekday-2" value="Friday" checked><label for="weekday-2">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-2" name="weekday-2" value="Friday" checked><label for="weekday-2">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-2" name="weekday-2" value="Friday" checked><label for="weekday-2">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-2" name="weekday-2" value="Friday" checked><label for="weekday-2">On
+                                        Quilt</label></div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content15', 'content16')"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!------------------- Slide 16---------------------- -->
+
+                <div class="slide-container" id="content16">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content16', 'content15')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarsixteen"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+                        <h1>Optional <span>accessories</span></h1>
+
+
+                        <div class="slider-container">
+                            <div class="slider-wrapper">
+                                <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 1"></div>
+                                <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 2"></div>
+                                <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 3"></div>
+                                <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 4"></div>
+                                <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 5"></div>
+                                <!-- Repeat these divs for more images -->
+                            </div>
+                        </div>
+
+                        <div class="slider-controls">
+                            <button onclick="prevSlide()">Previous</button>
+                            <button onclick="nextSlide()">Next</button>
+                        </div>
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content16', 'content17')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 17---------------------- -->
+
+                <div class="slide-container" id="content17">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content17', 'content16')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarseventeen"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+                        <h1>Other <span>Requirement</span></h1>
+                        <input type="text" placeholder="Enter Your Requirement">
+
+
+
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content17', 'content18')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 18---------------------- -->
+
+                <div class="slide-container" id="content18">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content18', 'content17')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbareighteen"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+                        <div class="delivery-heading mt-4 mb-4">
+                            <h4 onclick="toggleSlides('content18', 'content19')">Courier</h4>
+                            <h4 onclick="toggleSlides('content18', 'content19')">Direct collection</h4>
+                        </div>
+
+
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content18', 'content19')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 19---------------------- -->
+
+                <div class="slide-container" id="content19">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content19', 'content18')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarnineteen"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+                        <h1>Get Reminder <br><span>WhatsApp No.</span></h1>
+                        <input type="text" placeholder="Enter Your Requirement">
+
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content19', 'content20')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide 20---------------------- -->
+
+                <div class="slide-container" id="content20">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content20', 'content19')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbartwenty"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+                        <h1>Confirm <br><span>Order Request</span></h1>
+                        <div class="order-option d-flex justify-content-evenly">
+                            <h4 onclick="toggleSlides('content20', 'content21')">Yes</h4>
+                            <h4 onclick="toggleSlides('content20', 'content22')">No</h4>
+                            <h4 onclick="toggleSlides('content20', 'content23')">Save</h4>
+                        </div>
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <!-- <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content20', 'content21')"></i> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide Confirmd 21---------------------- -->
+
+                <div class="slide-container" id="content21">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content21', 'content20')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbartwentyone"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+                        <p><i class="bi bi-check-circle-fill"></i> Your request for Custom design has been received, we
+                            will reach back you within 24 hours.</p>
+                        <div class="order-option">
+                            <h4 onclick="toggleSlides('content23', 'content24')">Place another<br> Order</h4>
+                            <h4>Home</h4>
+                        </div>
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <!-- <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content21', 'content21')"></i> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!------------------- Slide cancel order 22---------------------- -->
+
+                <div class="slide-container" id="content22">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content22', 'content20')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbartwentytwo"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+                        <p><i class="bi bi-x-circle-fill"></i> Your request for Custom design has been cancelled</p>
+                        <div class="order-option">
+                            <h4 onclick="toggleSlides('content22', 'content24')">Place another<br> Order</h4>
+                            <h4>Home</h4>
+                        </div>
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <!-- <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content21', 'content21')"></i> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide save order 23---------------------- -->
+
+                <div class="slide-container" id="content23">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content23', 'content20')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbartwentythree"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+                        <p><i class="bi bi-save-fill"></i> Your request for Custom design has been saved. you can
+                            continue request in the future</p>
+                        <div class="order-option">
+                            <h4 onclick="toggleSlides('content23', 'content24')">Place another<br> Order</h4>
+                            <h4>Home</h4>
+                        </div>
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <!-- <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content21', 'content21')"></i> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide save order 24---------------------- -->
+
+                <div class="slide-container" id="content24">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content24', 'content20')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbartwentythree"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+
+                        <div class="order-option">
+                            <h4>New Order</h4>
+                            <h4 onclick="toggleSlides('content24', 'content25')">Previous Order</h4>
+                            <h4>Saved Order</h4>
+                        </div>
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <!-- <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content21', 'content21')"></i> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!------------------- Slide previos order list 25---------------------- -->
+
+                <div class="slide-container" id="content25">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content25', 'content24')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbartwentythree"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+
+                        <h1>Previous<span>Order</span></h1>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-4 col-md-4 col-sm-6"><img src="https://picsum.photos/200" alt=""
+                                    onclick="toggleSlides('content25', 'content26')"></div>
+                            <div class="col-lg-4 col-md-4 col-sm-6"><img src="https://picsum.photos/200" alt=""
+                                    onclick="toggleSlides('content25', 'content26')"></div>
+                            <div class="col-lg-4 col-md-4 col-sm-6"><img src="https://picsum.photos/200" alt=""
+                                    onclick="toggleSlides('content25', 'content26')"></div>
+                        </div>
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <!-- <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content21', 'content21')"></i> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- Slide previos info list 26---------------------- -->
+
+                <div class="slide-container" id="content26">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content25', 'content24')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbartwentythree"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+                        <div>
+                            <ul class="order-info">
+                                <div>
+                                    <li>
+                                        demo
+                                    </li>
+                                    <li>
+                                        :Demo1
+
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        demo
+                                    </li>
+                                    <li>
+                                        :Demo1
+
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        demo
+                                    </li>
+                                    <li>
+                                        :Demo1
+
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        demo
+                                    </li>
+                                    <li>
+                                        :Demo1
+
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        demo
+                                    </li>
+                                    <li>
+                                        :Demo1
+
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        demo
+                                    </li>
+                                    <li>
+                                        :Demo1
+
+                                    </li>
+                                </div>
                             </ul>
                         </div>
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content21', 'content21')"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content7', 'content8')"></i>
+
             </div>
         </div>
+    </section>
 
-        <!-- -------------------- 8 screen---------------- -->
-
-        <div class="content" id="content8">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content8', 'content7')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbareight"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbareight"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-
-                            <div>
-                                <h2>Head Circumference</h2>
-                                <img src="./1.png" alt="">
-                                <p>Step by step method to measure the shoulder to shoulder lengh of your baby</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1>Head<span> Circumference</span></h1>
-                <input type="text">
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content8', 'content9')"></i>
-            </div>
-        </div>
-
-        <!-- -------------------- 9 screen---------------- -->
-
-        <div class="content" id="content9">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content9', 'content8')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarnine"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarnine"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-
-                            <div>
-                                <h2>Chest Circumference</h2>
-                                <img src="./Chest_72-removebg-preview.png" alt="">
-                                <p>Step by step method to measure the shoulder to shoulder lengh of your baby</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1>Chest<span> Circumference</span></h1>
-                <input type="text">
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content9', 'content10')"></i>
-            </div>
-        </div>
-
-        <!-- -------------------- 10 screen---------------- -->
-
-        <div class="content" id="content10">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content10', 'content9')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarten"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarten"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-
-                            <div>
-                                <h2>Shoulder to shoulder length</h2>
-                                <img src="./image 5.jpg" alt="">
-                                <p>Step by step method to measure the shoulder to shoulder length of your baby</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1>Shoulder to<span> Shoulder Lenght</span></h1>
-                <input type="text">
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content10', 'content11')"></i>
-            </div>
-        </div>
-
-        <!-- -------------------- 11 screen---------------- -->
-
-        <div class="content" id="content11">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content11', 'content10')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbareleven"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbareleven"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-
-                            <div>
-                                <h2>Shoulder to foot length</h2>
-                                <img src="./image 5 (1).jpg" alt="">
-                                <p>Step by step method to measure the shoulder to shoulder length of your baby.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-            <div class="middle_part">
-
-                <h1>Shoulder to<span> Foot Lenght</span></h1>
-                <input type="text">
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content11', 'content12')"></i>
-            </div>
-        </div>
-
-        <!-- -------------------- 12 screen---------------- -->
-
-        <div class="content" id="content12">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content12', 'content11')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbartweel"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbartweel"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-
-                            <div>
-                                <h2>Foot length</h2>
-                                <img src="./image 5 (2).jpg" alt="">
-                                <p>Step by step method to measure the shoulder to shoulder length of your baby.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1>Foot <span>Lenght</span></h1>
-                <input type="text">
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content12', 'content13')"></i>
-            </div>
-        </div>
-
-        <!-- -------------------- 13 screen---------------- -->
-
-        <div class="content" id="content13">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content13', 'content12')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarthirteen"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarthirteen"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-
-                            <div>
-                                <h2>Expected Delivery</h2>
-                                <p>Please provude a date in which you're expecting the order to be delivered.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1>Expected <span>Delivery Date</span></h1>
-                <input type="text">
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content13', 'content14')"></i>
-            </div>
-        </div>
-
-        <!-- -------------------- 14 screen---------------- -->
-
-        <div class="content" id="content14">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content14', 'content13')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarfourteen"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarfourteen"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-
-                            <div>
-                                <h2>Fuction Date</h2>
-                                <p>Please provide the Exact date of the function</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1>Function <span>Date</span></h1>
-                <input type="text">
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content14', 'content15')"></i>
-            </div>
-        </div>
-
-
-        <!-- -------------------- 15 screen---------------- -->
-
-        <div class="content" id="content15">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content15', 'content14')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarfifthteen"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarfifthteen"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h2>Combo</h2>
-                                <p>Thisef will be a combo Purchase, including the selected outfit for your baby and a
-                                    complimentary
-                                    we provide the following items for you. <br>If you want to remove a specific product
-                                    you can
-                                    just click the clear button and the item will be automatically removed.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1>Our <span>package</span></h1>
-                <br><br>
-                <div class="parent">
-                    <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-
-                        <div class="form-check d-flex justify-content-between">
-                            <h5>Hello</h5>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        </div>
-                    </div>
-                    <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <div class="form-check d-flex justify-content-between">
-                            <h5>Hello</h5> <input class="form-check-input" type="checkbox" value=""
-                                id="flexCheckChecked" checked>
-                        </div>
-                    </div>
-                    <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <div class="form-check d-flex justify-content-between">
-                            <h5>Hello</h5> <input class="form-check-input" type="checkbox" value=""
-                                id="flexCheckChecked" checked>
-                        </div>
-                    </div>
-                    <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <div class="form-check d-flex justify-content-between">
-                            <h5>Hello</h5> <input class="form-check-input" type="checkbox" value=""
-                                id="flexCheckChecked" checked>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="parent">
-                    <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-
-                        <div class="form-check d-flex justify-content-between">
-                            <h5>Hello</h5>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        </div>
-                    </div>
-                    <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <div class="form-check d-flex justify-content-between">
-                            <h5>Hello</h5> <input class="form-check-input" type="checkbox" value=""
-                                id="flexCheckChecked" checked>
-                        </div>
-                    </div>
-                    <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <div class="form-check d-flex justify-content-between">
-                            <h5>Hello</h5> <input class="form-check-input" type="checkbox" value=""
-                                id="flexCheckChecked" checked>
-                        </div>
-                    </div>
-                    <div class="child"><img src="./image 5 (1).jpg" width="100%" alt="">
-                        <div class="form-check d-flex justify-content-between">
-                            <h5>Hello</h5> <input class="form-check-input" type="checkbox" value=""
-                                id="flexCheckChecked" checked>
-                        </div>
-                    </div>
-                    
-                </div>
-
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content15', 'content16')"></i>
-            </div>
-        </div>
-
-        <!-- -------------------- 16 screen---------------- -->
-
-        <div class="content" id="content16">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content16', 'content15')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarsixteen"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarsixteen"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h2>Other Accessories</h2>
-                                <p>If you want any other accessories for you baby's baptism other than the dress, we
-                                    provide these
-                                    ready to used products. <br>Please select the item from the screen and it
-                                    automatically added to
-                                    the list. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-                <div class="popupnew" id="imagePopup">
-                    <a class="close" href="#" onclick="closePopup()">&times;</a>
-                    <img id="popupImage" alt="Popup Image">
-                </div>
-                <h1>Optional <span>accessories</span></h1>
-                <div class="slider-container">
-                    <div class="slider-wrapper">
-                        <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 1" onclick="openPopup('https://picsum.photos/200')"></div>
-                        <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 2" onclick="openPopup('https://picsum.photos/200')"></div>
-                        <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 3" onclick="openPopup('https://picsum.photos/200')"></div>
-                        <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 4" onclick="openPopup('https://picsum.photos/200')"></div>
-                        <div class="slider-item"><img src="https://picsum.photos/200" alt="Image 5" onclick="openPopup('https://picsum.photos/200')"></div>
-                        <!-- Repeat these divs for more images -->
-                    </div>
-                </div>
-
-                <div class="slider-controls">
-                    <button onclick="prevSlide()">Previous</button>
-                    <button onclick="nextSlide()">Next</button>
-                </div>
-
-
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content16', 'content17')"></i>
-            </div>
-        </div>
-
-        <!-- -------------------- 17 screen---------------- -->
-        <div class="content" id="content17">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content17', 'content16')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarseventeen"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarseventeen"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h2>Other Requirement</h2>
-                                <p>Apart from the services we provide, Do you want any special Requirement for you
-                                    baby's baptism to
-                                    make it more beautiful please share with us.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1>Other <span>Requirement</span></h1>
-                <input type="text" placeholder="Enter Requirement">
-
-
-
-
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content17', 'content18')"></i>
-            </div>
-        </div>
-
-        <!-- -------------------- 18 screen---------------- -->
-
-        <div class="content" id="content18">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content18', 'content17')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbareightteen"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbareightteen"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h2>Mode of Delivery</h2>
-                                <p>We provide to type of delivery option for our customers. Please select on eout of
-                                    them.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1>Courier</h1>
-                <h1>Direct collection</h1>
-
-
-
-
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content18', 'content19')"></i>
-            </div>
-        </div>
-
-        <!-- -------------------- 19 screen---------------- -->
-
-        <div class="content" id="content19">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content19', 'content18')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbarnineteen"></i></div>
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbarnineteen"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h2>Reminder</h2>
-                                <p>Please provide the Whatsapp number to get instant reminders about the order
-                                    confirmation
-                                    tracking, delivery etc.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1>Get Reminder <br><span>WhatsApp No.</span></h1>
-                <input type="text" placeholder="Enter a number">
-
-
-
-
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content19', 'content20')"></i>
-            </div>
-        </div>
-
-
-        <!-- -------------------- 20 screen---------------- -->
-
-        <div class="content" id="content20">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content20', 'content19')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbartwenty"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbartwenty"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h2>Request confirmation</h2>
-                                <p>Select YES if you proceeding with customer order. <br>
-                                    No to go back. Otherwise Save the details for future use.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1>Confirm <br><span>Order Request</span></h1>
-                <div class="options">
-                    <a href="javascript:void(0);" onclick="handleOptionClick('yes', 'content21')">
-                        <h2>Yes</h2>
-                    </a>
-                    <a href="javascript:void(0);" onclick="handleOptionClick('no', 'content22')">
-                        <h2>No</h2>
-                    </a>
-                    <a href="javascript:void(0);" onclick="handleOptionClick('no', 'content27')">
-                        <h2>Save</h2>
-                    </a>
-                </div>
-
-
-
-
-
-            </div>
-
-        </div>
-
-        <!-- -------------------- 21 screen---------------- -->
-
-        <div class="content" id="content21">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content21', 'content20')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbartwentyone"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbartwentyone"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h2> Date</h2>
-                                <p>Please provide the Exact date of the function</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-
-            <div class="middle_part">
-
-                <p><i class="bi bi-check-circle-fill" style="font-size: 15px;"></i> Your request for Custom designs has
-                    been received, we will reach back you within 24 hours.</p>
-                <div style="display: flex;
-                 justify-content: space-evenly;">
-                    <h3>Place another <br> Other</h3>
-                    <h3>Home</h3>
-                </div>
-            </div>
-            <div class="next-btn-container" style="display: flex;  justify-content: space-around; align-items: center;">
-                <!-- <a href="" style="text-decoration: none; color: white;">Skip</a> -->
-                <i class="bi bi-arrow-right-circle-fill" style="font-size: 30px;"
-                    onclick="changeContent(1, 'content21', 'content23')"></i>
-            </div>
-        </div>
-
-        <!-- ---------------------content 22------------------ -->
-
-        <div class="content" id="content22">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content22', 'content20')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbartwentytwo"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbartwentytwo"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h2> Date</h2>
-                                <p>Please provide the Exact date of the function</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <p><i class="bi bi-x-circle-fill" style="font-size: 15px;"></i>
-                    Your request for Custom design has been Cancelled</p>
-                <div style="display: flex;
-                    justify-content: space-evenly;">
-                    <h3 href="javascript:void(0);" onclick="handleOptionClick('yes', 'content23')">Place another <br>
-                        Other</h3>
-                    <h3>Home</h3>
-                </div>
-
-
-            </div>
-
-        </div>
-
-        <!-- --------------------save order screen ---------------->
-
-
-        <div class="content" id="content27">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content27', 'content20')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbartwentytwo"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbartwentytwo"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h2> Date</h2>
-                                <p>Please provide the Exact date of the function</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <p><i class="bi bi-save-fill" style="font-size: 15px;"></i>Your details of custom design has been saved.
-                    you can continue the request in the future.</p>
-                <div style="display: flex;
-              justify-content: space-evenly;">
-                    <h3 href="javascript:void(0);" onclick="handleOptionClick('yes', 'content23')">Place another <br>
-                        Other</h3>
-                    <h3>Home</h3>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- ----------------------place another order screen--------------------------- -->
-
-        <div class="content" id="content23">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content22', 'content20')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbartwentythree"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbartwentythree"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h1>Demo</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-
-
-
-
-                <h3 href="javascript:void(0);" onclick="handleOptionClick('yes', 'content25')">New Order</h3>
-                <h3 href="javascript:void(0);" onclick="handleOptionClick('yes', 'content24')">Saved Order</h3>
-                <h3 href="javascript:void(0);" onclick="handleOptionClick('yes', 'content26')">Previous Order</h3>
-
-            </div>
-
-        </div>
-
-
-        <!-- -------------------Save Order Screen----------------------- -->
-
-        <div class="content" id="content24">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content24', 'content23')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbartwentyfour"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbartwentyfour"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h1>Save Orders</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1> Save <span>Orders</span></h1>
-            </div>
-
-        </div>
-
-        <!-- -------------------New Order Screen----------------------- -->
-
-        <div class="content" id="content25">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content25', 'content23')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbartwentyfive"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbartwentyfive"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h1>New Orders</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1> New <span>Orders</span></h1>
-            </div>
-
-        </div>
-
-        <!-- -------------------Previos Order Screen----------------------- -->
-
-        <div class="content" id="content26">
-            <div class="top-bar">
-                <div><i class="bi bi-arrow-left-circle-fill" onclick="changeContent(0, 'content26', 'content23')"></i>
-                </div>
-                <div><i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbartwentysix"></i></div>
-
-
-            </div>
-            <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbartwentysix"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <h1>Previous Orders</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-
-            <div class="middle_part">
-
-                <h1> Previous <span>Orders</span></h1>
-            </div>
-
-        </div>
-
-
-
-
-        <!-- Add more content divs as needed -->
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+
     <script>
 
-        // -----------------order confirm sript
 
-        function handleOptionClick(option, nextContentId) {
-            if (option === 'save') {
-                // Handle 'Save' option logic if needed
-                // You can add custom logic here
-            } else {
-                // Handle 'Yes' and 'No' options
-                changeContent(1, 'content20', nextContentId);
-            }
+        function toggleSlides(currentSlideId, targetSlideId) {
+            var currentSlide = document.getElementById(currentSlideId);
+            var targetSlide = document.getElementById(targetSlideId);
+
+            currentSlide.classList.remove('active');
+            targetSlide.classList.add('active');
         }
-
-
-
-        // ------------------------------------------------------select month modal-------------
-
-        document.addEventListener("DOMContentLoaded", function () {
-    var inputBox = document.getElementById("myInput");
-    var openPopup = document.getElementById("openPopup");
-    var listItems = document.querySelectorAll("#myList1 li");
-    var popup = document.getElementById("popup2");
-
-    // Close the popup by default
-    popup.style.display = "none";
-
-    // Open the popup when clicking on the "Choose" anchor
-    openPopup.addEventListener("click", function () {
-        popup.style.display = "block";
-    });
-
-    // Handle clicks on each list item in the popup
-    for (var i = 0; i < listItems.length; i++) {
-        listItems[i].addEventListener("click", function () {
-            if (this.innerText !== "Select") {
-                // Fill the input box with the selected option
-                inputBox.value = this.innerText;
-            }
-
-            // Close the popup
-            popup.style.display = "none";
-        });
-    }
-
-    // Close the popup when clicking the close button
-    popup.querySelector(".close").addEventListener("click", function () {
-        popup.style.display = "none";
-    });
-});
-        // ------------------------------------------------------select month modal end-------------
-
-
-
-        // hightcolor input javascript
-        document.addEventListener("DOMContentLoaded", function () {
-            var inputBox = document.getElementById("myInput");
-            var openPopup = document.getElementById("openPopup");
-            var listItems = document.querySelectorAll("#myList1 li");
-            var popup = document.getElementById("popup2");
-            var popup = document.getElementById("popup4");
-
-            // Close the popup by default
-            popup.style.display = "none";
-
-            // Open the popup when clicking on the "Choose" anchor
-            openPopup.addEventListener("click", function () {
-                popup.style.display = "block";
-            });
-
-            // Handle clicks on each list item in the popup
-            for (var i = 0; i < listItems.length; i++) {
-                listItems[i].addEventListener("click", function () {
-                    if (this.innerText === "Enter Manually") {
-                        // Enable input for manual entry
-                        inputBox.removeAttribute("readonly");
-                    } else {
-                        // Fill the input box with the selected option
-                        inputBox.value = this.innerText;
-                        // Disable input for non-manual options
-                        inputBox.setAttribute("readonly", true);
-                    }
-
-                    // Close the popup
-                    popup.style.display = "none";
-                });
-            }
-
-            // Close the popup when clicking the close button
-            popup.querySelector(".close").addEventListener("click", function () {
-                popup.style.display = "none";
-            });
-
-            // Clear the input box when needed
-            function clearInputBox() {
-                inputBox.value = "";
-                inputBox.removeAttribute("readonly");
-            }
-
-            // Example: You can call this function whenever you want to clear the input box
-            // For example, add a button or event listener that triggers this function
-            document.getElementById("clearButton").addEventListener("click", clearInputBox);
-        });
-
-        // ------------------------------------------
-
-
-
-        //  ----------------------------content change logic
-
-
-        function showContent(contentId) {
-            var contents = document.querySelectorAll('.content');
-            contents.forEach(function (content) {
-                content.classList.remove('active');
-            });
-
-            var currentContentElement = document.getElementById(contentId);
-            if (currentContentElement) {
-                currentContentElement.classList.add('active');
-            }
-        }
-
-        function changeContent(direction, currentContentId, targetContentId) {
-            showContent(targetContentId);
-
-            // Enable/disable buttons based on the current content
-            var prevButton = document.getElementById(currentContentId).querySelector('button:first-child');
-            var nextButton = document.getElementById(currentContentId).querySelector('button:last-child');
-
-            var currentIndex = parseInt(currentContentId.replace('content', ''), 10);
-
-            prevButton.disabled = currentIndex === 1;
-            nextButton.disabled = currentIndex === document.querySelectorAll('.content').length;
-        }
-
-        // ---------------------rightside nav js-------------------
-
-        // ----------------------------- first right side slide bar
-        // Function to open the sidebar
-        function openNav(sidebarId) {
-            document.getElementById(sidebarId).style.width = "360px";
-            document.getElementById("main").style.marginLeft = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
-
-        // Function to close the sidebar
-        function closeNav(sidebarId) {
-            document.getElementById(sidebarId).style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            document.body.style.backgroundColor = "white";
-        }
-
-        // Close all sidebars when the page loads
-        document.addEventListener("DOMContentLoaded", function () {
-            closeNav('mySidenav');
-
-        });
-        function closeSidebarOnClickOutside(event) {
-            var sidebar = document.getElementById("mySidenav");
-            if (event.target !== sidebar && !sidebar.contains(event.target)) {
-                closeNav('mySidenav');
-            }
-        }
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavtwo');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavthree');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavfour');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavfive');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavsix');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavseven');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenaveight');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavnine');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavten');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenaveleven');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavtwele');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavthirteen');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavfourteen');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavfifteen');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavsixteen');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavseventeen');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenaveighteen');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavnineteen');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavtwenty');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavtwentyone');
-
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-
-            closeNav('mySidenavtwentytwo');
-
-        });
-
-
-
-
-
-
-        // ---------------------rightside nav js closed-------------------
 
         let currentIndex = 0;
         const sliderWrapper = document.querySelector('.slider-wrapper');
@@ -1750,23 +1449,12 @@
             currentIndex = (currentIndex - 1 + items.length) % items.length;
             showSlide(currentIndex);
         }
-        function openPopup(imageUrl) {
-        var popup = document.getElementById("imagePopup");
-        var popupImage = document.getElementById("popupImage");
+        function showContent(contentId) {
+            const contentElements = document.querySelectorAll('.content');
+            contentElements.forEach(element => element.style.display = 'none');
+        } showContent(contentId);
+        document.getElementById(contentId).style.display = 'block';
 
-        // Set the source attribute of the popup image
-        popupImage.src = imageUrl;
-
-        // Show the popup
-        popup.style.display = "block";
-    }
-
-    function closePopup() {
-        var popup = document.getElementById("imagePopup");
-
-        // Close the popup
-        popup.style.display = "none";
-    }
     </script>
 </body>
 
