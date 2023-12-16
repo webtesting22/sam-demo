@@ -134,7 +134,12 @@ input[type=checkbox] {
     display: none;
     margin: 0px 30px;
 }
-
+  input[type="file"] {
+            overflow: hidden;
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
+        }
 input[type=checkbox]+label::after {
     content: "\2714";
     border: 0.1em solid #000;
@@ -385,4 +390,32 @@ text-align: center;
     font-size: 30px;
    color: white;
    opacity: 0.4;
+}
+
+ /* Style the progress bar container */
+ .progress-container {
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+/* Style the progress bar */
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #28a745;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+.custom-file-input{
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .custom-file-input {
+        display: block;
+        margin-top: 10px;
+    }
 }
