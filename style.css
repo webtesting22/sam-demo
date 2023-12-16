@@ -237,15 +237,15 @@ input[type=checkbox] + label {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #292929;
+    /* background-color: #292929; */
     color: white;
 }
 .offcanvas-header{
-    background-color: #292929;
+    /* background-color: #292929; */
     color: white;
 }
 .modal-header{
-    background-color: #292929;
+    /* background-color: #292929; */
     color: white;
 }
 .modal-body{
@@ -260,4 +260,13 @@ input[type=checkbox] + label {
 .order-info div li{
     margin: 0px 30px;
     font-size: 30px;
+}
+.offcanvas {
+    
+    --bs-offcanvas-bg: none;
+  
+}
+#offcanvasNavbarone {
+    --bs-offcanvas-bg: none;
+    backdrop-filter: blur(90px);
 }
