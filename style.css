@@ -8,6 +8,9 @@ h1{
 input[type="text"] {
     color: white;
 }
+input::placeholder{
+    color: white;
+}
 li {
     list-style: none;
     margin: 20px 0;
@@ -322,3 +325,39 @@ input[type=checkbox]:checked:disabled+label:before {
     --bs-offcanvas-bg: none;
     backdrop-filter: blur(90px);
 }
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.custom-dropdown input,
+.custom-dropdown input:focus{
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.custom-dropdown-options {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(90px);
+    /* border: 1px solid #ccc; */
+    /* background-color: #101010; */
+    /* border-radius: 4px; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-dropdown-option{
+    color: white;
+}
+.custom-dropdown-option {
+    padding: 8px;
+    cursor: pointer;
+}
+
