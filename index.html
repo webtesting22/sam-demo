@@ -684,7 +684,8 @@
                             <!-- <input type="text" id="colorInput" placeholder="Select Color" > -->
                             <div class="custom-dropdown d-flex justify-content-center">
                                 <input type="text" class="form-control" id="selectInput"
-                                    placeholder="Select an option" onclick="toggleOptions()"><i class="bi bi-folder-plus"></i>
+                                    placeholder="Select an option" onclick="toggleOptions()"> <label for="myFile2" class="custom-file-input" style="height: 40px; border: none;" id="fileInputLabel2"><i class="bi bi-images"></i></label>
+                                    <input type="file" id="myFile2" name="filename2" onchange="uploadFile('myFile2', 'fileInputLabel2')">
                                 <ul class="custom-dropdown-options" id="dropdownOptions"
                                     onclick="stopPropagation(event)">
                                     <li class="custom-dropdown-option" onclick="selectOption('Select')">Select</li>
