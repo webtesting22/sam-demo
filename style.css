@@ -378,6 +378,7 @@ input[type=checkbox]:checked:disabled+label::after {
     margin: 0;
     padding: 0;
     backdrop-filter: blur(90px);
+    border-radius: 30px;
     /* border: 1px solid #ccc; */
     /* background-color: #101010; */
     /* border-radius: 4px; */
@@ -390,6 +391,7 @@ input[type=checkbox]:checked:disabled+label::after {
 .custom-dropdown-option {
     padding: 8px;
     cursor: pointer;
+    font-size: 22px;
 }
 
 

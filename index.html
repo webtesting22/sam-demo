@@ -513,7 +513,7 @@
                     </div>
                     <div class="Content-container">
                         <h1>Baby's <span>Name</span> </h1>
-                        <input type="text"  placeholder="Enter Baby Name">
+                        <input type="text" placeholder="Enter Baby Name">
                         <div class="next-btn-container mt-4">
                             <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content1', 'content2')"></i>
                         </div>
@@ -539,26 +539,28 @@
                             <!-- ------------gallery modal --------------------->
 
                             <!-- Button trigger modal -->
-                          
-                            <div class="mt-5"> <!-- Progress bar container -->
+
+                            <div class="mt-5">
+                                <!-- Progress bar container -->
                                 <button class="gallery-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Gallery
                                 </button>
-                                <label for="myFile" class="custom-file-input w-30" id="fileInputLabel">Choose
-                                    File <i class="bi bi-upload" style="font-size: 10px;"></i></label>
+                                <label for="myFile" class="custom-file-input w-30" id="fileInputLabel">
+                                    Choose File <i class="bi bi-upload" style="font-size: 10px;"></i>
+                                </label>
                                 <!-- The actual file input (hidden) -->
-                                <input type="file" id="myFile" name="filename" style="width: 0px;"
-                                    onchange="uploadFile()">
+                                <input type="file" id="myFile" name="filename" style="width: 0px;" onchange="uploadFile()">
                             </div>
-
+                            
                             <div class="progress-container w-100" id="progressContainer">
-                                <div class="progress-bar" style=" background-color: #28a745; width: 100%;"
-                                    id="progressBar"></div>
+                                <div class="progress-bar" style="background-color: #28a745; width: 0%;" id="progressBar"></div>
                             </div>
+                            
+                            <div id="uploadedFileName" class="mt-4"></div>
 
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="false">
-                                
+
                                 <div class="modal-dialog  modal-dialog-scrollable"
                                     style="z-index: 1050; max-width: 900px;">
                                     <div class="modal-content">
@@ -681,31 +683,22 @@
                     </div>
                     <div class="Content-container">
                         <h1>Select a <span>Highlight Color</span></h1>
-                        <div>
-                            <!-- <input type="text" id="colorInput" placeholder="Select Color" > -->
-                            <div class="custom-dropdown d-flex justify-content-center">
-                                <input type="text" class="form-control" id="selectInput"
-                                    placeholder="Select an option" onclick="toggleOptions()"> <label for="myFile2" class="custom-file-input" style="height: 40px; border: none;" id="fileInputLabel2"><i class="bi bi-images"></i></label>
-                                    <input type="file" id="myFile2" name="filename2" onchange="uploadFile('myFile2', 'fileInputLabel2')">
-                                <ul class="custom-dropdown-options" id="dropdownOptions"
-                                    onclick="stopPropagation(event)">
-                                    <li class="custom-dropdown-option" onclick="selectOption('Select')">Select</li>
-                                    <li class="custom-dropdown-option" onclick="selectOption('Enter Manually')">Enter Manually
-                                    </li>
-                                    <li class="custom-dropdown-option" onclick="selectOption('Pink')">Pink</li>
-                                    <li class="custom-dropdown-option" onclick="selectOption('Light Yellow')">Light Yellow
-                                    </li>
-                                    <li class="custom-dropdown-option" onclick="selectOption('Peach')">Peach</li>
-                                    <li class="custom-dropdown-option" onclick="selectOption('Lavender')">Lavender</li>
-                                </ul>
-                            </div>
+                        <div class="custom-dropdown d-flex justify-content-center">
+                            <input type="text" class="form-control" id="selectInput" placeholder="Select an option" onclick="toggleOptions()">
+                            <label for="myFile2" class="custom-file-input" style="height: 40px; border: none;" id="fileInputLabel2">
+                                <i class="bi bi-images"></i>
+                            </label>
+                            <input type="file" id="myFile2" name="filename2" onchange="displayFileName('myFile2', 'fileInputLabel2')">
+                            <ul class="custom-dropdown-options" id="dropdownOptions" onclick="stopPropagation(event)">
+                                <li class="custom-dropdown-option" onclick="selectOption('Select')">Select</li>
+                                <li class="custom-dropdown-option" onclick="selectOption('Enter Manually')">Enter Manually</li>
+                                <li class="custom-dropdown-option" onclick="selectOption('Pink')">Pink</li>
+                                <li class="custom-dropdown-option" onclick="selectOption('Light Yellow')">Light Yellow</li>
+                                <li class="custom-dropdown-option" onclick="selectOption('Peach')">Peach</li>
+                                <li class="custom-dropdown-option" onclick="selectOption('Lavender')">Lavender</li>
+                            </ul>
                         </div>
-                        
-
-
-
-
-
+                        <div id="selectedFileName"></div>
                     </div>
 
                     <div class="next-btn-container mt-4 ">
@@ -908,7 +901,7 @@
                         <h1>Expected <span>Delivery Date</span></h1>
                         <input type="text" placeholder="Enter Your text">
                         <!-- <input type="text" placeholder="Enter Your text"> -->
-                        
+
 
                         <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
@@ -938,7 +931,7 @@
                             <input type="text" class="form-control" id="datepickerInput" placeholder="Select a date"
                                 onclick="showDatePicker()">
                         </div>
-                        
+
 
                         <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
@@ -965,50 +958,51 @@
                     <div class="Content-container mt-4">
                         <h1>Our <span>package</span></h1>
 
-                        
-                            <div class="row w-100 justify-content-center m-auto img-gallery scrollable-mobile" style="overflow: hidden;">
-                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                            id="weekday-3" checked><label for="weekday-3">On
-                                            Quilt</label></div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                            id="weekday-4" checked><label for="weekday-4">On
-                                            Quilt</label></div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                            id="weekday-5" checked><label for="weekday-5">On
-                                            Quilt</label></div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                            id="weekday-6" checked><label for="weekday-6">On
-                                            Quilt</label></div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                            id="weekday-7" checked><label for="weekday-7">On
-                                            Quilt</label></div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                            id="weekday-8" checked><label for="weekday-8">On
-                                            Quilt</label></div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                            id="weekday-9" checked><label for="weekday-9">On
-                                            Quilt</label></div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                            id="weekday-10" checked><label for="weekday-`0">On
-                                            Quilt</label></div>
-                                </div>
+
+                        <div class="row w-100 justify-content-center m-auto img-gallery scrollable-mobile"
+                            style="overflow: hidden;">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-3" checked><label for="weekday-3">On
+                                        Quilt</label></div>
                             </div>
-                      
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-4" checked><label for="weekday-4">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-5" checked><label for="weekday-5">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-6" checked><label for="weekday-6">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-7" checked><label for="weekday-7">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-8" checked><label for="weekday-8">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-9" checked><label for="weekday-9">On
+                                        Quilt</label></div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                        id="weekday-10" checked><label for="weekday-`0">On
+                                        Quilt</label></div>
+                            </div>
+                        </div>
+
 
 
 
@@ -1143,14 +1137,15 @@
                     <div class="Content-container mt-4">
 
                         <h1>Get Reminder <br><span>WhatsApp No.</span></h1>
-                        <input type="text" inputmode="numeric" id="mobileNumber" name="mobileNumber" placeholder="Enter Your Mobile Number" maxlength="10" >
+                        <input type="text" inputmode="numeric" id="mobileNumber" name="mobileNumber"
+                            placeholder="Enter Your Mobile Number" maxlength="10">
 
 
 
                         <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
-                            <i class="bi bi-arrow-right-circle-fill"
-                                onclick="toggleSlides('content19', 'content20')" type="submit"></i>
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content19', 'content20')"
+                                type="submit"></i>
                         </div>
                     </div>
                 </div>
@@ -1544,6 +1539,12 @@
                 hideOptions();
             }
         });
+        function displayFileName(inputId, labelId) {
+            const input = document.getElementById(inputId);
+            const label = document.getElementById(labelId);
+            const fileName = input.files[0].name;
+            document.getElementById('selectedFileName').innerText = `Selected File: ${fileName}`;
+        }
 
 
         // ------------------select option------------------- js
@@ -1567,63 +1568,66 @@
         }
 
         function uploadFile() {
-            var fileInput = document.getElementById('myFile');
-            var progressContainer = document.getElementById('progressContainer');
-            var progressBar = document.getElementById('progressBar');
-            var fileInputLabel = document.getElementById('fileInputLabel');
+        var fileInput = document.getElementById('myFile');
+        var progressContainer = document.getElementById('progressContainer');
+        var progressBar = document.getElementById('progressBar');
+        var fileInputLabel = document.getElementById('fileInputLabel');
+        var uploadedFileName = document.getElementById('uploadedFileName');
 
-            if (fileInput.files.length > 0) {
-                // Show the progress bar container
-                progressContainer.style.display = 'block';
-                // Reset the progress bar
-                progressBar.style.width = '0%';
+        if (fileInput.files.length > 0) {
+            // Show the progress bar container
+            progressContainer.style.display = 'block';
+            // Reset the progress bar
+            progressBar.style.width = '0%';
 
-                // Simulate file upload (you need a server-side script for actual file upload)
-                simulateFileUpload(fileInput.files[0], function (progress) {
-                    // Update the progress bar based on the upload progress
-                    progressBar.style.width = progress + '%';
+            // Simulate file upload (you need a server-side script for actual file upload)
+            simulateFileUpload(fileInput.files[0], function (progress, fileName) {
+                // Update the progress bar based on the upload progress
+                progressBar.style.width = progress + '%';
+
+                // When the upload is complete, reset the UI
+                if (progress === 100) {
+                    fileInputLabel.textContent = 'Choose File';
+                    progressContainer.style.display = 'none';
+                    // Display the uploaded file name at the bottom
+                    uploadedFileName.textContent = 'Uploaded File: ' + fileName;
+                }
+            });
+        }
+    }
+
+    // Simulate file upload progress (replace this with actual file upload handling on the server)
+    function simulateFileUpload(file, onProgress) {
+        var totalSize = file.size;
+        var uploadedSize = 0;
+        var chunkSize = 1024 * 1024; // 1 MB chunks for simulation
+
+        function uploadChunk() {
+            if (uploadedSize < totalSize) {
+                // Simulate uploading a chunk
+                setTimeout(function () {
+                    uploadedSize += chunkSize;
+
+                    // Ensure progress doesn't exceed 100%
+                    if (uploadedSize > totalSize) {
+                        uploadedSize = totalSize;
+                    }
+
+                    var progress = (uploadedSize / totalSize) * 100;
+                    onProgress(progress, file.name);
 
                     // When the upload is complete, reset the UI
                     if (progress === 100) {
-                        fileInputLabel.textContent = 'Choose File';
-                        progressContainer.style.display = 'none';
+                        onProgress(100, file.name); // Ensure the progress is exactly 100%
+                    } else {
+                        uploadChunk();
                     }
-                });
+                }, 500); // Simulated delay
             }
         }
 
-        // Simulate file upload progress (replace this with actual file upload handling on the server)
-        function simulateFileUpload(file, onProgress) {
-            var totalSize = file.size;
-            var uploadedSize = 0;
-            var chunkSize = 1024 * 1024; // 1 MB chunks for simulation
-
-            function uploadChunk() {
-                if (uploadedSize < totalSize) {
-                    // Simulate uploading a chunk
-                    setTimeout(function () {
-                        uploadedSize += chunkSize;
-
-                        // Ensure progress doesn't exceed 100%
-                        if (uploadedSize > totalSize) {
-                            uploadedSize = totalSize;
-                        }
-
-                        var progress = (uploadedSize / totalSize) * 100;
-                        onProgress(progress);
-
-                        // When the upload is complete, reset the UI
-                        if (progress === 100) {
-                            onProgress(100); // Ensure the progress is exactly 100%
-                        } else {
-                            uploadChunk();
-                        }
-                    }, 500); // Simulated delay
-                }
-            }
-
-            uploadChunk();
-        }
+        uploadChunk();
+    }
     </script>
 </body>
 
