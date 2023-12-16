@@ -150,7 +150,7 @@ input[type=checkbox] {
         }
 input[type=checkbox]+label::after {
     content: "\2714";
-    border: 0.1em solid #000;
+    border: 0.1em solid #ffffff;
     border-radius: 0.2em;
     display: inline-block;
     width: 1.5em;
