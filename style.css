@@ -124,44 +124,49 @@ input[type=checkbox]+label {
     margin: 0.2em;
     cursor: pointer;
     padding: 0.2em;
-    font-family: 'Arial'
+    font-family: 'Arial';
+    font-size: 30px;
+    font-weight: 400;
+    
 }
 
 input[type=checkbox] {
     display: none;
+    margin: 0px 30px;
 }
 
-input[type=checkbox]+label:before {
+input[type=checkbox]+label::after {
     content: "\2714";
     border: 0.1em solid #000;
     border-radius: 0.2em;
     display: inline-block;
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     padding-left: 0.2em;
     padding-bottom: 0.3em;
     margin-right: 0.2em;
+    margin-left: 0.4em;
     vertical-align: bottom;
     color: transparent;
     transition: .2s;
 }
 
-input[type=checkbox]+label:active:before {
+input[type=checkbox]+label:active::after {
     transform: scale(0);
 }
 
-input[type=checkbox]:checked+label:before {
+input[type=checkbox]:checked+label::after {
     /* background-color: #ED820A;
     border-color: #ED820A; */
     color: #fff;
 }
 
-input[type=checkbox]:disabled+label:before {
+input[type=checkbox]:disabled+label::after {
     transform: scale(1);
     border-color: #aaa;
 }
 
-input[type=checkbox]:checked:disabled+label:before {
+input[type=checkbox]:checked:disabled+label::after {
     transform: scale(1);
     background-color: #F7C28F;
     border-color: #F7C28F;
