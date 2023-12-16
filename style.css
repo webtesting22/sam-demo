@@ -10,6 +10,7 @@ input[type="text"] {
 }
 input::placeholder{
     color: white;
+    opacity: 0.4;
 }
 li {
     list-style: none;
@@ -177,7 +178,7 @@ input[type=checkbox]:checked:disabled+label:before {
 
 .slide-container i,
 .next-btn-container i {
-    font-size: 25px;
+    font-size: 35px;
     color: white;
     margin: 20px 0px;
     cursor: pointer;
@@ -200,7 +201,7 @@ input[type=checkbox]:checked:disabled+label:before {
     cursor: pointer;
 }
 
-.delivery-heading h4:hover {
+.delivery-heading h3:hover {
     transform: scale3d(1.3, 1.3, 1.3);
     transition: .5s;
     cursor: pointer;
@@ -361,3 +362,18 @@ input[type=checkbox]:checked:disabled+label:before {
     cursor: pointer;
 }
 
+
+.datepicker-container {
+    position: relative;
+    display: inline-block;
+}
+.datepicker-container input,
+.datepicker-container input:focus,
+.datepicker-container input::placeholder{
+    border-radius: 0px;
+font-size: 30px;
+   color: white;
+margin: auto;
+text-align: center;
+    box-shadow: none;
+}
