@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;800;900&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
-h1{
+h1 {
     font-family: 'Roboto Flex', sans-serif;
 
 
@@ -11,10 +11,12 @@ input[type="text"] {
     color: white;
     text-align: center;
 }
-input::placeholder{
+
+input::placeholder {
     color: white;
     opacity: 0.4;
 }
+
 li {
     list-style: none;
     margin: 20px 0;
@@ -53,7 +55,7 @@ li {
     width: 50%;
 }
 
-@media (max-width:600px){
+@media (max-width:600px) {
     .slide-container {
         display: none;
         width: 100%;
@@ -135,21 +137,23 @@ input[type=checkbox]+label {
     cursor: pointer;
     padding: 0.2em;
     font-family: 'Arial';
-    font-size:25px;
+    font-size: 25px;
     font-weight: 400;
-    
+
 }
 
 input[type=checkbox] {
     display: none;
     margin: 0px 30px;
 }
-  input[type="file"] {
-            overflow: hidden;
-            opacity: 0;
-            position: absolute;
-            z-index: -1;
-        }
+
+input[type="file"] {
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
 input[type=checkbox]+label::after {
     content: "\2714";
     border: 0.1em solid #ffffff;
@@ -214,7 +218,8 @@ input[type=checkbox]:checked:disabled+label::after {
     justify-content: space-evenly;
     margin-top: 50px;
 }
-.Dress-color-heading h4{
+
+.Dress-color-heading h4 {
     font-weight: 400;
 }
 
@@ -289,7 +294,8 @@ input[type=checkbox]:checked:disabled+label::after {
     color: white;
     padding: 0px 50px;
 }
-.offcanvas-body div{
+
+.offcanvas-body div {
     padding: 0px 40px;
 }
 
@@ -299,9 +305,10 @@ input[type=checkbox]:checked:disabled+label::after {
     justify-content: end;
     padding: 20px 20px;
 }
+
 .offcanvas-header i {
-   cursor: pointer;
-   font-size: 30px;
+    cursor: pointer;
+    font-size: 30px;
 }
 
 
@@ -364,8 +371,9 @@ input[type=checkbox]:checked:disabled+label::after {
     position: relative;
     display: inline-block;
 }
+
 .custom-dropdown input,
-.custom-dropdown input:focus{
+.custom-dropdown input:focus {
     border-radius: 0px;
     box-shadow: none;
 }
@@ -388,9 +396,10 @@ input[type=checkbox]:checked:disabled+label::after {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.custom-dropdown-option{
+.custom-dropdown-option {
     color: white;
 }
+
 .custom-dropdown-option {
     padding: 8px;
     cursor: pointer;
@@ -402,23 +411,24 @@ input[type=checkbox]:checked:disabled+label::after {
     position: relative;
     display: inline-block;
 }
+
 .datepicker-container input,
-.datepicker-container input:focus
-{
+.datepicker-container input:focus {
     border-radius: 0px;
     font-size: 30px;
-margin: auto;
-text-align: center;
+    margin: auto;
+    text-align: center;
     box-shadow: none;
 }
-.datepicker-container input::placeholder{
+
+.datepicker-container input::placeholder {
     font-size: 30px;
-   color: white;
-   opacity: 0.4;
+    color: white;
+    opacity: 0.4;
 }
 
- /* Style the progress bar container */
- .progress-container {
+/* Style the progress bar container */
+.progress-container {
     display: none;
     margin-top: 20px;
     width: 100%;
@@ -433,19 +443,21 @@ text-align: center;
     border-radius: 4px;
     transition: width 0.3s ease;
 }
-.custom-file-input{
+
+.custom-file-input {
     border: 1px solid white;
     padding: 5px 10px;
 }
-  /* Mobile styles */
-  @media (max-width: 768px) {
+
+/* Mobile styles */
+@media (max-width: 768px) {
     .custom-file-input {
         display: block;
         margin-top: 10px;
     }
 }
 
-#selectInput::placeholder{
+#selectInput::placeholder {
     color: white;
 }
 
@@ -456,4 +468,18 @@ text-align: center;
         height: 60vh;
         overflow-y: auto !important;
     }
+}
+
+@media screen and (orientation: landscape) {
+    .carousel img {
+        height: 60vh;
+    }
+}
+
+.design{
+    /* background-color: rgb(36, 36, 36); */
+    backdrop-filter: blur(90px);
+    padding: 40px 40px;
+    border-radius: 10px;
+    
 }

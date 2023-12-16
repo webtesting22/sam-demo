@@ -10,6 +10,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -493,15 +494,91 @@
 
     <section id="main-container">
         <div class="container">
+            <img src="./navinjoy888.webp" width="200px" style="position: absolute; top: 2%;" alt="">
             <div class="slider">
+
+                <div class="slide-container active" id="content0">
+                    <div class="content">
+                        <div class="top-bar d-flex justify-content-end">
+                            <!-- <button >Previous</button> -->
+                            <!-- <i class="bi bi-arrow-left-circle-fill"></i> -->
+
+                            <!-- ------------Info Button------------>
+
+                            <!-- <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarone"></i> -->
+
+
+                        </div>
+                    </div>
+                    <div class="Content-container">
+                        
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="design">
+                                        <h1>1</h1>
+                                        <p>Enter the Details like name date age etc. in the field provides</p>
+                                        <i class="bi bi-arrow-right-circle-fill slide-button" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="1" ></i>
+                                        <!-- <button >Next Slide</button> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="design">
+                                        <h1>2</h1>
+                                        <p>Share you preferred Model of the outfit by simply uploading an image of it, or select a design from our gallery.</p>
+                                        <i class="bi bi-arrow-right-circle-fill slide-button" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="2" ></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="design">
+                                        <h1>3</h1>
+                                        <p>If any other accessories needed please add the item and it will be automatically added to the list.</p>
+                                        <i class="bi bi-arrow-right-circle-fill slide-button" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="3" ></i>
+                                        
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="design">
+                                        <h1>4</h1>
+                                        <p>For taking the measurements of your baby take a tape and follow the instrutions that we have provided.</p>
+                                        <i class="bi bi-arrow-right-circle-fill slide-button" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="4" ></i>
+                                        
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="design">
+                                        <h1>5</h1>
+                                        <p>That's all submit a request our team will reach back to you about the details.</p>
+                                        <i class="bi bi-arrow-right-circle-fill slide-button" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="5" ></i>
+                                        
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="design">
+                                        <h1>6</h1>
+                                        <p>Hey, little bit confused ! Don't worry, click the <b>i</b> button on the right corner of your of screen for instant support.</p>
+                                        <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content0', 'content1')"></i>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!------------------- Slide 1---------------------- -->
 
-                <div class="slide-container active" id="content1">
+                <div class="slide-container " id="content1">
                     <div class="content">
-                        <div class="top-bar">
+                        <div class="top-bar d-flex justify-content-between">
                             <!-- <button >Previous</button> -->
-                            <i class="bi bi-arrow-left-circle-fill"></i>
+                            <i class="bi bi-arrow-left-circle-fill" onclick="toggleSlides('content1', 'content0')"></i>
 
                             <!-- ------------Info Button------------>
 
@@ -549,13 +626,15 @@
                                     Choose File <i class="bi bi-upload" style="font-size: 10px;"></i>
                                 </label>
                                 <!-- The actual file input (hidden) -->
-                                <input type="file" id="myFile" name="filename" style="width: 0px;" onchange="uploadFile()" accept=".jpg, .jpeg, .png, .pdf">
+                                <input type="file" id="myFile" name="filename" style="width: 0px;"
+                                    onchange="uploadFile()" accept=".jpg, .jpeg, .png, .pdf">
                             </div>
-                            
+
                             <div class="progress-container w-100" id="progressContainer">
-                                <div class="progress-bar" style="background-color: #28a745; width: 0%;" id="progressBar"></div>
+                                <div class="progress-bar" style="background-color: #28a745; width: 0%;"
+                                    id="progressBar"></div>
                             </div>
-                            
+
                             <div id="uploadedFileName" class="mt-4"></div>
 
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -625,11 +704,11 @@
                         <span>(Name will be embroidered in the cloths)</span>
                         <div class="mt-5">
                             <div>
-                                <input type="checkbox" id="weekday-1" name="weekday-1" value="Friday" >
+                                <input type="checkbox" id="weekday-1" name="weekday-1" value="Friday">
                                 <label for="weekday-1">On Dress</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="weekday-2" name="weekday-2" value="Friday" >
+                                <input type="checkbox" id="weekday-2" name="weekday-2" value="Friday">
                                 <label for="weekday-2" style="    margin-right: -11px;
                                 ">On Quilt</label>
                             </div>
@@ -684,16 +763,22 @@
                     <div class="Content-container">
                         <h1>Select a <span>Highlight Color</span></h1>
                         <div class="custom-dropdown d-flex justify-content-center">
-                            <input type="text" class="form-control" id="selectInput" placeholder="Select an option" onclick="toggleOptions()">
-                            <label for="myFile2" class="custom-file-input" style="height: 40px; border: none;" id="fileInputLabel2">
+                            <input type="text" class="form-control" id="selectInput" placeholder="Select an option"
+                                onclick="toggleOptions()">
+                            <label for="myFile2" class="custom-file-input" style="height: 40px; border: none;"
+                                id="fileInputLabel2">
                                 <i class="bi bi-images"></i>
                             </label>
-                            <input type="file" id="myFile2" name="filename2" onchange="displayFileName('myFile2', 'fileInputLabel2')">
+                            <input type="file" id="myFile2" name="filename2"
+                                onchange="displayFileName('myFile2', 'fileInputLabel2')">
                             <ul class="custom-dropdown-options" id="dropdownOptions" onclick="stopPropagation(event)">
                                 <li class="custom-dropdown-option" onclick="selectOption('Select')">Select</li>
-                                <li class="custom-dropdown-option" onclick="selectOption('Enter Manually')">Enter Manually</li>
+                                <li class="custom-dropdown-option" onclick="selectOption('Enter Manually')">Enter
+                                    Manually</li>
                                 <li class="custom-dropdown-option" onclick="selectOption('Pink')">Pink</li>
-                                <li class="custom-dropdown-option" onclick="selectOption('Light Yellow')">Light Yellow</li>
+                                <li class="custom-dropdown-option" onclick="selectOption('Light Yellow')">Light
+                                    Yellow
+                                </li>
                                 <li class="custom-dropdown-option" onclick="selectOption('Peach')">Peach</li>
                                 <li class="custom-dropdown-option" onclick="selectOption('Lavender')">Lavender</li>
                             </ul>
@@ -963,42 +1048,42 @@
                             style="overflow: hidden;">
                             <div class="col-lg-3 col-md-4 col-sm-4 col-6">
                                 <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-3" ><label for="weekday-3">On
+                                        id="weekday-3"><label for="weekday-3">On
                                         Quilt</label></div>
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4 col-6">
                                 <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-4" ><label for="weekday-4">On
+                                        id="weekday-4"><label for="weekday-4">On
                                         Quilt</label></div>
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4 col-6">
                                 <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-5" ><label for="weekday-5">On
+                                        id="weekday-5"><label for="weekday-5">On
                                         Quilt</label></div>
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4 col-6">
                                 <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-6" ><label for="weekday-6">On
+                                        id="weekday-6"><label for="weekday-6">On
                                         Quilt</label></div>
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4 col-6">
                                 <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-7" ><label for="weekday-7">On
+                                        id="weekday-7"><label for="weekday-7">On
                                         Quilt</label></div>
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4 col-6">
                                 <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-8" ><label for="weekday-8">On
+                                        id="weekday-8"><label for="weekday-8">On
                                         Quilt</label></div>
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4 col-6">
                                 <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-9" ><label for="weekday-9">On
+                                        id="weekday-9"><label for="weekday-9">On
                                         Quilt</label></div>
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4 col-6">
                                 <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-10" ><label for="weekday-`0">On
+                                        id="weekday-10"><label for="weekday-`0">On
                                         Quilt</label></div>
                             </div>
                         </div>
@@ -1198,7 +1283,9 @@
                     </div>
                     <div class="Content-container mt-4">
 
-                        <p><i class="bi bi-check-circle-fill"></i> Your request for Custom design has been received, we
+                        <p><i class="bi bi-check-circle-fill" style="color: green;"></i> Your request for Custom
+                            design
+                            has been received, we
                             will reach back you within 24 hours.</p>
                         <div class="order-option">
                             <h4 onclick="toggleSlides('content21', 'content24')">Place another<br> Order</h4>
@@ -1231,7 +1318,9 @@
                     </div>
                     <div class="Content-container mt-4">
 
-                        <p><i class="bi bi-x-circle-fill"></i> Your request for Custom design has been cancelled</p>
+                        <p><i class="bi bi-x-circle-fill" style="color: red;"></i> Your request for Custom design
+                            has
+                            been cancelled</p>
                         <div class="order-option">
                             <h4 onclick="toggleSlides('content22', 'content24')">Place another<br> Order</h4>
                             <h4>Home</h4>
@@ -1262,7 +1351,8 @@
                     </div>
                     <div class="Content-container mt-4">
 
-                        <p><i class="bi bi-save-fill"></i> Your request for Custom design has been saved. you can
+                        <p><i class="bi bi-save-fill" style="color: orange;"></i> Your request for Custom design has
+                            been saved. you can
                             continue request in the future</p>
                         <div class="order-option">
                             <h4 onclick="toggleSlides('content23', 'content24')">Place another<br> Order</h4>
@@ -1471,12 +1561,27 @@
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <script>
+        var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
+            interval: false // Disable automatic sliding
+        });
+
+        function redirectToContent1() {
+            // Your logic to redirect to the content1 slide
+            toggleSlides('content0', 'content1');
+        }
+        function toggleSlides(currentContent, nextContent) {
+            document.getElementById(currentContent).style.display = 'none';
+            document.getElementById(nextContent).style.display = 'block';
+        }
 
 
         function toggleSlides(currentSlideId, targetSlideId) {
@@ -1570,66 +1675,92 @@
 
         // ------------2nd screen file upload----------
         function uploadFile() {
-        var fileInput = document.getElementById('myFile');
-        var progressContainer = document.getElementById('progressContainer');
-        var progressBar = document.getElementById('progressBar');
-        var fileInputLabel = document.getElementById('fileInputLabel');
-        var uploadedFileName = document.getElementById('uploadedFileName');
+            var fileInput = document.getElementById('myFile');
+            var progressContainer = document.getElementById('progressContainer');
+            var progressBar = document.getElementById('progressBar');
+            var fileInputLabel = document.getElementById('fileInputLabel');
+            var uploadedFileName = document.getElementById('uploadedFileName');
 
-        if (fileInput.files.length > 0) {
-            // Show the progress bar container
-            progressContainer.style.display = 'block';
-            // Reset the progress bar
-            progressBar.style.width = '0%';
+            if (fileInput.files.length > 0) {
+                // Show the progress bar container
+                progressContainer.style.display = 'block';
+                // Reset the progress bar
+                progressBar.style.width = '0%';
 
-            // Simulate file upload (you need a server-side script for actual file upload)
-            simulateFileUpload(fileInput.files[0], function (progress, fileName) {
-                // Update the progress bar based on the upload progress
-                progressBar.style.width = progress + '%';
-
-                // When the upload is complete, reset the UI
-                if (progress === 100) {
-                    fileInputLabel.textContent = 'Choose File';
-                    progressContainer.style.display = 'none';
-                    // Display the uploaded file name at the bottom
-                    uploadedFileName.textContent = 'Uploaded File: ' + fileName;
-                }
-            });
-        }
-    }
-
-    // Simulate file upload progress (replace this with actual file upload handling on the server)
-    function simulateFileUpload(file, onProgress) {
-        var totalSize = file.size;
-        var uploadedSize = 0;
-        var chunkSize = 1024 * 1024; // 1 MB chunks for simulation
-
-        function uploadChunk() {
-            if (uploadedSize < totalSize) {
-                // Simulate uploading a chunk
-                setTimeout(function () {
-                    uploadedSize += chunkSize;
-
-                    // Ensure progress doesn't exceed 100%
-                    if (uploadedSize > totalSize) {
-                        uploadedSize = totalSize;
-                    }
-
-                    var progress = (uploadedSize / totalSize) * 100;
-                    onProgress(progress, file.name);
+                // Simulate file upload (you need a server-side script for actual file upload)
+                simulateFileUpload(fileInput.files[0], function (progress, fileName) {
+                    // Update the progress bar based on the upload progress
+                    progressBar.style.width = progress + '%';
 
                     // When the upload is complete, reset the UI
                     if (progress === 100) {
-                        onProgress(100, file.name); // Ensure the progress is exactly 100%
-                    } else {
-                        uploadChunk();
+                        fileInputLabel.textContent = 'Choose File';
+                        progressContainer.style.display = 'none';
+                        // Display the uploaded file name at the bottom
+                        uploadedFileName.textContent = 'Uploaded File: ' + fileName;
                     }
-                }, 500); // Simulated delay
+                });
             }
         }
 
-        uploadChunk();
-    }
+        // Simulate file upload progress (replace this with actual file upload handling on the server)
+        function simulateFileUpload(file, onProgress) {
+            var totalSize = file.size;
+            var uploadedSize = 0;
+            var chunkSize = 1024 * 1024; // 1 MB chunks for simulation
+
+            function uploadChunk() {
+                if (uploadedSize < totalSize) {
+                    // Simulate uploading a chunk
+                    setTimeout(function () {
+                        uploadedSize += chunkSize;
+
+                        // Ensure progress doesn't exceed 100%
+                        if (uploadedSize > totalSize) {
+                            uploadedSize = totalSize;
+                        }
+
+                        var progress = (uploadedSize / totalSize) * 100;
+                        onProgress(progress, file.name);
+
+                        // When the upload is complete, reset the UI
+                        if (progress === 100) {
+                            onProgress(100, file.name); // Ensure the progress is exactly 100%
+                        } else {
+                            uploadChunk();
+                        }
+                    }, 500); // Simulated delay
+                }
+            }
+
+            uploadChunk();
+        }
+
+
+        var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
+            interval: false
+        });
+
+        var carouselElement = document.getElementById('carouselExampleCaptions');
+        var prevButton = carouselElement.querySelector('.carousel-control-prev');
+        var nextButton = carouselElement.querySelector('.carousel-control-next');
+
+        carouselElement.addEventListener('slid.bs.carousel', function () {
+            var activeIndex = carousel.getActiveIndex();
+            var itemCount = carousel._items.length;
+
+            // Check if it's the first or last slide and hide the controls accordingly
+            if (activeIndex === 0) {
+                prevButton.style.display = 'none';
+                nextButton.style.display = 'block';
+            } else if (activeIndex === itemCount - 1) {
+                nextButton.style.display = 'none';
+                prevButton.style.display = 'block';
+            } else {
+                prevButton.style.display = 'block';
+                nextButton.style.display = 'block';
+            }
+        });
     </script>
 </body>
 
