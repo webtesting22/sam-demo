@@ -287,7 +287,14 @@ input[type=checkbox]:checked:disabled+label::after {
 .offcanvas-header {
     /* background-color: #292929; */
     color: white;
+    justify-content: end;
+    padding: 20px 20px;
 }
+.offcanvas-header i {
+   cursor: pointer;
+   font-size: 30px;
+}
+
 
 .modal-header {
     /* background-color: #292929; */
