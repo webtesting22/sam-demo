@@ -47,7 +47,14 @@ li {
 
 .slide-container {
     display: none;
-    /* width: 70%; */
+    width: 50%;
+}
+
+@media (max-width:600px){
+    .slide-container {
+        display: none;
+        width: 100%;
+    }
 }
 
 .slide-container.active {
@@ -417,5 +424,18 @@ text-align: center;
     .custom-file-input {
         display: block;
         margin-top: 10px;
+    }
+}
+
+#selectInput::placeholder{
+    color: white;
+}
+
+
+@media (max-width: 767px) {
+    .img-gallery.scrollable-mobile {
+        overflow-x: auto;
+        height: 60vh;
+        overflow-y: auto !important;
     }
 }

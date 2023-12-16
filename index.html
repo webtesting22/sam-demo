@@ -558,6 +558,7 @@
 
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="false">
+                                
                                 <div class="modal-dialog  modal-dialog-scrollable"
                                     style="z-index: 1050; max-width: 900px;">
                                     <div class="modal-content">
@@ -682,18 +683,18 @@
                         <div>
                             <!-- <input type="text" id="colorInput" placeholder="Select Color" > -->
                             <div class="custom-dropdown">
-                                <input type="text" class="form-control text-white" id="selectInput"
+                                <input type="text" class="form-control" id="selectInput"
                                     placeholder="Select an option" onclick="toggleOptions()">
                                 <ul class="custom-dropdown-options" id="dropdownOptions"
                                     onclick="stopPropagation(event)">
-                                    <li class="custom-dropdown-option" onclick="selectOption('Option 1')">Select</li>
-                                    <li class="custom-dropdown-option" onclick="selectOption('Option 2')">Enter Manually
+                                    <li class="custom-dropdown-option" onclick="selectOption('Select')">Select</li>
+                                    <li class="custom-dropdown-option" onclick="selectOption('Enter Manually')">Enter Manually
                                     </li>
-                                    <li class="custom-dropdown-option" onclick="selectOption('Option 3')">Pink</li>
-                                    <li class="custom-dropdown-option" onclick="selectOption('Option 4')">Light Yellow
+                                    <li class="custom-dropdown-option" onclick="selectOption('Pink')">Pink</li>
+                                    <li class="custom-dropdown-option" onclick="selectOption('Light Yellow')">Light Yellow
                                     </li>
-                                    <li class="custom-dropdown-option" onclick="selectOption('Option 5')">Peach</li>
-                                    <li class="custom-dropdown-option" onclick="selectOption('Option 5')">Lavender</li>
+                                    <li class="custom-dropdown-option" onclick="selectOption('Peach')">Peach</li>
+                                    <li class="custom-dropdown-option" onclick="selectOption('Lavender')">Lavender</li>
                                 </ul>
                             </div>
                         </div>
@@ -960,48 +961,50 @@
                     <div class="Content-container mt-4">
                         <h1>Our <span>package</span></h1>
 
-                        <div class="row w-50 justify-content-center m-auto img-gallery">
-                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-3" checked><label for="weekday-3">On
-                                        Quilt</label></div>
+                        
+                            <div class="row w-100 justify-content-center m-auto img-gallery scrollable-mobile" style="overflow: hidden;">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                            id="weekday-3" checked><label for="weekday-3">On
+                                            Quilt</label></div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                            id="weekday-4" checked><label for="weekday-4">On
+                                            Quilt</label></div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                            id="weekday-5" checked><label for="weekday-5">On
+                                            Quilt</label></div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                            id="weekday-6" checked><label for="weekday-6">On
+                                            Quilt</label></div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                            id="weekday-7" checked><label for="weekday-7">On
+                                            Quilt</label></div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                            id="weekday-8" checked><label for="weekday-8">On
+                                            Quilt</label></div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                            id="weekday-9" checked><label for="weekday-9">On
+                                            Quilt</label></div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
+                                            id="weekday-10" checked><label for="weekday-`0">On
+                                            Quilt</label></div>
+                                </div>
                             </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-4" checked><label for="weekday-4">On
-                                        Quilt</label></div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-5" checked><label for="weekday-5">On
-                                        Quilt</label></div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-6" checked><label for="weekday-6">On
-                                        Quilt</label></div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-7" checked><label for="weekday-7">On
-                                        Quilt</label></div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-8" checked><label for="weekday-8">On
-                                        Quilt</label></div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-9" checked><label for="weekday-9">On
-                                        Quilt</label></div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                <div class="m-2"><img src="https://picsum.photos/200" alt=""> <input type="checkbox"
-                                        id="weekday-10" checked><label for="weekday-`0">On
-                                        Quilt</label></div>
-                            </div>
-                        </div>
+                      
 
 
 
