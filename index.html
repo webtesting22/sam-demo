@@ -906,11 +906,9 @@
                     </div>
                     <div class="Content-container mt-4">
                         <h1>Expected <span>Delivery Date</span></h1>
+                        <input type="text" placeholder="Enter Your text">
                         <!-- <input type="text" placeholder="Enter Your text"> -->
-                        <div class="datepicker-container">
-                            <input type="text" class="form-control" id="datepickerInput" placeholder="Select a date"
-                                onclick="showDatePicker()">
-                        </div>
+                        
 
                         <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
@@ -936,7 +934,11 @@
                     </div>
                     <div class="Content-container mt-4">
                         <h1>Function <span>Date</span></h1>
-                        <input type="text" placeholder="Enter Your text">
+                        <div class="datepicker-container">
+                            <input type="text" class="form-control" id="datepickerInput" placeholder="Select a date"
+                                onclick="showDatePicker()">
+                        </div>
+                        
 
                         <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
@@ -1107,7 +1109,7 @@
                         </div>
                     </div>
                     <div class="Content-container mt-4">
-
+                        <h1>Mode of <span>Delivery</span></h1>
                         <div class="delivery-heading mt-4 mb-4">
                             <h3 onclick="toggleSlides('content18', 'content19')">Courier</h3>
                             <h3 onclick="toggleSlides('content18', 'content19')">Direct collection</h3>
@@ -1141,14 +1143,14 @@
                     <div class="Content-container mt-4">
 
                         <h1>Get Reminder <br><span>WhatsApp No.</span></h1>
-                        <input type="text" placeholder="Enter Your Requirement">
+                        <input type="text" inputmode="numeric" id="mobileNumber" name="mobileNumber" placeholder="Enter Your Mobile Number" maxlength="10" >
 
 
 
                         <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
                             <i class="bi bi-arrow-right-circle-fill"
-                                onclick="toggleSlides('content19', 'content20')"></i>
+                                onclick="toggleSlides('content19', 'content20')" type="submit"></i>
                         </div>
                     </div>
                 </div>
