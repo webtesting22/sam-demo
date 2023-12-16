@@ -251,7 +251,7 @@ input[type=checkbox]:checked:disabled+label::after {
 
 .slider-container {
     overflow: hidden;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
