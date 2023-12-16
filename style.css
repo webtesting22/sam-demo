@@ -368,12 +368,16 @@ input[type=checkbox]:checked:disabled+label:before {
     display: inline-block;
 }
 .datepicker-container input,
-.datepicker-container input:focus,
-.datepicker-container input::placeholder{
+.datepicker-container input:focus
+{
     border-radius: 0px;
-font-size: 30px;
-   color: white;
+    font-size: 30px;
 margin: auto;
 text-align: center;
     box-shadow: none;
+}
+.datepicker-container input::placeholder{
+    font-size: 30px;
+   color: white;
+   opacity: 0.4;
 }
