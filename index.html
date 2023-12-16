@@ -549,7 +549,7 @@
                                     Choose File <i class="bi bi-upload" style="font-size: 10px;"></i>
                                 </label>
                                 <!-- The actual file input (hidden) -->
-                                <input type="file" id="myFile" name="filename" style="width: 0px;" onchange="uploadFile()">
+                                <input type="file" id="myFile" name="filename" style="width: 0px;" onchange="uploadFile()" accept=".jpg, .jpeg, .png, .pdf">
                             </div>
                             
                             <div class="progress-container w-100" id="progressContainer">
@@ -1567,6 +1567,8 @@
             picker.show();
         }
 
+
+        // ------------2nd screen file upload----------
         function uploadFile() {
         var fileInput = document.getElementById('myFile');
         var progressContainer = document.getElementById('progressContainer');

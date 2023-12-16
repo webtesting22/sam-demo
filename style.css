@@ -287,7 +287,10 @@ input[type=checkbox]:checked:disabled+label::after {
     justify-content: center;
     /* background-color: #292929; */
     color: white;
-    padding: 0px 30px;
+    padding: 0px 50px;
+}
+.offcanvas-body div{
+    padding: 0px 40px;
 }
 
 .offcanvas-header {
