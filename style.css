@@ -332,12 +332,14 @@ input[type=checkbox]:checked:disabled+label::after {
     font-size: 30px;
 }
 
-.offcanvas {
+/* .offcanvas {
 
     --bs-offcanvas-bg: none;
 
-}
-
+} */
+/* .fade{
+    display: none;
+} */
 #offcanvasNavbarone,
 #offcanvasNavbartwo,
 #offcanvasNavbarthree,
@@ -363,9 +365,9 @@ input[type=checkbox]:checked:disabled+label::after {
 #offcanvasNavbartwentythree,
 #offcanvasNavbartwentyfour,
 #offcanvasNavbartwentyfive {
-    --bs-offcanvas-bg: none;
-    backdrop-filter: blur(18px);
-    box-shadow: rgba(48, 48, 50, 0.2) 0px 7px 29px 0px;
+    /* --bs-offcanvas-bg: none; */
+    backdrop-filter: blur(14px);
+    /* box-shadow: rgba(11, 11, 11, 0.2) 0px 7px 29px 0px; */
 }
 
 .custom-dropdown {
