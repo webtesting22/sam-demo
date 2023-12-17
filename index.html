@@ -670,7 +670,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
 
-                                            <i class="bi bi-x-lg" data-bs-dismiss="modal"></i>
+                                            <i class="btn-close bi bi-x-lg" data-bs-dismiss="modal"></i>
                                         </div>
                                         <div class="modal-body">
                                             <div class="row">
@@ -776,7 +776,7 @@
                             </div>
                             <div class="form-check" id="form-check">
                                 <input class="form-check-input" onclick="toggleSlides('content4', 'content5')"
-                                    type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
                                 <label class="form-check-label" onclick="toggleSlides('content4', 'content5')"
                                     for="flexRadioDefault2">
                                     Off&nbsp;White
@@ -1263,9 +1263,25 @@
                     </div>
                     <div class="Content-container mt-4">
                         <h1>Mode of <span>Delivery</span></h1>
-                        <div class="delivery-heading mt-4 mb-4">
-                            <h3 onclick="toggleSlides('content18', 'content19')">Courier</h3>
-                            <h3 onclick="toggleSlides('content18', 'content19')">Direct collection</h3>
+                        <div class="delivery-heading mt-4 mb-4 d-flex justify-content-evenly">
+                            <div class="form-check" id="form-check">
+                                <input class="form-check-input" onclick="toggleSlides('content18', 'content19')"
+                                    type="radio" name="flexRadioDefault" id="flexRadioDefault1" >
+                                <label class="form-check-label" onclick="toggleSlides('content18', 'conten19')"
+                                    for="flexRadioDefault1">
+                                    Courier
+                                </label>
+                            </div>
+                            <div class="form-check" id="form-check">
+                                <input class="form-check-input" onclick="toggleSlides('content18', 'content19')"
+                                    type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                <label class="form-check-label" onclick="toggleSlides('content18', 'content19')"
+                                    for="flexRadioDefault2">
+                                    Direct collection
+                                </label>
+                            </div>
+                            <!-- <h3 onclick="toggleSlides('content18', 'content19')">Courier</h3>
+                            <h3 onclick="toggleSlides('content18', 'content19')">Direct collection</h3> -->
                         </div>
 
 
@@ -1640,7 +1656,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    
+    =
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script> -->
 
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
