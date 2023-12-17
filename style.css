@@ -364,7 +364,8 @@ input[type=checkbox]:checked:disabled+label::after {
 #offcanvasNavbartwentyfour,
 #offcanvasNavbartwentyfive {
     --bs-offcanvas-bg: none;
-    backdrop-filter: blur(90px);
+    backdrop-filter: blur(18px);
+    box-shadow: rgba(48, 48, 50, 0.2) 0px 7px 29px 0px;
 }
 
 .custom-dropdown {
