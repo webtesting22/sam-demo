@@ -9,7 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+    <link rel="stylesheet" href="https://codepen.io/denic/pen/YzyPzKG.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -500,7 +502,7 @@
 
     <section id="main-container">
         <div class="container">
-            <a href="https://baptismdressindia.com/" style="position: absolute; top: 2%; z-index: 5000;"><img
+            <a href="https://baptismdressindia.com/" style="position: absolute; top: 2%; z-index: 3;"><img
                     src="./navinjoy888.webp" width="200px" alt=""></a>
             <div class="slider">
 
@@ -634,9 +636,12 @@
 
                             <div class="mt-5">
                                 <!-- Progress bar container -->
-                                <button class="gallery-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button class="gallery-btn" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
                                     Gallery
                                 </button>
+                                
+                                
                                 <label for="myFile" class="custom-file-input w-30" id="fileInputLabel">
                                     Choose File <i class="bi bi-upload" style="font-size: 10px;"></i>
                                 </label>
@@ -644,6 +649,11 @@
                                 <input type="file" id="myFile" name="filename" style="width: 0px;"
                                     onchange="uploadFile()" accept=".jpg, .jpeg, .png, .pdf">
                             </div>
+                            <br><br>
+                            <div class="img-show">
+
+                            </div>
+                           
 
                             <div class="progress-container w-100" id="progressContainer">
                                 <div class="progress-bar" style="background-color: #28a745; width: 0%;"
@@ -660,35 +670,38 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
 
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                            <i class="bi bi-x-lg" data-bs-dismiss="modal"></i>
                                         </div>
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
-                                                        src="https://picsum.photos/200" alt=""></div>
+                                                        src="https://picsum.photos/200" alt="https://picsum.photos/200">
+                                                </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
-                                                        src="https://picsum.photos/200" alt=""></div>
+                                                        src="https://picsum.photos/200" alt="https://picsum.photos/200"></div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
-                                                        src="https://picsum.photos/200" alt=""></div>
+                                                        src="https://picsum.photos/200" alt="https://picsum.photos/200"></div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
-                                                        src="https://picsum.photos/200" alt=""></div>
+                                                        src="https://picsum.photos/200" alt="https://picsum.photos/200"></div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
-                                                        src="https://picsum.photos/200" alt=""></div>
+                                                        src="https://picsum.photos/200" alt="https://picsum.photos/200"></div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
-                                                        src="https://picsum.photos/200" alt=""></div>
+                                                        src="https://picsum.photos/200" alt="https://picsum.photos/200"></div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
-                                                        src="https://picsum.photos/200" alt=""></div>
+                                                        src="https://picsum.photos/200" alt="https://picsum.photos/200"></div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
-                                                        src="https://picsum.photos/200" alt=""></div>
+                                                        src="https://picsum.photos/200" alt="https://picsum.photos/200"></div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6 mb-4"><img
-                                                        src="https://picsum.photos/200" alt=""></div>
+                                                        src="https://picsum.photos/200" alt="https://picsum.photos/200"></div>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
+
+
+
 
 
                             <!-- ------------gallery modal --------------------->
@@ -1017,12 +1030,13 @@
                         <h1>Expected <span>Delivery Date</span></h1>
                         <form style="color: white;">
                             <!-- <label for="birthday">Birthday:</label> -->
-                            <input type="date" id="birthday" class="text-white" style="font-size: 20px; text-align: center;" name="birthday">
+                            <input type="date" id="birthday" class="text-white"
+                                style="font-size: 20px; text-align: center;" name="birthday">
                             <!-- <input type="submit"> -->
-                          </form>
-                          
-                          <!-- <input type="text" class="form-control" id="customDatePicker"> -->
-                    
+                        </form>
+
+                        <!-- <input type="text" class="form-control" id="customDatePicker"> -->
+
                         <div class="next-btn-container">
                             <i class="bi bi-arrow-right-circle-fill"
                                 onclick="toggleSlides('content13', 'content14')"></i>
@@ -1060,12 +1074,13 @@
                         <h1>Function <span>Date</span></h1>
                         <form style="color: white;">
                             <!-- <label for="birthday">Birthday:</label> -->
-                            <input type="date" id="birthday" class="text-white" style="font-size: 20px; text-align: center;" name="birthday">
+                            <input type="date" id="birthday" class="text-white"
+                                style="font-size: 20px; text-align: center;" name="birthday">
                             <!-- <input type="submit"> -->
-                          </form>
-                          
-                          <!-- <input type="text" class="form-control" id="customDatePicker"> -->
-                    
+                        </form>
+
+                        <!-- <input type="text" class="form-control" id="customDatePicker"> -->
+
                         <div class="next-btn-container">
                             <i class="bi bi-arrow-right-circle-fill"
                                 onclick="toggleSlides('content14', 'content15')"></i>
@@ -1618,11 +1633,14 @@
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script> -->
 
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
@@ -1630,6 +1648,19 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
 
     <script>
+  $(document).ready(function () {
+        $('.modal-body img').on('click', function () {
+            var imageName = $(this).attr('alt');
+            
+            // Display image name in the container with class 'img-show'
+            $('.img-show').text('Image Name: ' + imageName);
+
+            // Close the modal
+            $('#exampleModal').modal('hide');
+        });
+    });
+
+
         var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
             interval: false // Disable automatic sliding
         });
@@ -1714,56 +1745,56 @@
 
         // ------------------select option------------------- js
         // Get the date input and custom text input
-  var dateInput = document.getElementById('birthday');
-  var customDatePickerInput = document.getElementById('customDatePicker');
+        var dateInput = document.getElementById('birthday');
+        var customDatePickerInput = document.getElementById('customDatePicker');
 
-  // Add a click event listener to the custom text input
-  customDatePickerInput.addEventListener('click', function() {
-    // Trigger a click on the hidden date input
-    dateInput.click();
-  });
-
-  // Add a change event listener to the date input
-  dateInput.addEventListener('change', function() {
-    // Set the value of the custom text input to the selected date
-    customDatePickerInput.value = dateInput.value;
-  });
-        var picker;
-
-    function showDatePicker() {
-        if (picker) {
-            // If the picker already exists, destroy it before creating a new one
-            picker.destroy();
-        }
-
-        picker = new Pikaday({
-            field: document.getElementById('datepickerInput'),
-            format: 'MM/DD/YYYY',
-            onSelect: function (date) {
-                // You can add custom logic here if needed
-            }
+        // Add a click event listener to the custom text input
+        customDatePickerInput.addEventListener('click', function () {
+            // Trigger a click on the hidden date input
+            dateInput.click();
         });
 
-        picker.show();
-    }
-    function showDatePicker2() {
-    if (picker2) {
-        picker2.destroy();
-    }
+        // Add a change event listener to the date input
+        dateInput.addEventListener('change', function () {
+            // Set the value of the custom text input to the selected date
+            customDatePickerInput.value = dateInput.value;
+        });
+        var picker;
 
-    picker2 = new Pikaday({
-        field: document.getElementById('datepickerInput2'),
-        format: 'MM/DD/YYYY',
-        onSelect: function (date) {
-            // You can add custom logic here if needed
+        function showDatePicker() {
+            if (picker) {
+                // If the picker already exists, destroy it before creating a new one
+                picker.destroy();
+            }
+
+            picker = new Pikaday({
+                field: document.getElementById('datepickerInput'),
+                format: 'MM/DD/YYYY',
+                onSelect: function (date) {
+                    // You can add custom logic here if needed
+                }
+            });
+
+            picker.show();
         }
-    });
+        function showDatePicker2() {
+            if (picker2) {
+                picker2.destroy();
+            }
 
-    picker2.show();
-}
+            picker2 = new Pikaday({
+                field: document.getElementById('datepickerInput2'),
+                format: 'MM/DD/YYYY',
+                onSelect: function (date) {
+                    // You can add custom logic here if needed
+                }
+            });
 
-   
-        
+            picker2.show();
+        }
+
+
+
 
         // ------------2nd screen file upload----------
         function uploadFile() {
@@ -1882,6 +1913,11 @@
                 lastClickTime = currentTime;
             });
         });
+
+
+
+
+      
     </script>
 </body>
 

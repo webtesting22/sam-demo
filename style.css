@@ -312,16 +312,9 @@ input[type=checkbox]:checked:disabled+label::after {
 }
 
 
-.modal-header {
-    /* background-color: #292929; */
-    color: white;
-}
 
-.modal-body {
-    background-color: #292929;
-    color: white;
-}
 
+.moda
 .order-info div {
     display: flex;
     justify-content: space-between;
@@ -367,6 +360,25 @@ input[type=checkbox]:checked:disabled+label::after {
     backdrop-filter: blur(14px);
     box-shadow: rgba(11, 11, 11, 0.2) 0px 7px 29px 0px;
 }
+#exampleModal .modal-content {
+    background-color: transparent; /* Adjust the color and opacity as needed */
+    border: none;
+    border-radius: 15px; 
+    backdrop-filter: blur(14px);/* Optional: Add border-radius for rounded corners */
+}
+#exampleModal .modal-header {
+    border: none;
+    display: flex;
+    justify-content: end;padding: 0px 30px;
+}
+#exampleModal .modal-header i{
+    float: right;
+}
+#exampleModal .modal-header i:hover {
+    color: white;
+}
+
+
 
 .custom-dropdown {
     position: relative;
@@ -515,3 +527,5 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 5px;
     cursor: pointer;
   }
+
+
