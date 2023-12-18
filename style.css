@@ -529,3 +529,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
 
+  .custom-dropdown-options {
+    max-height: 500px; /* Set a maximum height for the container */
+    overflow-y: auto;  /* Add a vertical scrollbar if content overflows */
+   
+    padding: 5px; /* Optional: Add padding for spacing */
+}
