@@ -515,6 +515,25 @@
             </div>
         </div>
     </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" style="padding: 0px;">
+        <div class="container-fluid">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarthirtythree"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <i class="bi bi-x-lg" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div>
+                        <p>[You Can Mention The Content That Has To Be Written On The Candle (Size 8 Inches Height *3 Inches Diameter</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
 
 
 
@@ -1276,7 +1295,7 @@
                                     type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" onclick="toggleSlides('content15', 'conten16')"
                                     for="flexRadioDefault1">
-                                    Dress Set
+                                    Dress&nbsp;Set
 
                                 </label>
                             </div>
@@ -1285,7 +1304,7 @@
                                     type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                                 <label class="form-check-label" onclick="toggleSlides('content15', 'content16')"
                                     for="flexRadioDefault2">
-                                    Combo Set
+                                    Combo&nbsp;Set
                                 </label>
                             </div>
                             <!-- <h3 onclick="toggleSlides('content18', 'content19')">Courier</h3>
@@ -1383,27 +1402,68 @@
                                 data-bs-target="#offcanvasNavbarsixteen"></i>
                         </div>
                     </div>
-                    <div class="Content-container mt-4">
+                    <div class="Content-container mt-4" id="uploadfirst">
                         <h1>Upload an image of any specified accessories you need along with the set</h1>
-
-
-
-                        <div>
-                            <label for="myFile2" class="custom-file-input w-30" id="fileInputLabel2">
-                                Choose File <i class="bi bi-upload" style="font-size: 10px;"></i>
-                            </label>
-                            <!-- The actual file input (hidden) -->
-                            <input type="file" id="myFile2" name="filename" style="width: 0px;" onchange="uploadFile('myFile2', 'progressContainer2', 'progressBar2', 'fileInputLabel2', 'uploadedFileName2')" accept=".jpg, .jpeg, .png, .pdf">
-                            <div class="progress-container w-100" id="progressContainer2">
-                                <div class="progress-bar" style="background-color: #28a745; width: 0%;" id="progressBar2"></div>
-                            </div>
-                            <div id="uploadedFileName2" class="mt-4"></div>
-                        </div>
+                        <input type="file" id="myFile" name="filename" style="opacity: 1; position: static;">
 
                         <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
                             <i class="bi bi-arrow-right-circle-fill"
-                                onclick="toggleSlides('content31', 'content17')"></i>
+                                onclick="toggleSlides('content31', 'content32')"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!------------------- Slide 32---------------------- -->
+
+                <div class="slide-container" id="content32">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content32', 'content31')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarsixteen"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4" id="uploadfirst">
+                        <h1>Upload the model of the name-printed candle here</h1>
+                        <input type="file" id="myFile" name="filename" style="opacity: 1; position: static;">
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content32', 'content33')"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!------------------- Slide 33---------------------- -->
+
+                <div class="slide-container" id="content33">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content33', 'content32')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarthirtythree"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4" id="uploadfirst">
+                        <h1>Candle Content</h1>
+                        <input type="file" id="myFile" name="filename" style="opacity: 1; position: static;">
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill"
+                                onclick="toggleSlides('content33', 'content17')"></i>
                         </div>
                     </div>
                 </div>
@@ -1973,7 +2033,7 @@
             const input = document.getElementById(inputId);
             const label = document.getElementById(labelId);
             const fileName = input.files[0].name;
-            document.getElementById('selectedFileName').innerText = `Selected File: ${fileName}`;
+            document.getElementById('selectedFileName','selectedFileNametwo').innerText = `Selected File: ${fileName}`;
         }
 
 
@@ -2028,7 +2088,7 @@
         }
 
 
-
+        
 
         // ------------2nd screen file upload----------
         function uploadFile(fileInputId, progressContainerId, progressBarId, fileInputLabelId, uploadedFileNameId) {
