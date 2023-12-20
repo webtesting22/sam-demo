@@ -154,7 +154,7 @@
                 <div class="offcanvas-body">
 
                     <div>
-                        <h2>Agr of your baby</h2>
+                        <h2>Age of your baby</h2>
                         <p>Please share the exact age in months</p>
                     </div>
 
@@ -527,7 +527,8 @@
                 <div class="offcanvas-body">
 
                     <div>
-                        <p>[You Can Mention The Content That Has To Be Written On The Candle (Size 8 Inches Height *3 Inches Diameter</p>
+                        <p>[You Can Mention The Content That Has To Be Written On The Candle (Size 8 Inches Height *3
+                            Inches Diameter</p>
                     </div>
 
                 </div>
@@ -870,18 +871,64 @@
                     <div class="Content-container">
                         <h1>Select a <span>Highlight Color</span></h1>
                         <div class="custom-dropdown d-flex justify-content-center">
-                            <input type="text" class="form-control" id="selectInput" placeholder="Select an option"
-                                onclick="toggleOptions()">
-                            <label for="myFile2" class="custom-file-input" style="height: 40px; border: none;"
-                                id="fileInputLabel2">
-                                <i class="bi bi-images"></i>
-                            </label>
-                            <input type="file" id="myFile2" name="filename2"
-                                onchange="displayFileName('myFile2', 'fileInputLabel2')">
-                            <ul class="custom-dropdown-options" id="dropdownOptions" onclick="stopPropagation(event)">
+                            <!-- <input type="text" class="form-control" id="selectInput" placeholder="Select an option"
+                                onclick="toggleOptions()"> -->
+
+
+                            <div class="custom-dropdown" id="FirstHigh" onclick="toggleOptions('dropdownOptions1')">
+                                <div style="display: flex;">
+                                    <input type="text" class="form-control" id="selectInput1"
+                                        placeholder="Select an option">
+                                    <label for="myFile2" class="custom-file-input" style="height: 40px; border: none;"
+                                        id="fileInputLabel2">
+                                        <i class="bi bi-images"></i>
+                                    </label>
+                                    <input type="file" id="myFile2" name="filename2"
+                                        onchange="displayFileName('myFile2', 'fileInputLabel2')">
+                                </div>
+                                <ul class="custom-dropdown-options" id="dropdownOptions1"
+                                    onclick="stopPropagation(event)">
+                                    <li class="custom-dropdown-option" onclick="selectOption('Select', 'selectInput1')">
+                                        Select</li>
+                                    <!-- <li class="custom-dropdown-option" onclick="selectOption('Enter Manually')">Enter Manually</li> -->
+                                    <li class="custom-dropdown-option" onclick="selectOption('Pink', 'selectInput1')">
+                                        Pink
+                                    </li>
+                                    <li class="custom-dropdown-option" onclick="selectOption('Pink', 'selectInput1')">
+                                        Pink</li>
+                                    <li class="custom-dropdown-option"
+                                        onclick="selectOption('Light Yellow', 'selectInput1')">Light
+                                        Yellow
+                                    </li>
+                                    <li class="custom-dropdown-option" onclick="selectOption('Peach', 'selectInput1')">
+                                        Peach</li>
+                                    <li class="custom-dropdown-option"
+                                        onclick="selectOption('Lavender', 'selectInput1')">Lavender</li>
+                                    <li class="custom-dropdown-option"
+                                        onclick="selectOption('Pastel Green', 'selectInput1')">Pastel Green
+                                    </li>
+                                    <li class="custom-dropdown-option"
+                                        onclick="selectOption('Olive Green', 'selectInput1')">Olive Green
+                                    </li>
+                                    <li class="custom-dropdown-option" onclick="selectOption('Blue', 'selectInput1')">
+                                        Blue</li>
+                                    <li class="custom-dropdown-option" onclick="selectOption('Silver', 'selectInput1')">
+                                        Silver</li>
+                                    <li class="custom-dropdown-option" onclick="selectOption('Gold', 'selectInput1')">
+                                        Gold</li>
+                                    <li class="custom-dropdown-option"
+                                        onclick="selectOption('Onion Pink', 'selectInput1')">Onion Pink</li>
+                                    <li class="custom-dropdown-option" onclick="selectOption('Beidge', 'selectInput1')">
+                                        Beidge</li>
+                                    <li class="custom-dropdown-option" onclick="selectOption('Other', 'selectInput1')">
+                                        Other</li>
+                                    <!-- Add other options as needed -->
+                                </ul>
+                            </div>
+                            <!-- <ul class="custom-dropdown-options" id="dropdownOptions" onclick="stopPropagation(event)">
                                 <li class="custom-dropdown-option" onclick="selectOption('Select')">Select</li>
-                                <!-- <li class="custom-dropdown-option" onclick="selectOption('Enter Manually')">Enter
-                                    Manually</li> -->
+                                <li class="custom-dropdown-option" onclick="selectOption('Enter Manually')">Enter
+                                    Manually</li>
                                 <li class="custom-dropdown-option" onclick="selectOption('Pink')">Pink</li>
                                 <li class="custom-dropdown-option" onclick="selectOption('Light Yellow')">Light
                                     Yellow
@@ -898,7 +945,7 @@
                                 <li class="custom-dropdown-option" onclick="selectOption('Onion Pink')">Onion Pink</li>
                                 <li class="custom-dropdown-option" onclick="selectOption('Beidge')">Beidge</li>
                                 <li class="custom-dropdown-option" onclick="selectOption('Other')">Other</li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <div id="selectedFileName"></div>
                     </div>
@@ -926,7 +973,8 @@
                     </div>
                     <div class="Content-container mt-4">
                         <h1>Age of <br><span>Baby Girl</span></h1>
-                        <input type="text" placeholder="Select Age">
+                        <input type="number" placeholder="Select Age" min="0"
+                            style="color: white; background-color: #333; ">
 
                         <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
@@ -950,7 +998,31 @@
                     </div>
                     <div class="Content-container mt-4">
                         <h1>Size Required <br>For the<span> Dress</span></h1>
-                        <input type="text" placeholder="Select Size">
+                        <!-- <input type="text" placeholder="Select Size"> -->
+
+                        <!-- First dropdown -->
+
+                        <!-- 0-3 Month, 3-6 Month, 6-9 Month, 9-12 Month, 12-18 Month, Custom Size -->
+                        <!-- Second dropdown -->
+                        <div class="custom-dropdown" id="secondRequired" onclick="toggleOptions('dropdownOptions2')">
+                            <input type="text" class="form-control" id="selectInput2" placeholder="Select an option">
+                            <ul class="custom-dropdown-options" id="dropdownOptions2" onclick="stopPropagation(event)">
+                                <li class="custom-dropdown-option" onclick="selectOption('Select', 'selectInput2')">
+                                    0-3 Month</li>
+                                <!-- <li class="custom-dropdown-option" onclick="selectOption('Enter Manually')">Enter Manually</li> -->
+                                <li class="custom-dropdown-option" onclick="selectOption('Blue', 'selectInput2')">3-6 Month
+                                </li>
+                                <li class="custom-dropdown-option" onclick="selectOption('6-9 Month', 'selectInput2')">6-9 Month
+                                </li>
+                                <li class="custom-dropdown-option" onclick="selectOption('9-12 Month', 'selectInput2')">9-12 Month
+                                </li>
+                                <li class="custom-dropdown-option" onclick="selectOption('12-18 Month', 'selectInput2')">12-18 Month
+                                </li>
+                                <li class="custom-dropdown-option" onclick="selectOption('Custom Size', 'selectInput2')">Custom Size
+                                </li>
+                                <!-- Add other options as needed -->
+                            </ul>
+                        </div>
 
                         <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
@@ -1458,7 +1530,7 @@
                     </div>
                     <div class="Content-container mt-4" id="uploadfirst">
                         <h1>Candle Content</h1>
-                        <input type="file" id="myFile" name="filename" style="opacity: 1; position: static;">
+                        <input type="text" placeholder="Enter Your Requirement">
 
                         <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
@@ -2005,18 +2077,43 @@
 
 
         // ------------------select option------------------- js
-        function selectOption(option) {
-            document.getElementById('selectInput').value = option;
-            hideOptions();
+        // function selectOption(option) {
+        //     document.getElementById('selectInput').value = option;
+        //     hideOptions();
+        // }
+
+        // function toggleOptions() {
+        //     var options = document.getElementById('dropdownOptions');
+        //     options.style.display = (options.style.display === 'none' || options.style.display === '') ? 'block' : 'none';
+        // }
+
+        // function hideOptions() {
+        //     document.getElementById('dropdownOptions').style.display = 'none';
+        // }
+
+        // function stopPropagation(event) {
+        //     event.stopPropagation();
+        // }
+
+        // document.addEventListener('click', function (event) {
+        //     var dropdown = document.querySelector('.custom-dropdown');
+        //     if (!dropdown.contains(event.target)) {
+        //         hideOptions();
+        //     }
+        // });
+
+        function selectOption(option, inputId) {
+            document.getElementById(inputId).value = option;
+            hideOptions(inputId);
         }
 
-        function toggleOptions() {
-            var options = document.getElementById('dropdownOptions');
+        function toggleOptions(optionsId) {
+            var options = document.getElementById(optionsId);
             options.style.display = (options.style.display === 'none' || options.style.display === '') ? 'block' : 'none';
         }
 
-        function hideOptions() {
-            document.getElementById('dropdownOptions').style.display = 'none';
+        function hideOptions(inputId) {
+            document.getElementById('dropdownOptions' + inputId.slice(-1)).style.display = 'none';
         }
 
         function stopPropagation(event) {
@@ -2024,16 +2121,21 @@
         }
 
         document.addEventListener('click', function (event) {
-            var dropdown = document.querySelector('.custom-dropdown');
-            if (!dropdown.contains(event.target)) {
-                hideOptions();
-            }
+            var dropdowns = document.querySelectorAll('.custom-dropdown');
+            dropdowns.forEach(function (dropdown) {
+                var dropdownOptions = dropdown.querySelector('.custom-dropdown-options');
+                if (!dropdownOptions.contains(event.target)) {
+                    hideOptions(dropdown.querySelector('input').id);
+                }
+            });
         });
+
+
         function displayFileName(inputId, labelId) {
             const input = document.getElementById(inputId);
             const label = document.getElementById(labelId);
             const fileName = input.files[0].name;
-            document.getElementById('selectedFileName','selectedFileNametwo').innerText = `Selected File: ${fileName}`;
+            document.getElementById('selectedFileName', 'selectedFileNametwo').innerText = `Selected File: ${fileName}`;
         }
 
 
@@ -2088,53 +2190,53 @@
         }
 
 
-        
+
 
         // ------------2nd screen file upload----------
         function uploadFile(fileInputId, progressContainerId, progressBarId, fileInputLabelId, uploadedFileNameId) {
-        var fileInput = document.getElementById(fileInputId);
-        var progressContainer = document.getElementById(progressContainerId);
-        var progressBar = document.getElementById(progressBarId);
-        var fileInputLabel = document.getElementById(fileInputLabelId);
-        var uploadedFileName = document.getElementById(uploadedFileNameId);
+            var fileInput = document.getElementById(fileInputId);
+            var progressContainer = document.getElementById(progressContainerId);
+            var progressBar = document.getElementById(progressBarId);
+            var fileInputLabel = document.getElementById(fileInputLabelId);
+            var uploadedFileName = document.getElementById(uploadedFileNameId);
 
-        if (fileInput.files.length > 0) {
-            // Show the progress bar container
-            progressContainer.style.display = 'block';
-            // Reset the progress bar
-            progressBar.style.width = '0%';
+            if (fileInput.files.length > 0) {
+                // Show the progress bar container
+                progressContainer.style.display = 'block';
+                // Reset the progress bar
+                progressBar.style.width = '0%';
 
-            // Simulate file upload (you need a server-side script for actual file upload)
-            simulateFileUpload(fileInput.files[0], function (progress, fileName) {
-                // Update the progress bar based on the upload progress
-                progressBar.style.width = progress + '%';
+                // Simulate file upload (you need a server-side script for actual file upload)
+                simulateFileUpload(fileInput.files[0], function (progress, fileName) {
+                    // Update the progress bar based on the upload progress
+                    progressBar.style.width = progress + '%';
 
-                // When the upload is complete, reset the UI
-                if (progress === 100) {
-                    fileInputLabel.textContent = 'Choose File';
-                    progressContainer.style.display = 'none';
-                    // Display the uploaded file name at the bottom
-                    uploadedFileName.textContent = 'Uploaded File: ' + fileName;
-                }
-            });
-        }
-    }
-
-    // Simulate file upload function (replace with actual implementation)
-    function simulateFileUpload(file, callback) {
-        var totalSize = file.size;
-        var uploadedSize = 0;
-        var chunkSize = 1024; // You can adjust the chunk size
-        var simulateUploadInterval = setInterval(function () {
-            uploadedSize += chunkSize;
-            var progress = (uploadedSize / totalSize) * 100;
-            callback(progress.toFixed(2), file.name);
-
-            if (uploadedSize >= totalSize) {
-                clearInterval(simulateUploadInterval);
+                    // When the upload is complete, reset the UI
+                    if (progress === 100) {
+                        fileInputLabel.textContent = 'Choose File';
+                        progressContainer.style.display = 'none';
+                        // Display the uploaded file name at the bottom
+                        uploadedFileName.textContent = 'Uploaded File: ' + fileName;
+                    }
+                });
             }
-        }, 100);
-    }
+        }
+
+        // Simulate file upload function (replace with actual implementation)
+        function simulateFileUpload(file, callback) {
+            var totalSize = file.size;
+            var uploadedSize = 0;
+            var chunkSize = 1024; // You can adjust the chunk size
+            var simulateUploadInterval = setInterval(function () {
+                uploadedSize += chunkSize;
+                var progress = (uploadedSize / totalSize) * 100;
+                callback(progress.toFixed(2), file.name);
+
+                if (uploadedSize >= totalSize) {
+                    clearInterval(simulateUploadInterval);
+                }
+            }, 100);
+        }
 
         // Simulate file upload progress (replace this with actual file upload handling on the server)
         function simulateFileUpload(file, onProgress) {
@@ -2242,7 +2344,7 @@
             var checkbox = element.querySelector('.item-checkbox');
             checkbox.checked = !checkbox.checked;
         }
-        
+
     </script>
 </body>
 

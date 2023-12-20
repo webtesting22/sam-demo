@@ -558,3 +558,8 @@ input[type="checkbox"] {
     text-align: right;
     top: 0;
 }
+
+#FirstHigh input::placeholder,
+#secondRequired input::placeholder{
+    color: white;
+}
