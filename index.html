@@ -1324,32 +1324,32 @@
                         <h1>Optional <span>accessories</span></h1>
 
 
-                        <div class="row" style="height: 60vh; overflow: auto;">
-                            <div class="col-lg-4 col-md-4 col-sm-6" onclick="selectItem(this)">
+                        <div class="row" style="height: 50vh; overflow: auto;">
+                            <div class="col-lg-4 col-md-4 col-sm-6" onclick="toggleSelectItem(this)">
                                 <input type="checkbox" class="item-checkbox">
                                 <img src="https://picsum.photos/200" style="height: 120px;" alt="">
                                 <br>
                                 <p>Decorated Basket: ₹1050.00 - ₹1850.00 + Shipping</p>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6" onclick="selectItem(this)">
+                            <div class="col-lg-4 col-md-4 col-sm-6" onclick="toggleSelectItem(this)">
                                 <input type="checkbox" class="item-checkbox">
                                 <img src="https://picsum.photos/200" style="height: 120px;" alt="">
                                 <br>
                                 <p>Acrylic box with baby’s name: ₹1250.00 - ₹1850.00</p>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6" onclick="selectItem(this)">
+                            <div class="col-lg-4 col-md-4 col-sm-6" onclick="toggleSelectItem(this)">
                                 <input type="checkbox" class="item-checkbox">
                                 <img src="https://picsum.photos/200" style="height: 120px;" alt="">
                                 <br>
                                 <p>Custom-made name-printed candle: ₹ 1200 - ₹1850.00</p>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6" onclick="selectItem(this)">
+                            <div class="col-lg-4 col-md-4 col-sm-6" onclick="toggleSelectItem(this)">
                                 <input type="checkbox" class="item-checkbox">
                                 <img src="https://picsum.photos/200" style="height: 120px;" alt="">
                                 <br>
                                 <p>Pillow with baby’s name: ₹850.00</p>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6" onclick="selectItem(this)">
+                            <div class="col-lg-4 col-md-4 col-sm-6" onclick="toggleSelectItem(this)">
                                 <input type="checkbox" class="item-checkbox">
                                 <img src="https://picsum.photos/200" style="height: 120px;" alt="">
                                 <br>
@@ -2174,22 +2174,15 @@
             });
         });
 
-        function selectItem(element) {
-            // Remove the 'selected' class from all elements
-            var elements = document.querySelectorAll('.row > div');
-            elements.forEach(function (el) {
-                el.classList.remove('selected');
-            });
+        function toggleSelectItem(element) {
+            // Toggle the 'selected' class for the clicked element
+            element.classList.toggle('selected');
 
-            // Add the 'selected' class to the clicked element
-            element.classList.add('selected');
-
-            // Check the checkbox inside the clicked element
+            // Toggle the checkbox state inside the clicked element
             var checkbox = element.querySelector('.item-checkbox');
-            checkbox.checked = true;
+            checkbox.checked = !checkbox.checked;
         }
-
-       
+        
     </script>
 </body>
 
