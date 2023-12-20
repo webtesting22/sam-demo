@@ -234,7 +234,10 @@ input[type=checkbox]:checked:disabled+label::after {
     transition: .5s;
     cursor: pointer;
 }
-
+.order-option{
+    display: flex;
+    justify-content: space-evenly;
+}
 .order-option h4 {
     font-weight: 400;
     margin: 20px 0px;
