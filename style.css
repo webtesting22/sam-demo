@@ -567,3 +567,17 @@ input[type="checkbox"] {
 #secondRequired input::placeholder{
     color: white;
 }
+
+#deliveryheading{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+@media (max-width:800px){
+    #deliveryheading{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}
