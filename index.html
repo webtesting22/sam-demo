@@ -673,10 +673,12 @@
                         </div>
                     </div>
                     <div class="Content-container">
+                       <div>
                         <h1>Baby's <span>Name</span></h1>
-                        <input type="text" id="babyNameInput" placeholder="Enter Baby Name" oninput="toggleNextButton()"
+                        <input type="text" id="input1" placeholder="Enter Baby Name" oninput="toggleButton('input1', 'button1')"
                             required>
-                        <div class="next-btn-container hello-hide mt-4" id="nextBtn"
+                       </div>
+                        <div class="next-btn-container hello-hide mt-4" id="button1"
                             onclick="toggleSlides('content1', 'content2')">
                             <i class="bi bi-arrow-right-circle-fill"></i>
                         </div>
@@ -985,11 +987,13 @@
                         </div>
                     </div>
                     <div class="Content-container mt-4">
+                       <div>
                         <h1>Age of <br><span>Baby Girl</span></h1>
-                        <input type="number" placeholder="Select Age" id="ageinput" min="0"
+                        <input type="number" placeholder="Select Age" id="input2"  min="0" oninput="toggleButton('input2', 'button2')"
                             style="color: white; background-color: transparent;">
+                       </div>
 
-                        <div class="next-btn-container" id="nextBtn">
+                        <div class="next-btn-container" id="button2">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
                             <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content6', 'content7')"></i>
                         </div>
@@ -1044,7 +1048,7 @@
                             </ul>
                         </div>
 
-                        <div class="next-btn-container">
+                        <div class="next-btn-container" id="button3">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
                             <i class="bi bi-arrow-right-circle-fill"
                                 onclick="toggleSlides('content7', 'content11')"></i>
@@ -1673,13 +1677,16 @@
                     </div>
                     <div class="Content-container mt-4">
 
+                       <div>
                         <h1>Get Reminder <br><span>WhatsApp No.</span></h1>
-                        <input type="text" inputmode="numeric" id="mobileNumber" name="mobileNumber"
+                        <input type="text" inputmode="numeric" id="input4" name="mobileNumber" oninput="toggleButton('input4', 'button4')"
                             placeholder="Enter Your Mobile Number" maxlength="10">
+                       </div>
+                       
 
 
 
-                        <div class="next-btn-container">
+                        <div class="next-btn-container" id="button4">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
                             <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content19', 'content34')"
                                 type="submit"></i>
@@ -2154,20 +2161,20 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
 
     <script>
-        function toggleNextButton(inputSelector, buttonSelector) {
-            var input = document.querySelector(inputSelector);
-            var button = document.querySelector(buttonSelector);
+         function toggleButton(inputId, buttonId) {
+      // Get the input value
+      var inputValue = document.getElementById(inputId).value.trim();
 
-            // Check if both inputs have values
-            var shouldShowButton = input.value.trim() !== "";
-            // Add checks for other inputs as needed
+      // Get the corresponding button
+      var button = document.getElementById(buttonId);
 
-            button.style.display = shouldShowButton ? "block" : "none";
-        }
-
-        // Add event listeners for both inputs
-        document.getElementById('babyNameInput').addEventListener('input', toggleNextButton.bind(null, '#babyNameInput', '#nextBtn'));
-        document.querySelector('ageinput').addEventListener('input', toggleNextButton.bind(null, '#ageinput', '#nextBtn'));
+      // Toggle button visibility based on input value
+      if (inputValue !== '') {
+        button.style.display = 'inline-block';
+      } else {
+        button.style.display = 'none';
+      }
+    }
 
         $(document).ready(function () {
             $('.modal-body img').on('click', function () {

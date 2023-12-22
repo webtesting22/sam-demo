@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Popup</title>
-
-    <!-- Add Bootstrap CSS -->
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-sty
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Button on Input</title>
+  <style>
+    /* Initially hide all buttons */
+    .input-button {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-    <button class="trigger">Click the modal!</button>
-    <div class="modalnew">
-        <div class="modal-content">
-            <span class="close-button">×</span>
-            <h1>Hello, I am a modal!</h1>
-        </div>
-    </div>
 
-<!-- Add Bootstrap JS and Popper.js -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <label for="input1">Input 1:</label>
+  <input type="text" id="input1" oninput="toggleButton('input1', 'button1')" />
+  <button id="button1" class="input-button" onclick="alert('Button 1 Clicked!')">Button 1</button>
 
-<script>
-   var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".trigger");
-var closeButton = document.querySelector(".close-button");
+  <label for="input2">Input 2:</label>
+  <input type="text" id="input2" oninput="toggleButton('input2', 'button2')" />
+  <button id="button2" class="input-button" onclick="alert('Button 2 Clicked!')">Button 2</button>
 
-function toggleModal() {
-    modal.classList.toggle("show-modal");
-}
+  <label for="input3">Input 3:</label>
+  <input type="text" id="input3" oninput="toggleButton('input3', 'button3')" />
+  <button id="button3" class="input-button" onclick="alert('Button 3 Clicked!')">Button 3</button>
 
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
+  <script>
+    function toggleButton(inputId, buttonId) {
+      // Get the input value
+      var inputValue = document.getElementById(inputId).value.trim();
+
+      // Get the corresponding button
+      var button = document.getElementById(buttonId);
+
+      // Toggle button visibility based on input value
+      if (inputValue !== '') {
+        button.style.display = 'inline-block';
+      } else {
+        button.style.display = 'none';
+      }
     }
-}
-
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
-</script>
+  </script>
 
 </body>
 </html>
