@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
     <link rel="stylesheet" href="https://codepen.io/denic/pen/YzyPzKG.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -601,9 +602,9 @@
                                             automatically added to the list.</p>
                                         <div class="d-flex justify-content-evenly">
                                             <i class="bi bi-arrow-left-circle-fill slide-button"
-                                            data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
-                                        <i class="bi bi-arrow-right-circle-fill slide-button"
-                                            data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></i>
+                                                data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
+                                            <i class="bi bi-arrow-right-circle-fill slide-button"
+                                                data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></i>
                                         </div>
 
                                     </div>
@@ -613,12 +614,12 @@
                                         <h1>4</h1>
                                         <p>For taking the measurements of your baby take a tape and follow the
                                             instrutions that we have provided.</p>
-                                       <div class="d-flex justify-content-evenly">
-                                        <i class="bi bi-arrow-left-circle-fill slide-button"
-                                        data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
-                                    <i class="bi bi-arrow-right-circle-fill slide-button"
-                                        data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></i>
-                                       </div>
+                                        <div class="d-flex justify-content-evenly">
+                                            <i class="bi bi-arrow-left-circle-fill slide-button"
+                                                data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
+                                            <i class="bi bi-arrow-right-circle-fill slide-button"
+                                                data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></i>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -629,9 +630,9 @@
                                             details.</p>
                                         <div class="d-flex justify-content-evenly">
                                             <i class="bi bi-arrow-left-circle-fill slide-button"
-                                            data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
-                                        <i class="bi bi-arrow-right-circle-fill slide-button"
-                                            data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></i>
+                                                data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
+                                            <i class="bi bi-arrow-right-circle-fill slide-button"
+                                                data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></i>
                                         </div>
 
                                     </div>
@@ -643,9 +644,9 @@
                                             right corner of your of screen for instant support.</p>
                                         <div class="d-flex justify-content-evenly">
                                             <i class="bi bi-arrow-left-circle-fill slide-button"
-                                            data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
-                                        <i class="bi bi-arrow-right-circle-fill"
-                                            onclick="toggleSlides('content0', 'content1')"></i>
+                                                data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
+                                            <i class="bi bi-arrow-right-circle-fill"
+                                                onclick="toggleSlides('content0', 'content1')"></i>
                                         </div>
 
                                     </div>
@@ -672,10 +673,12 @@
                         </div>
                     </div>
                     <div class="Content-container">
-                        <h1>Baby's <span>Name</span> </h1>
-                        <input type="text" placeholder="Enter Baby Name">
-                        <div class="next-btn-container mt-4">
-                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content1', 'content2')"></i>
+                        <h1>Baby's <span>Name</span></h1>
+                        <input type="text" id="babyNameInput" placeholder="Enter Baby Name" oninput="toggleNextButton()"
+                            required>
+                        <div class="next-btn-container hello-hide mt-4" id="nextBtn"
+                            onclick="toggleSlides('content1', 'content2')">
+                            <i class="bi bi-arrow-right-circle-fill"></i>
                         </div>
                     </div>
                 </div>
@@ -983,10 +986,10 @@
                     </div>
                     <div class="Content-container mt-4">
                         <h1>Age of <br><span>Baby Girl</span></h1>
-                        <input type="number" placeholder="Select Age" min="0"
+                        <input type="number" placeholder="Select Age" id="ageinput" min="0"
                             style="color: white; background-color: transparent;">
 
-                        <div class="next-btn-container">
+                        <div class="next-btn-container" id="nextBtn">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
                             <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content6', 'content7')"></i>
                         </div>
@@ -1020,13 +1023,15 @@
                                 <li class="custom-dropdown-option" onclick="selectOption('0-3 Month', 'selectInput2')">
                                     0-3 Month</li>
                                 <!-- <li class="custom-dropdown-option" onclick="selectOption('Enter Manually')">Enter Manually</li> -->
-                                <li class="custom-dropdown-option" onclick="selectOption('3-6 Month', 'selectInput2')">3-6
+                                <li class="custom-dropdown-option" onclick="selectOption('3-6 Month', 'selectInput2')">
+                                    3-6
                                     Month
                                 </li>
                                 <li class="custom-dropdown-option" onclick="selectOption('6-12 Month', 'selectInput2')">
                                     6-12 Month
                                 </li>
-                                <li class="custom-dropdown-option" onclick="selectOption('12-18 Month', 'selectInput2')">
+                                <li class="custom-dropdown-option"
+                                    onclick="selectOption('12-18 Month', 'selectInput2')">
                                     12-18 Month
                                 </li>
                                 <li class="custom-dropdown-option"
@@ -1379,7 +1384,8 @@
                         <br>
                         <br>
                         <div class="delivery-heading mt-4 mb-4" id="deliveryheading">
-                            <div class="form-check" id="form-check" style="display: flex; flex-direction: column; width: 100%; margin-bottom: 1rem;">
+                            <div class="form-check" id="form-check"
+                                style="display: flex; flex-direction: column; width: 100%; margin-bottom: 1rem;">
                                 <input class="form-check-input" onclick="toggleSlides('content15', 'content16')"
                                     type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" onclick="toggleSlides('content15', 'conten16')"
@@ -1388,16 +1394,19 @@
 
                                 </label> <br>
                                 <span style="font-size: 11px;">(Under Dress Set, include Dress, Booties & Cap)</span>
-                                
+
                             </div>
-                            <div class="form-check" id="form-check" style="display: flex; flex-direction: column; width: 100%;">
+                            <div class="form-check" id="form-check"
+                                style="display: flex; flex-direction: column; width: 100%;">
                                 <input class="form-check-input" onclick="toggleSlides('content15', 'content16')"
                                     type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                                 <label class="form-check-label" onclick="toggleSlides('content15', 'content16')"
                                     for="flexRadioDefault2">
                                     Combo&nbsp;Set
                                 </label> <br>
-                                <span style="font-size: 11px;">Under Combo Set, include the full set with Main Dress, Booties, Cap, Decorated Candle, Crown, Baby Wipes, Baby Quilt with "God Bless" and baby's name embroidery, and Blessing Dress.</span>
+                                <span style="font-size: 11px;">Under Combo Set, include the full set with Main Dress,
+                                    Booties, Cap, Decorated Candle, Crown, Baby Wipes, Baby Quilt with "God Bless" and
+                                    baby's name embroidery, and Blessing Dress.</span>
                             </div>
                             <!-- <h3 onclick="toggleSlides('content18', 'content19')">Courier</h3>
                             <h3 onclick="toggleSlides('content18', 'content19')">Direct collection</h3> -->
@@ -1672,7 +1681,100 @@
 
                         <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
-                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content19', 'content20')"
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content19', 'content34')"
+                                type="submit"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <!------------------- Slide 34---------------------- -->
+
+                 <div class="slide-container" id="content34">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content34', 'content19')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarnineteen"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+                        <h1>Full <span>Name</span></h1>
+                        <input type="text" 
+                            placeholder="Enter Your Name" required>
+
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content34', 'content35')"
+                                type="submit"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!------------------- Slide 35---------------------- -->
+
+                <div class="slide-container" id="content35">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content35', 'content34')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarnineteen"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+                        <h1>Your <span>Email</span></h1>
+                        <input type="text" 
+                            placeholder="Enter Your Email" required>
+
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content35', 'content36')"
+                                type="submit"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!------------------- Slide 35---------------------- -->
+
+                <div class="slide-container" id="content36">
+                    <div class="content">
+                        <div class="top-bar">
+                            <!-- <button >Previous</button> -->
+                            <i class="bi bi-arrow-left-circle-fill"
+                                onclick="toggleSlides('content36', 'content35')"></i>
+
+                            <!-- ------------Info Button------------>
+                            <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarnineteen"></i>
+                        </div>
+                    </div>
+                    <div class="Content-container mt-4">
+
+                        <h1>Customer <span>Shipping&nbsp;Address</span></h1>
+                        <input type="text" 
+                            placeholder="Enter Your Email" required>
+
+
+
+                        <div class="next-btn-container">
+                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content36', 'content20')"
                                 type="submit"></i>
                         </div>
                     </div>
@@ -1685,7 +1787,7 @@
                         <div class="top-bar">
                             <!-- <button >Previous</button> -->
                             <i class="bi bi-arrow-left-circle-fill"
-                                onclick="toggleSlides('content20', 'content19')"></i>
+                                onclick="toggleSlides('content20', 'content36')"></i>
 
                             <!-- ------------Info Button------------>
                             <i class="bi bi-info-circle-fill" data-bs-toggle="offcanvas"
@@ -1792,14 +1894,14 @@
                             has
                             been cancelled</p>
                         <div class="order-option">
-                            
-                                <a href="" style="text-decoration: none; color: white;">
-                                    <h4>Place&nbsp;another<br>&nbsp;Order</h4>
-                                </a>
-                                <a href="https://baptismdressindia.com/" style="text-decoration: none; color: white;">
-                                    <h4>Home</h4>
-                                </a>
-                            
+
+                            <a href="" style="text-decoration: none; color: white;">
+                                <h4>Place&nbsp;another<br>&nbsp;Order</h4>
+                            </a>
+                            <a href="https://baptismdressindia.com/" style="text-decoration: none; color: white;">
+                                <h4>Home</h4>
+                            </a>
+
                         </div>
 
 
@@ -2052,6 +2154,21 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
 
     <script>
+        function toggleNextButton(inputSelector, buttonSelector) {
+            var input = document.querySelector(inputSelector);
+            var button = document.querySelector(buttonSelector);
+
+            // Check if both inputs have values
+            var shouldShowButton = input.value.trim() !== "";
+            // Add checks for other inputs as needed
+
+            button.style.display = shouldShowButton ? "block" : "none";
+        }
+
+        // Add event listeners for both inputs
+        document.getElementById('babyNameInput').addEventListener('input', toggleNextButton.bind(null, '#babyNameInput', '#nextBtn'));
+        document.querySelector('ageinput').addEventListener('input', toggleNextButton.bind(null, '#ageinput', '#nextBtn'));
+
         $(document).ready(function () {
             $('.modal-body img').on('click', function () {
                 var imageName = $(this).attr('alt');
@@ -2255,6 +2372,8 @@
                         progressContainer.style.display = 'none';
                         // Display the uploaded file name at the bottom
                         uploadedFileName.textContent = 'Uploaded File: ' + fileName;
+
+
                     }
                 });
             }
@@ -2382,6 +2501,9 @@
             var checkbox = element.querySelector('.item-checkbox');
             checkbox.checked = !checkbox.checked;
         }
+
+
+
 
     </script>
 </body>
