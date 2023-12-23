@@ -1308,17 +1308,17 @@
                         </div>
                     </div>
                     <div class="Content-container mt-4">
-                        <h1>Expected <span>Delivery Date</span></h1>
+                        <h1>Expected <span>Delivery Date</span><span style="color: red; font-size: 35px;"> *</span></h1>
                         <form style="color: white;">
                             <!-- <label for="birthday">Birthday:</label> -->
-                            <input type="date" id="birthday" class="text-white"
+                            <input type="date" id="birthday" class="text-white" onchange="toggleArrowButton3()"
                                 style="font-size: 20px; text-align: center;" name="birthday">
                             <!-- <input type="submit"> -->
                         </form>
 
                         <!-- <input type="text" class="form-control" id="customDatePicker"> -->
 
-                        <div class="next-btn-container">
+                        <div class="next-btn-container" id="arrowButtonContainerr" style="display: none;">
                             <i class="bi bi-arrow-right-circle-fill"
                                 onclick="toggleSlides('content13', 'content14')"></i>
                         </div>
@@ -1352,17 +1352,17 @@
                         </div>
                     </div>
                     <div class="Content-container mt-4">
-                        <h1>Function <span>Date</span></h1>
+                        <h1>Function <span>Date</span><span style="color: red; font-size: 35px;"> *</span></h1>
                         <form style="color: white;">
                             <!-- <label for="birthday">Birthday:</label> -->
                             <input type="date" id="birthday" class="text-white"
-                                style="font-size: 20px; text-align: center;" name="birthday">
+                                style="font-size: 20px; text-align: center;" name="birthday" onchange="toggleArrowButton4()">
                             <!-- <input type="submit"> -->
                         </form>
 
                         <!-- <input type="text" class="form-control" id="customDatePicker"> -->
 
-                        <div class="next-btn-container">
+                        <div class="next-btn-container" id="arrowButtonContainerrr" style="display: none;">
                             <i class="bi bi-arrow-right-circle-fill"
                                 onclick="toggleSlides('content14', 'content15')"></i>
                         </div>
@@ -2539,7 +2539,29 @@
         }
 
 
+        function toggleArrowButton3() {
+            var birthdayInput = document.getElementById('birthday');
+            var arrowButtonContainer = document.getElementById('arrowButtonContainerr');
 
+            // Check if the birthday input has a value
+            if (birthdayInput.value.trim() !== "") {
+                arrowButtonContainer.style.display = 'block';
+            } else {
+                arrowButtonContainer.style.display = 'none';
+            }
+        }
+
+        function toggleArrowButton4() {
+            var birthdayInput = document.getElementById('birthday');
+            var arrowButtonContainer = document.getElementById('arrowButtonContainerrr');
+
+            // Check if the birthday input has a value
+            if (birthdayInput.value.trim() !== "") {
+                arrowButtonContainer.style.display = 'block';
+            } else {
+                arrowButtonContainer.style.display = 'none';
+            }
+        }
 
     </script>
 </body>
