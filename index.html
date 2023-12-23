@@ -892,7 +892,7 @@
 
                             <div class="custom-dropdown" id="FirstHigh" onclick="toggleOptions('dropdownOptions1')">
                                 <div style="display: flex;">
-                                    <input type="text" class="form-control" id="selectInput1"
+                                    <input type="text" class="form-control" id="selectInput1" onchange="toggleArrowButton1()"
                                         placeholder="Select an option">
                                     <label for="myFile2" class="custom-file-input" style="height: 40px; border: none;"
                                         id="fileInputLabel2">
@@ -909,8 +909,8 @@
                                     <li class="custom-dropdown-option" onclick="selectOption('Pink', 'selectInput1')">
                                         Pink
                                     </li>
-                                    <li class="custom-dropdown-option" onclick="selectOption('Pink', 'selectInput1')">
-                                        Pink</li>
+                                    <!-- <li class="custom-dropdown-option" onclick="selectOption('Pink', 'selectInput1')">
+                                        Pink</li> -->
                                     <li class="custom-dropdown-option"
                                         onclick="selectOption('Light Yellow', 'selectInput1')">Light
                                         Yellow
@@ -965,7 +965,7 @@
                         <div id="selectedFileName"></div>
                     </div>
 
-                    <div class="next-btn-container mt-4 ">
+                    <div class="next-btn-container mt-4 "  id="arrowButtonContainer1" style="display:none;">
                         <!-- <span onclick="toggleSlides('content3', 'content4')">Skip</span> -->
                         <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content5', 'content6')"></i>
                     </div>
@@ -2266,7 +2266,7 @@
         function selectOption(option, inputId) {
             document.getElementById(inputId).value = option;
             hideOptions(inputId);
-            toggleArrowButton();
+            toggleArrowButton();toggleArrowButton1()
         }
 
         function toggleOptions(optionsId) {
@@ -2280,7 +2280,16 @@
 
         function stopPropagation(event) {
             event.stopPropagation();
+        }  function toggleArrowButton1() {
+        var inputElement = document.getElementById('selectInput1');
+        var arrowButtonContainer = document.getElementById('arrowButtonContainer1');
+
+        if (inputElement.value.trim() !== "") {
+            arrowButtonContainer.style.display = 'block';
+        } else {
+            arrowButtonContainer.style.display = 'none';
         }
+    }
         function toggleArrowButton() {
         var inputElement = document.getElementById('selectInput2');
         var arrowButtonContainer = document.getElementById('arrowButtonContainer');
