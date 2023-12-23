@@ -673,11 +673,11 @@
                         </div>
                     </div>
                     <div class="Content-container">
-                       <div>
-                        <h1>Baby's <span>Name</span><span style="color: red; font-size: 35px;"> *</span></h1>
-                        <input type="text" id="input1" placeholder="Enter Baby Name" oninput="toggleButton('input1', 'button1')"
-                            required>
-                       </div>
+                        <div>
+                            <h1>Baby's <span>Name</span><span style="color: red; font-size: 35px;"> *</span></h1>
+                            <input type="text" id="input1" placeholder="Enter Baby Name"
+                                oninput="toggleButton('input1', 'button1')" required>
+                        </div>
                         <div class="next-btn-container hello-hide mt-4" id="button1"
                             onclick="toggleSlides('content1', 'content2')">
                             <i class="bi bi-arrow-right-circle-fill"></i>
@@ -884,7 +884,8 @@
                         </div>
                     </div>
                     <div class="Content-container">
-                        <h1>Select a <span>Highlight Color</span><span style="color: red; font-size: 35px;"> *</span></h1>
+                        <h1>Select a <span>Highlight Color</span><span style="color: red; font-size: 35px;"> *</span>
+                        </h1>
                         <div class="custom-dropdown d-flex justify-content-center">
                             <!-- <input type="text" class="form-control" id="selectInput" placeholder="Select an option"
                                 onclick="toggleOptions()"> -->
@@ -892,8 +893,8 @@
 
                             <div class="custom-dropdown" id="FirstHigh" onclick="toggleOptions('dropdownOptions1')">
                                 <div style="display: flex;">
-                                    <input type="text" class="form-control" id="selectInput1" onchange="toggleArrowButton1()"
-                                        placeholder="Select an option">
+                                    <input type="text" class="form-control" id="selectInput1"
+                                        onchange="toggleArrowButton1()" placeholder="Select an option">
                                     <label for="myFile2" class="custom-file-input" style="height: 40px; border: none;"
                                         id="fileInputLabel2">
                                         <i class="bi bi-images"></i>
@@ -965,7 +966,7 @@
                         <div id="selectedFileName"></div>
                     </div>
 
-                    <div class="next-btn-container mt-4 "  id="arrowButtonContainer1" style="display:none;">
+                    <div class="next-btn-container mt-4 " id="arrowButtonContainer1" style="display:none;">
                         <!-- <span onclick="toggleSlides('content3', 'content4')">Skip</span> -->
                         <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content5', 'content6')"></i>
                     </div>
@@ -987,15 +988,20 @@
                         </div>
                     </div>
                     <div class="Content-container mt-4">
-                       <div>
-                        <h1>Age of <br><span>Baby Girl</span><span style="color: red; font-size: 35px;"> *</span></h1>
                         <div>
-                            <input type="number" placeholder="Select Age" id="input2"  min="0" oninput="toggleButton('input2', 'button2')"
-                            style="color: white; background-color: transparent; text-align: center;">
-                            <h4>In Months</h4>
-                        </div>
+                            <h1>Age of <br><span>Baby Girl</span><span style="color: red; font-size: 35px;"> *</span>
+                            </h1>
+                            <div style="display: flex;
+                        margin: auto;
+                        justify-content: center;
+                        align-items: center;">
+                                <input type="number" placeholder="Select Age" id="input2" min="0"
+                                    oninput="toggleButton('input2', 'button2')"
+                                    style="color: white; background-color: transparent; text-align: center;">
+                                <h5 style="background-color: black; color: white; padding: 5px 10px;">In Months</h5>
+                            </div>
 
-                       </div>
+                        </div>
 
                         <div class="next-btn-container" id="button2">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
@@ -1018,7 +1024,8 @@
                         </div>
                     </div>
                     <div class="Content-container mt-4">
-                        <h1>Size Required <br>For the<span> Dress</span><span style="color: red; font-size: 35px;"> *</span></h1>
+                        <h1>Size Required <br>For the<span> Dress</span><span style="color: red; font-size: 35px;">
+                                *</span></h1>
                         <!-- <input type="text" placeholder="Select Size"> -->
 
                         <!-- First dropdown -->
@@ -1026,9 +1033,10 @@
                         <!-- 0-3 Month, 3-6 Month, 6-9 Month, 9-12 Month, 12-18 Month, Custom Size -->
                         <!-- Second dropdown -->
                         <div class="custom-dropdown" id="secondRequired" onclick="toggleOptions('dropdownOptions2')">
-                            <input type="text" class="form-control" id="selectInput2" placeholder="Select an option" onchange="toggleArrowButton()"> 
+                            <input type="text" class="form-control" id="selectInput2" placeholder="Select an option"
+                                onchange="toggleArrowButton()">
                             <ul class="custom-dropdown-options" id="dropdownOptions2" onclick="stopPropagation(event)">
-                                <li class="custom-dropdown-option" onclick="selectOption('0-3 Month', 'selectInput2')" >
+                                <li class="custom-dropdown-option" onclick="selectOption('0-3 Month', 'selectInput2')">
                                     0-3 Month</li>
                                 <!-- <li class="custom-dropdown-option" onclick="selectOption('Enter Manually')">Enter Manually</li> -->
                                 <li class="custom-dropdown-option" onclick="selectOption('3-6 Month', 'selectInput2')">
@@ -1396,8 +1404,7 @@
                                 style="display: flex; flex-direction: column; width: 100%; margin-bottom: 1rem;">
                                 <input class="form-check-input" onclick="toggleSlides('content15', 'content16')"
                                     type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label"
-                                    for="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
                                     Dress&nbsp;Set
 
                                 </label> <br>
@@ -1408,15 +1415,14 @@
                                 style="display: flex; flex-direction: column; width: 100%;">
                                 <input class="form-check-input" onclick="toggleSlides('content15', 'content16')"
                                     type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                <label class="form-check-label" 
-                                    for="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
                                     Combo&nbsp;Set
                                 </label> <br>
                                 <span style="font-size: 11px;">Under Combo Set, include the full set with Main Dress,
                                     Booties, Cap, Decorated Candle, Crown, Baby Wipes, Baby Quilt with "God Bless" and
                                     baby's name embroidery, and Blessing Dress.</span>
                             </div>
-                           
+
                         </div>
 
 
@@ -1424,7 +1430,7 @@
 
 
 
-                       
+
                     </div>
                 </div>
 
@@ -1676,12 +1682,14 @@
                     </div>
                     <div class="Content-container mt-4">
 
-                       <div>
-                        <h1>Get Reminder <br><span>WhatsApp No.</span><span style="color: red; font-size: 35px;"> *</span></h1>
-                        <input type="number" placeholder="Enter You Number" id="input4"  min="0" oninput="toggleButton('input4', 'button4')"
-                            style="color: white; background-color: transparent; text-align: center;">
-                       </div>
-                       
+                        <div>
+                            <h1>Get Reminder <br><span>WhatsApp No.</span><span style="color: red; font-size: 35px;">
+                                    *</span></h1>
+                            <input type="number" placeholder="Enter You Number" id="input4" min="0"
+                                oninput="toggleButton('input4', 'button4')"
+                                style="color: white; background-color: transparent; text-align: center;">
+                        </div>
+
 
 
 
@@ -1694,9 +1702,9 @@
                 </div>
 
 
-                 <!------------------- Slide 34---------------------- -->
+                <!------------------- Slide 34---------------------- -->
 
-                 <div class="slide-container" id="content34">
+                <div class="slide-container" id="content34">
                     <div class="content">
                         <div class="top-bar">
                             <!-- <button >Previous</button> -->
@@ -1711,8 +1719,8 @@
                     <div class="Content-container mt-4">
 
                         <h1>Full <span>Name</span><span style="color: red; font-size: 35px;"> *</span></h1>
-                        <input type="text" id="input5" placeholder="Enter Baby Name" oninput="toggleButton('input5', 'button5')"
-                            required>
+                        <input type="text" id="input5" placeholder="Enter Baby Name"
+                            oninput="toggleButton('input5', 'button5')" required>
 
 
 
@@ -1742,7 +1750,7 @@
                     <div class="Content-container mt-4">
 
                         <h1>Your <span>Email</span><span style="color: red; font-size: 35px;"> *</span></h1>
-                        <input type="text"  id="input6" oninput="toggleButton('input6', 'button6')"
+                        <input type="text" id="input6" oninput="toggleButton('input6', 'button6')"
                             placeholder="Enter Your Email" required>
 
 
@@ -1772,8 +1780,9 @@
                     </div>
                     <div class="Content-container mt-4">
 
-                        <h1>Customer <span>Shipping&nbsp;Address</span><span style="color: red; font-size: 35px;"> *</span></h1>
-                        <input type="text" id="input7"  oninput="toggleButton('input7', 'button7')"
+                        <h1>Customer <span>Shipping&nbsp;Address</span><span style="color: red; font-size: 35px;">
+                                *</span></h1>
+                        <input type="text" id="input7" oninput="toggleButton('input7', 'button7')"
                             placeholder="Enter Your Email" required>
 
 
@@ -2160,20 +2169,20 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
 
     <script>
-         function toggleButton(inputId, buttonId) {
-      // Get the input value
-      var inputValue = document.getElementById(inputId).value.trim();
+        function toggleButton(inputId, buttonId) {
+            // Get the input value
+            var inputValue = document.getElementById(inputId).value.trim();
 
-      // Get the corresponding button
-      var button = document.getElementById(buttonId);
+            // Get the corresponding button
+            var button = document.getElementById(buttonId);
 
-      // Toggle button visibility based on input value
-      if (inputValue !== '') {
-        button.style.display = 'inline-block';
-      } else {
-        button.style.display = 'none';
-      }
-    }
+            // Toggle button visibility based on input value
+            if (inputValue !== '') {
+                button.style.display = 'inline-block';
+            } else {
+                button.style.display = 'none';
+            }
+        }
 
         $(document).ready(function () {
             $('.modal-body img').on('click', function () {
@@ -2266,7 +2275,7 @@
         function selectOption(option, inputId) {
             document.getElementById(inputId).value = option;
             hideOptions(inputId);
-            toggleArrowButton();toggleArrowButton1()
+            toggleArrowButton(); toggleArrowButton1()
         }
 
         function toggleOptions(optionsId) {
@@ -2280,26 +2289,26 @@
 
         function stopPropagation(event) {
             event.stopPropagation();
-        }  function toggleArrowButton1() {
-        var inputElement = document.getElementById('selectInput1');
-        var arrowButtonContainer = document.getElementById('arrowButtonContainer1');
+        } function toggleArrowButton1() {
+            var inputElement = document.getElementById('selectInput1');
+            var arrowButtonContainer = document.getElementById('arrowButtonContainer1');
 
-        if (inputElement.value.trim() !== "") {
-            arrowButtonContainer.style.display = 'block';
-        } else {
-            arrowButtonContainer.style.display = 'none';
+            if (inputElement.value.trim() !== "") {
+                arrowButtonContainer.style.display = 'block';
+            } else {
+                arrowButtonContainer.style.display = 'none';
+            }
         }
-    }
         function toggleArrowButton() {
-        var inputElement = document.getElementById('selectInput2');
-        var arrowButtonContainer = document.getElementById('arrowButtonContainer');
+            var inputElement = document.getElementById('selectInput2');
+            var arrowButtonContainer = document.getElementById('arrowButtonContainer');
 
-        if (inputElement.value.trim() !== "") {
-            arrowButtonContainer.style.display = 'block';
-        } else {
-            arrowButtonContainer.style.display = 'none';
+            if (inputElement.value.trim() !== "") {
+                arrowButtonContainer.style.display = 'block';
+            } else {
+                arrowButtonContainer.style.display = 'none';
+            }
         }
-    }
 
         document.addEventListener('click', function (event) {
             var dropdowns = document.querySelectorAll('.custom-dropdown');
@@ -2317,6 +2326,7 @@
             const label = document.getElementById(labelId);
             const fileName = input.files[0].name;
             document.getElementById('selectedFileName', 'selectedFileNametwo').innerText = `Selected File: ${fileName}`;
+            toggleArrowButto2();
         }
 
 
