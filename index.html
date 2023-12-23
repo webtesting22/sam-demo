@@ -989,8 +989,12 @@
                     <div class="Content-container mt-4">
                        <div>
                         <h1>Age of <br><span>Baby Girl</span></h1>
-                        <input type="number" placeholder="Select Age" id="input2"  min="0" oninput="toggleButton('input2', 'button2')"
-                            style="color: white; background-color: transparent;">
+                        <div>
+                            <input type="number" placeholder="Select Age" id="input2"  min="0" oninput="toggleButton('input2', 'button2')"
+                            style="color: white; background-color: transparent; text-align: center;">
+                            <h4>In Months</h4>
+                        </div>
+
                        </div>
 
                         <div class="next-btn-container" id="button2">
@@ -1048,7 +1052,7 @@
                             </ul>
                         </div>
 
-                        <div class="next-btn-container" id="button3">
+                        <div class="next-btn-container">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
                             <i class="bi bi-arrow-right-circle-fill"
                                 onclick="toggleSlides('content7', 'content11')"></i>
@@ -1392,7 +1396,7 @@
                                 style="display: flex; flex-direction: column; width: 100%; margin-bottom: 1rem;">
                                 <input class="form-check-input" onclick="toggleSlides('content15', 'content16')"
                                     type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" onclick="toggleSlides('content15', 'conten16')"
+                                <label class="form-check-label"
                                     for="flexRadioDefault1">
                                     Dress&nbsp;Set
 
@@ -1404,7 +1408,7 @@
                                 style="display: flex; flex-direction: column; width: 100%;">
                                 <input class="form-check-input" onclick="toggleSlides('content15', 'content16')"
                                     type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                <label class="form-check-label" onclick="toggleSlides('content15', 'content16')"
+                                <label class="form-check-label" 
                                     for="flexRadioDefault2">
                                     Combo&nbsp;Set
                                 </label> <br>
@@ -1412,8 +1416,7 @@
                                     Booties, Cap, Decorated Candle, Crown, Baby Wipes, Baby Quilt with "God Bless" and
                                     baby's name embroidery, and Blessing Dress.</span>
                             </div>
-                            <!-- <h3 onclick="toggleSlides('content18', 'content19')">Courier</h3>
-                            <h3 onclick="toggleSlides('content18', 'content19')">Direct collection</h3> -->
+                           
                         </div>
 
 
@@ -1421,11 +1424,7 @@
 
 
 
-                        <div class="next-btn-container">
-                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
-                            <i class="bi bi-arrow-right-circle-fill"
-                                onclick="toggleSlides('content15', 'content16')"></i>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -1653,11 +1652,11 @@
 
 
 
-                        <div class="next-btn-container">
-                            <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
+                        <!-- <div class="next-btn-container">
+                            <span onclick="toggleSlides('content6', 'content7')">Skip</span>
                             <i class="bi bi-arrow-right-circle-fill"
                                 onclick="toggleSlides('content18', 'content19')"></i>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -1679,8 +1678,8 @@
 
                        <div>
                         <h1>Get Reminder <br><span>WhatsApp No.</span></h1>
-                        <input type="text" inputmode="numeric" id="input4" name="mobileNumber" oninput="toggleButton('input4', 'button4')"
-                            placeholder="Enter Your Mobile Number" maxlength="10">
+                        <input type="number" placeholder="Enter You Number" id="input4"  min="0" oninput="toggleButton('input4', 'button4')"
+                            style="color: white; background-color: transparent; text-align: center;">
                        </div>
                        
 
@@ -1712,12 +1711,12 @@
                     <div class="Content-container mt-4">
 
                         <h1>Full <span>Name</span></h1>
-                        <input type="text" 
-                            placeholder="Enter Your Name" required>
+                        <input type="text" id="input5" placeholder="Enter Baby Name" oninput="toggleButton('input5', 'button5')"
+                            required>
 
 
 
-                        <div class="next-btn-container">
+                        <div class="next-btn-container" id="button5">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
                             <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content34', 'content35')"
                                 type="submit"></i>
@@ -1743,12 +1742,12 @@
                     <div class="Content-container mt-4">
 
                         <h1>Your <span>Email</span></h1>
-                        <input type="text" 
+                        <input type="text"  id="input6" oninput="toggleButton('input6', 'button6')"
                             placeholder="Enter Your Email" required>
 
 
 
-                        <div class="next-btn-container">
+                        <div class="next-btn-container" id="button6">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
                             <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content35', 'content36')"
                                 type="submit"></i>
@@ -1774,12 +1773,12 @@
                     <div class="Content-container mt-4">
 
                         <h1>Customer <span>Shipping&nbsp;Address</span></h1>
-                        <input type="text" 
+                        <input type="text" id="input7"  oninput="toggleButton('input7', 'button7')"
                             placeholder="Enter Your Email" required>
 
 
 
-                        <div class="next-btn-container">
+                        <div class="next-btn-container" id="button7">
                             <!-- <span onclick="toggleSlides('content6', 'content7')">Skip</span> -->
                             <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content36', 'content20')"
                                 type="submit"></i>

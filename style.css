@@ -584,6 +584,9 @@ input[type="checkbox"] {
 
 #button1,
 #button2,
-#button4{
+#button4,
+#button5,
+#button6
+#button7{
     display: none;
 }
