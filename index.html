@@ -722,7 +722,7 @@
 
                             </div>
                             <br><br>
-                            <div class="img-show">
+                            <div class="img-show" id="imageContainer1">
 
                             </div>
 
@@ -786,7 +786,7 @@
                             <!-- ------------gallery modal --------------------->
 
                         </div>
-                        <div class="next-btn-container mt-4">
+                        <div class="next-btn-container mt-4 hello" style="display: none;">
                             <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content2', 'content3')"></i>
                         </div>
                     </div>
@@ -1356,7 +1356,8 @@
                         <form style="color: white;">
                             <!-- <label for="birthday">Birthday:</label> -->
                             <input type="date" id="birthday" class="text-white"
-                                style="font-size: 20px; text-align: center;" name="birthday" onchange="toggleArrowButton4()">
+                                style="font-size: 20px; text-align: center;" name="birthday"
+                                onchange="toggleArrowButton4()">
                             <!-- <input type="submit"> -->
                         </form>
 
@@ -2169,6 +2170,8 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
 
     <script>
+
+        //-------------- input btn hide and show js
         function toggleButton(inputId, buttonId) {
             // Get the input value
             var inputValue = document.getElementById(inputId).value.trim();
@@ -2184,6 +2187,12 @@
             }
         }
 
+
+
+
+
+        // -----------------Gallery btn 2 screen upload file-------------
+
         $(document).ready(function () {
             $('.modal-body img').on('click', function () {
                 var imageName = $(this).attr('alt');
@@ -2191,11 +2200,16 @@
                 // Display image name in the container with class 'img-show'
                 $('.img-show').text('Image Name: ' + imageName);
 
+                // Show the 'img-show' container
+                $('.hello').show();
+
                 // Close the modal
                 $('#exampleModal').modal('hide');
             });
         });
 
+
+        // --------------------starting carousal js------------------
 
         var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
             interval: false // Disable automatic sliding
@@ -2272,6 +2286,8 @@
         //     }
         // });
 
+        // -----------------select dropdown options js
+
         function selectOption(option, inputId) {
             document.getElementById(inputId).value = option;
             hideOptions(inputId);
@@ -2346,6 +2362,9 @@
             // Set the value of the custom text input to the selected date
             customDatePickerInput.value = dateInput.value;
         });
+
+        // ----------------------Date picker js
+
         var picker;
 
         function showDatePicker() {
@@ -2382,38 +2401,41 @@
 
 
 
+        // ----------------------second slide progress bar animations js
 
         // ------------2nd screen file upload----------
         function uploadFile(fileInputId, progressContainerId, progressBarId, fileInputLabelId, uploadedFileNameId) {
-            var fileInput = document.getElementById(fileInputId);
-            var progressContainer = document.getElementById(progressContainerId);
-            var progressBar = document.getElementById(progressBarId);
-            var fileInputLabel = document.getElementById(fileInputLabelId);
-            var uploadedFileName = document.getElementById(uploadedFileNameId);
+    var fileInput = document.getElementById(fileInputId);
+    var progressContainer = document.getElementById(progressContainerId);
+    var progressBar = document.getElementById(progressBarId);
+    var fileInputLabel = document.getElementById(fileInputLabelId);
+    var uploadedFileName = document.getElementById(uploadedFileNameId);
 
-            if (fileInput.files.length > 0) {
-                // Show the progress bar container
-                progressContainer.style.display = 'block';
-                // Reset the progress bar
-                progressBar.style.width = '0%';
+    if (fileInput.files.length > 0) {
+        // Show the progress bar container
+        progressContainer.style.display = 'block';
+        // Reset the progress bar
+        progressBar.style.width = '0%';
 
-                // Simulate file upload (you need a server-side script for actual file upload)
-                simulateFileUpload(fileInput.files[0], function (progress, fileName) {
-                    // Update the progress bar based on the upload progress
-                    progressBar.style.width = progress + '%';
+        // Simulate file upload (you need a server-side script for actual file upload)
+        simulateFileUpload(fileInput.files[0], function (progress, fileName) {
+            // Update the progress bar based on the upload progress
+            progressBar.style.width = progress + '%';
 
-                    // When the upload is complete, reset the UI
-                    if (progress === 100) {
-                        fileInputLabel.textContent = 'Choose File';
-                        progressContainer.style.display = 'none';
-                        // Display the uploaded file name at the bottom
-                        uploadedFileName.textContent = 'Uploaded File: ' + fileName;
+            // When the upload is complete, reset the UI
+            if (progress === 100) {
+                fileInputLabel.textContent = 'Choose File';
+                progressContainer.style.display = 'none';
+                // Display the uploaded file name at the bottom
+                uploadedFileName.textContent = 'Uploaded File: ' + fileName;
 
-
-                    }
-                });
+                // Show the element with class 'hello'
+                $('.hello').show();
             }
-        }
+        });
+    }
+}
+
 
         // Simulate file upload function (replace with actual implementation)
         function simulateFileUpload(file, callback) {
@@ -2464,6 +2486,7 @@
             uploadChunk();
         }
 
+        //-------------------------- slide carousal start js
 
         var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
             interval: false
@@ -2511,6 +2534,8 @@
         //         }
         //     });
         // });
+
+        //--------------------------- Offcanvas navbar js
 
         document.addEventListener('DOMContentLoaded', function () {
             var offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasNavbartwetytwo'));
@@ -2562,6 +2587,8 @@
                 arrowButtonContainer.style.display = 'none';
             }
         }
+
+
 
     </script>
 </body>
