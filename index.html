@@ -2405,36 +2405,36 @@
 
         // ------------2nd screen file upload----------
         function uploadFile(fileInputId, progressContainerId, progressBarId, fileInputLabelId, uploadedFileNameId) {
-    var fileInput = document.getElementById(fileInputId);
-    var progressContainer = document.getElementById(progressContainerId);
-    var progressBar = document.getElementById(progressBarId);
-    var fileInputLabel = document.getElementById(fileInputLabelId);
-    var uploadedFileName = document.getElementById(uploadedFileNameId);
+            var fileInput = document.getElementById(fileInputId);
+            var progressContainer = document.getElementById(progressContainerId);
+            var progressBar = document.getElementById(progressBarId);
+            var fileInputLabel = document.getElementById(fileInputLabelId);
+            var uploadedFileName = document.getElementById(uploadedFileNameId);
 
-    if (fileInput.files.length > 0) {
-        // Show the progress bar container
-        progressContainer.style.display = 'block';
-        // Reset the progress bar
-        progressBar.style.width = '0%';
+            if (fileInput.files.length > 0) {
+                // Show the progress bar container
+                progressContainer.style.display = 'block';
+                // Reset the progress bar
+                progressBar.style.width = '0%';
 
-        // Simulate file upload (you need a server-side script for actual file upload)
-        simulateFileUpload(fileInput.files[0], function (progress, fileName) {
-            // Update the progress bar based on the upload progress
-            progressBar.style.width = progress + '%';
+                // Simulate file upload (you need a server-side script for actual file upload)
+                simulateFileUpload(fileInput.files[0], function (progress, fileName) {
+                    // Update the progress bar based on the upload progress
+                    progressBar.style.width = progress + '%';
 
-            // When the upload is complete, reset the UI
-            if (progress === 100) {
-                fileInputLabel.textContent = 'Choose File';
-                progressContainer.style.display = 'none';
-                // Display the uploaded file name at the bottom
-                uploadedFileName.textContent = 'Uploaded File: ' + fileName;
+                    // When the upload is complete, reset the UI
+                    if (progress === 100) {
+                        fileInputLabel.textContent = 'Choose File';
+                        progressContainer.style.display = 'none';
+                        // Display the uploaded file name at the bottom
+                        uploadedFileName.textContent = 'Uploaded File: ' + fileName;
 
-                // Show the element with class 'hello'
-                $('.hello').show();
+                        // Show the element with class 'hello'
+                        $('.hello').show();
+                    }
+                });
             }
-        });
-    }
-}
+        }
 
 
         // Simulate file upload function (replace with actual implementation)
