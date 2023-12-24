@@ -1501,9 +1501,8 @@
 
 
                         <div class="next-btn-container d-flex justify-content-between" style="align-items: center;">
-                            <span onclick="toggleSlides('content16', 'content31')">Skip</span>
-                            <i class="bi bi-arrow-right-circle-fill"
-                                onclick="toggleSlides('content16', 'content31')"></i>
+                            <!-- <span onclick="toggleSlides('content16', 'content31')">Skip</span> -->
+                            <i class="bi bi-arrow-right-circle-fill" onclick="handleRightArrowClick()"></i>
                         </div>
                     </div>
                 </div>
@@ -2171,7 +2170,27 @@
 
     <script>
 
+        // --------------optional acceseries problem solve
+
+        function handleRightArrowClick() {
+    // Assuming you have a class 'item-checkbox' for your checkboxes
+    const checkboxes = document.querySelectorAll('.item-checkbox');
+
+    // Check if only the checkbox with index 2 is checked
+    if (checkboxes[2].checked && !Array.from(checkboxes).some((checkbox, index) => index !== 2 && checkbox.checked)) {
+        // Toggle to the next slide when only checkbox with index 3 is checked (e.g., slide 32)
+        toggleSlides('content16', 'content32');
+    } else if (Array.from(checkboxes).some(checkbox => checkbox.checked)) {
+        // Toggle to the next slide when any checkbox is checked (e.g., slide 31)
+        toggleSlides('content16', 'content31');
+    } else {
+        // Toggle to the default slide when no checkbox is checked (e.g., slide 17)
+        toggleSlides('content16', 'content17');
+    }
+}
+
         //-------------- input btn hide and show js
+
         function toggleButton(inputId, buttonId) {
             // Get the input value
             var inputValue = document.getElementById(inputId).value.trim();
@@ -2562,6 +2581,7 @@
             var checkbox = element.querySelector('.item-checkbox');
             checkbox.checked = !checkbox.checked;
         }
+
 
 
         function toggleArrowButton3() {
