@@ -48,25 +48,28 @@
 
                 <!-- -------------First slide ----------------->
 
-                <div id="step1" class="form-step active">
+                <div id="content1" class="form-step active">
                     <!-- Your Step 1 content here -->
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(1)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content1', 'content0')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarzero"></i>
                     </div>
                     <label for="baby_name" class="title">Baby's Name</label>
                     <input type="text" placeholder="Enter Your Baby's Name" class="form-control input-edit mb-5"
                         name="baby_name" id="baby_name" required>
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(1)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content1', 'content2')"></i>
                 </div>
 
                 <!-- -------------Second slide ----------------->
 
-                <div id="step2" class="form-step ">
+                <div id="content2" class="form-step ">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(2)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content2', 'content1')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
@@ -74,16 +77,18 @@
                     <input type="file" name="model_sample" id="model_sample"
                         class="form-control input-edit mb-5 text-white" required>
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(2)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content2', 'content3')"></i>
                 </div>
 
 
                 <!-- -------------Third slide ----------------->
 
-                <div id="step3" class="form-step ">
+                <div id="content3" class="form-step ">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(3)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content3', 'content2')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
@@ -100,15 +105,17 @@
                         </div>
                     </div>
                     <br><br><br>
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(3)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content3', 'content4')"></i>
                 </div>
 
                 <!-- -------------Forth slide ----------------->
 
-                <div id="step4" class="form-step ">
+                <div id="content4" class="form-step ">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(4)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content4', 'content3')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
@@ -124,15 +131,17 @@
                         </div>
                     </div>
                     <br><br><br>
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(4)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content4', 'content5')"></i>
                 </div>
 
                 <!-- -------------Fifth slide ----------------->
 
-                <div id="step5" class="form-step">
+                <div id="content5" class="form-step">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(5)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content5', 'content4')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
@@ -153,15 +162,17 @@
 
                     </select>
                     <br><br><br>
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(5)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content5', 'content6')"></i>
                 </div>
 
                 <!-- -------------six slide ----------------->
 
-                <div id="step6" class="form-step">
+                <div id="content6" class="form-step">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(6)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content6', 'content5')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
@@ -169,15 +180,17 @@
                     <input type="number" name="age_of_baby" class="form-control input-edit mb-5 text-white"
                         id="age_of_baby" required>
                     <br>
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(6)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content6', 'content7')"></i>
                 </div>
 
                 <!-- -------------seven slide ----------------->
 
-                <div id="step7" class="form-step">
+                <div id="content7" class="form-step">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(7)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content7', 'content6')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
@@ -193,27 +206,29 @@
                         <option value="Custom Measurements">Custom Measurements</option>
                     </select>
                     <br><br><br>
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(7)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content7', 'content8')"></i>
                 </div>
 
                 <!-- -------------eight slide ----------------->
 
-                <div id="step8" class="form-step">
+                <div id="content8" class="form-step">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(8)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content8', 'content7')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
                     <label class="title">Do you want custom measurement</label>
                     <br>
                     <div class="checkbox-btn">
-                        <div class="d-flex align-items-center" onclick="nextStep(8)">
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content8', 'content9')">
                             <input type="radio" name="select_dress" value="yes"
                                 onclick="showCustomFields(this)">&nbsp;&nbsp;<h4>Yes</h4>
                         </div>
 
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content8', 'content16')">
                             <input type="radio" name="select_dress" value="no"
                                 onclick="hideCustomFields(this)">&nbsp;&nbsp;<h4>No</h4>
                         </div>
@@ -223,10 +238,11 @@
                 </div>
                 <!-- -------------nine slide ----------------->
 
-                <div id="step9" class="form-step">
+                <div id="content9" class="form-step">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(9)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content9', 'content8')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
@@ -234,14 +250,16 @@
                     <input type="text" name="chest_circumference" placeholder="Enter your value"
                         class="form-control input-edit mb-5 text-white" id="chest_circumference">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(9)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content9', 'content10')"></i>
                 </div>
                 <!-- -------------ten slide ----------------->
 
-                <div id="step10" class="form-step">
+                <div id="content10" class="form-step">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(10)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content10', 'content9')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
@@ -249,14 +267,16 @@
                     <input type="text" name="shoulder_length" placeholder="Enter your value"
                         class="form-control input-edit mb-5 text-white" id="shoulder_length">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(10)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content10', 'content11')"></i>
                 </div>
                 <!-- -------------eleven slide ----------------->
 
-                <div id="step11" class="form-step">
+                <div id="content11" class="form-step">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(11)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content11', 'content10')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
@@ -264,14 +284,16 @@
                     <input type="text" name="neck_circumference" placeholder="Enter your value"
                         class="form-control input-edit mb-5 text-white" id="neck_circumference">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(11)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content11', 'content12')"></i>
                 </div>
                 <!-- -------------twele slide ----------------->
 
-                <div id="step12" class="form-step">
+                <div id="content12" class="form-step">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(12)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content12', 'content11')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
@@ -279,14 +301,16 @@
                     <input type="text" name="shoulder_crotch_length" placeholder="Enter your value"
                         class="form-control input-edit mb-5 text-white" id="shoulder_crotch_length">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(12)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content12', 'content13')"></i>
                 </div>
                 <!-- -------------thirteen slide ----------------->
 
-                <div id="step13" class="form-step">
+                <div id="content13" class="form-step">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(13)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content13', 'content12')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
@@ -294,21 +318,104 @@
                     <input type="text" name="length_of_dress_required" placeholder="Enter you value"
                         class="form-control input-edit mb-5 text-white" id="length_of_dress_required">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(13)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content13', 'content14')"></i>
                 </div>
                 <!-- -------------fourteen slide ----------------->
 
-                <div id="step14" class="form-step">
+                <div id="content14" class="form-step">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(14)"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content14', 'content13')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
                     <label for="head_circumference" class="title">Head Circumference:</label>
-                    <input type="text" name="head_circumference" placeholder="Enter your value" class="form-control input-edit mb-5 text-white" id="head_circumference">
+                    <input type="text" name="head_circumference" placeholder="Enter your value"
+                        class="form-control input-edit mb-5 text-white" id="head_circumference">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(14)"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content14', 'content15')"></i>
+                </div>
+                <!-- -------------fifthteen slide ----------------->
+
+                <div id="content15" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content15', 'content14')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="foot_length" class="title">Foot Length:</label>
+                    <input type="text" name="foot_length" placeholder="Enter your value"
+                        class="form-control input-edit mb-5 text-white" id="foot_length">
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content15', 'content16')"></i>
+                </div>
+                <!-- -------------sixteen slide ----------------->
+
+                <div id="content16" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content16', 'content15')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="expected_delivery_date" class="title">Expected Delivery Date:</label>
+                    <input type="date" name="expected_delivery_date" class="mb-5"
+                        style="width: 100%; text-align: center;" id="expected_delivery_date" required>
+
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content16', 'content17')"></i>
+                </div>
+                <!-- -------------seventeen slide ----------------->
+
+                <div id="content17" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content17', 'content16')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="function_date" class="title">Function Date:</label>
+                    <input type="date" name="function_date" class="mb-5" style="width: 100%; text-align: center;"
+                        id="function_date" required>
+
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content17', 'content18')"></i>
+                </div>
+                <!-- -------------eighteen slide ----------------->
+
+                <div id="content18" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content18', 'content17')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="mode_of_delivery" class="title">Select the Package</label>
+                    
+                   <div>
+                    <input type="radio" name="select_the_package" value="Dress Set"><h4>Dress Set</h4>
+                   </div>
+                   
+                    <div>
+                        <input type="radio" name="select_the_package" value="Combo Set"><h4>Combo Set</h4>
+                    </div>
+                   
+                    <br>
+
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content18', 'content19')"></i>
                 </div>
 
                 <!-- -------------second slide ----------------->
@@ -329,46 +436,55 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script>
-        var currentStep = 1;
-
-        function nextStep(step) {
-            if (step < 20) {
-                $('#step' + step).removeClass('active');
-                currentStep = step + 1;
-                $('#step' + currentStep).addClass('active');
-                updateButtonVisibility(currentStep);
-            }
-        }
-
-        function prevStep(step) {
-            if (step > 1) {
-                $('#step' + step).removeClass('active');
-                currentStep = step - 1;
-                $('#step' + currentStep).addClass('active');
-                updateButtonVisibility(currentStep);
-            }
-        }
-
-        function updateButtonVisibility(step) {
-            // Hide all step buttons initially
-            for (let i = 1; i <= 20; i++) {
-                $('#step' + i + 'Buttons').hide();
-            }
-
-            // Show buttons for the current step
-            $('#step' + step + 'Buttons').show();
-        }
-
-        function submitForm() {
-            // Handle form submission logic here
-            // You may want to validate the form data before submission
-            // For example: $("#multiStepForm").submit();
-        }
-
-        $(document).ready(function () {
-            // Initially update button visibility on page load
-            updateButtonVisibility(1);
+        var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
+            interval: false // Disable automatic sliding
         });
+
+        function redirectToContent1() {
+            // Your logic to redirect to the content1 slide
+            toggleSlides('content0', 'content1');
+        }
+        function toggleSlides(currentContent, nextContent) {
+            document.getElementById(currentContent).style.display = 'none';
+            document.getElementById(nextContent).style.display = 'block';
+        }
+
+
+        function toggleSlides(currentSlideId, targetSlideId) {
+            var currentSlide = document.getElementById(currentSlideId);
+            var targetSlide = document.getElementById(targetSlideId);
+
+            currentSlide.classList.remove('active');
+            targetSlide.classList.add('active');
+        }
+
+        let currentIndex = 0;
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        const items = document.querySelectorAll('.slider-item');
+
+        function showSlide(index) {
+            const newPosition = -index * 20; // 20% width per slide
+            sliderWrapper.style.transform = `translateX(${newPosition}%)`;
+        }
+
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % items.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            showSlide(currentIndex);
+        }
+        function showContent(contentId) {
+            const contentElements = document.querySelectorAll('.content');
+            contentElements.forEach(element => element.style.display = 'none');
+        } showContent(contentId);
+        document.getElementById(contentId).style.display = 'block';
+
+
+
 
     </script>
 </body>
