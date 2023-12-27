@@ -402,20 +402,105 @@
                             data-bs-target="#offcanvasNavbarone"></i>
                     </div>
                     <label for="mode_of_delivery" class="title">Select the Package</label>
-                    
-                   <div>
-                    <input type="radio" name="select_the_package" value="Dress Set"><h4>Dress Set</h4>
-                   </div>
-                   
-                    <div>
-                        <input type="radio" name="select_the_package" value="Combo Set"><h4>Combo Set</h4>
+                    <div class="checkbox-btn">
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content18', 'content19')">
+                            <input type="radio" name="select_the_package" value="Dress Set">&nbsp;&nbsp;<h4>Dress Set
+                            </h4>
+                        </div>
+
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content18', 'content19')">
+                            <input type="radio" name="select_the_package" value="Combo Set">&nbsp;&nbsp;<h4>Combo Set
+                            </h4>
+                        </div>
                     </div>
-                   
+
+                    <br>
+
+
+                    <!-- <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content18', 'content19')"></i> -->
+                </div>
+                <!-- -------------eighteen slide ----------------->
+
+                <div id="content19" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content19', 'content18')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label class="title">Optional accessories:</label>
+                    <br>
+                    <br>
+                    <div class="accesories-container">
+                        <div>
+                            <input type="checkbox" name="optional_accessories[]" value="Decorated Basket"
+                                id="decorated_basket">
+                            <label for="decorated_basket">
+                                <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/IMG_1014-1-400x300-1.webp"
+                                    alt="Decorated Basket Image"
+                                    style="width: 100px; height: 100px; object-fit: cover;">
+                                Decorated Basket: ₹1050.00 - ₹1850.00 + Shipping
+                            </label>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div>
+                            <input type="checkbox" name="optional_accessories[]" value="Acrylic Box" id="acrylic_box">
+                            <label for="acrylic_box">
+                                <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/PHOTO-2022-04-02-09-07-09-1.jpg"
+                                    alt="Acrylic Box Image" style="width: 100px; height: 100px; object-fit: cover;">
+                                Acrylic
+                                box
+                                with baby’s name: ₹1250.00 - ₹1850.00
+                            </label>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div>
+                            <input type="checkbox" name="optional_accessories[]" value="Custom Candle"
+                                id="custom_candle">
+                            <label for="custom_candle">
+                                <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/IMG_1262-2-400x300-1.webp"
+                                    alt="Custom Candle Image" style="width: 100px; height: 100px; object-fit: cover;">
+                                Custom-made name-printed candle: ₹ 1200 - ₹1850.00
+                            </label>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div>
+                            <input type="checkbox" name="optional_accessories[]" value="Baby Pillow" id="baby_pillow">
+                            <label for="baby_pillow">
+                                <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/Pillow-4-400x300-1.webp"
+                                    alt="Baby Pillow Image" style="width: 100px; height: 100px; object-fit: cover;">
+                                Pillow
+                                with
+                                baby’s name: ₹850.00
+                            </label>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div>
+                            <input type="checkbox" name="optional_accessories[]" value="Wooden Box" id="wooden_box">
+                            <label for="wooden_box">
+                                <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/241392270_831506927731543_4270040596047820136_n-400x300-1-1.webp"
+                                    alt="Wooden Box Image" style="width: 100px; height: 100px; object-fit: cover;">
+                                Wooden
+                                Box:
+                                ₹ 2500.00
+                            </label>
+                        </div>
+                    </div>
                     <br>
 
 
                     <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content18', 'content19')"></i>
+                        onclick="toggleSlides('content19', 'content20')"></i>
                 </div>
 
                 <!-- -------------second slide ----------------->
