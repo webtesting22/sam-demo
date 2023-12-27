@@ -151,13 +151,18 @@
 
 }
 
-#nextBtn:hover,
-#prevBtn:hover {
+#nextBtn:hover{
     font-size: 30px;
     transform: translateX(5px);
     transition: .3s;
     cursor: pointer;
 }
+/* #prevBtn:hover {
+    font-size: 30px;
+    transform: translateX(5px);
+    transition: .3s;
+    cursor: pointer;
+} */
 
 .checkbox-btn input[type="checkbox"] {
     appearance: none; /* Remove default styles */
@@ -208,18 +213,35 @@
     background-color: #fff; /* Set background color to white when checked */
   }
 
-  /* Style the radio dot/indicator */
-  .checkbox-btn input[type="radio"]::before {
-    content: ""; /* Empty content */
-    display: block;
-    width: 20px; /* Adjust the width of the dot */
-    height: 20px; /* Adjust the height of the dot */
-    margin: 5px; /* Center the dot within the circle */
-    border-radius: 50%; /* Make it a circle */
-    background-color: transparent; /* Set dot color to transparent */
-  }
 
   /* Style the radio dot/indicator when checked */
   .checkbox-btn input[type="radio"]:checked::before {
     background-color: #fff; /* Set dot color to white when checked */
+  }
+
+  #colorSelect option,
+  #monthSelect option{
+    background-color: black;
+    backdrop-filter: blur(14px);
+    box-shadow: rgba(11, 11, 11, 0.2) 0px 7px 29px 0px;
+   
+  }
+  #colorSelect,
+  #monthSelect{
+    background-color: transparent;
+    border-right:none ;
+    border-left: none;
+    border-top: none;
+    color: rgb(255, 255, 255);
+    width: 80%;
+    text-align: center;
+   
+  }
+  #colorSelect:focus,
+  #colorSelect:active{
+    background-color: transparent;
+    border-right:none ;
+    border-left: none;
+    border-top: none;
+    color: rgb(255, 255, 255);
   }

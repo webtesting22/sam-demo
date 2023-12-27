@@ -90,11 +90,13 @@
                     <label class="title">Embroidery Work:</label>
                     <div class="checkbox-btn">
                         <div class="d-flex">
-                            <input type="checkbox" name="embroidery_work[]" value="On Dress">&nbsp;&nbsp;<h4>On Dress</h4>
+                            <input type="checkbox" name="embroidery_work[]" value="On Dress">&nbsp;&nbsp;<h4>On Dress
+                            </h4>
                         </div>
 
                         <div class="d-flex">
-                            <input type="checkbox" name="embroidery_work[]" value="On Quilt">&nbsp;&nbsp;<h4>On Quilt</h4>
+                            <input type="checkbox" name="embroidery_work[]" value="On Quilt">&nbsp;&nbsp;<h4>On Quilt
+                            </h4>
                         </div>
                     </div>
                     <br><br><br>
@@ -125,6 +127,190 @@
                     <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(4)"></i>
                 </div>
 
+                <!-- -------------Fifth slide ----------------->
+
+                <div id="step5" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(5)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="highlight_color" class="title">Select Highlight Colour:</label>
+                    <br>
+                    <select name="highlight_color" required id="colorSelect">
+                        <option value="" disabled selected hidden>Select an option</option>
+                        <option value="pink">Pink</option>
+                        <option value="light_yellow">Light Yellow</option>
+                        <option value="lavender">Lavender</option>
+                        <option value="pastel_green">Pastel Green</option>
+                        <option value="olive_green">Olive Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                        <option value="beidge">Beidge</option>
+                        <option value="other">Other</option>
+
+                    </select>
+                    <br><br><br>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(5)"></i>
+                </div>
+
+                <!-- -------------six slide ----------------->
+
+                <div id="step6" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(6)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="age_of_baby" class="title">Age of Baby Girl (In Months)</label>
+                    <input type="number" name="age_of_baby" class="form-control input-edit mb-5 text-white"
+                        id="age_of_baby" required>
+                    <br>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(6)"></i>
+                </div>
+
+                <!-- -------------seven slide ----------------->
+
+                <div id="step7" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(7)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="size_required" class="title">Size Required for the Dress:</label>
+                    <br>
+                    <select name="size_required" required id="monthSelect">
+                        <option value="" disabled selected hidden>Select an option</option>
+                        <option value="0-3 Months">0-3 Months</option>
+                        <option value="3-6 Months">3-6 Months</option>
+                        <option value="6-12 Months">6-12 Months</option>
+                        <option value="12-18 Months">12-18 Months</option>
+                        <option value="18-24 Months">18-24 Months</option>
+                        <option value="Custom Measurements">Custom Measurements</option>
+                    </select>
+                    <br><br><br>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(7)"></i>
+                </div>
+
+                <!-- -------------eight slide ----------------->
+
+                <div id="step8" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(8)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label class="title">Do you want custom measurement</label>
+                    <br>
+                    <div class="checkbox-btn">
+                        <div class="d-flex align-items-center" onclick="nextStep(8)">
+                            <input type="radio" name="select_dress" value="yes"
+                                onclick="showCustomFields(this)">&nbsp;&nbsp;<h4>Yes</h4>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <input type="radio" name="select_dress" value="no"
+                                onclick="hideCustomFields(this)">&nbsp;&nbsp;<h4>No</h4>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(8)"></i> -->
+                </div>
+                <!-- -------------nine slide ----------------->
+
+                <div id="step9" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(9)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="chest_circumference" class="title">Chest Circumference</label>
+                    <input type="text" name="chest_circumference" placeholder="Enter your value"
+                        class="form-control input-edit mb-5 text-white" id="chest_circumference">
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(9)"></i>
+                </div>
+                <!-- -------------ten slide ----------------->
+
+                <div id="step10" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(10)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="shoulder_length" class="title">Shoulder to Shoulder Length:</label>
+                    <input type="text" name="shoulder_length" placeholder="Enter your value"
+                        class="form-control input-edit mb-5 text-white" id="shoulder_length">
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(10)"></i>
+                </div>
+                <!-- -------------eleven slide ----------------->
+
+                <div id="step11" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(11)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="neck_circumference" class="title">Neck Circumference:</label>
+                    <input type="text" name="neck_circumference" placeholder="Enter your value"
+                        class="form-control input-edit mb-5 text-white" id="neck_circumference">
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(11)"></i>
+                </div>
+                <!-- -------------twele slide ----------------->
+
+                <div id="step12" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(12)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="shoulder_crotch_length" class="title">Shoulder to crotch length:</label>
+                    <input type="text" name="shoulder_crotch_length" placeholder="Enter your value"
+                        class="form-control input-edit mb-5 text-white" id="shoulder_crotch_length">
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(12)"></i>
+                </div>
+                <!-- -------------thirteen slide ----------------->
+
+                <div id="step13" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(13)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="length_of_dress_required" class="title">Length of the dress required:</label>
+                    <input type="text" name="length_of_dress_required" placeholder="Enter you value"
+                        class="form-control input-edit mb-5 text-white" id="length_of_dress_required">
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(13)"></i>
+                </div>
+                <!-- -------------fourteen slide ----------------->
+
+                <div id="step14" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(14)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
+                    </div>
+                    <label for="head_circumference" class="title">Head Circumference:</label>
+                    <input type="text" name="head_circumference" placeholder="Enter your value" class="form-control input-edit mb-5 text-white" id="head_circumference">
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(14)"></i>
+                </div>
+
                 <!-- -------------second slide ----------------->
 
 
@@ -146,7 +332,7 @@
         var currentStep = 1;
 
         function nextStep(step) {
-            if (step < 9) {
+            if (step < 20) {
                 $('#step' + step).removeClass('active');
                 currentStep = step + 1;
                 $('#step' + currentStep).addClass('active');
@@ -165,7 +351,7 @@
 
         function updateButtonVisibility(step) {
             // Hide all step buttons initially
-            for (let i = 1; i <= 9; i++) {
+            for (let i = 1; i <= 20; i++) {
                 $('#step' + i + 'Buttons').hide();
             }
 
