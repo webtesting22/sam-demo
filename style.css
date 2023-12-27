@@ -23,7 +23,7 @@
     }
 }
 
-.main-container .container .radios-btn {
+.main-container .container .radios-btn, .checkbox-btn {
     display: flex;
     justify-content: space-evenly;
 }
@@ -109,6 +109,7 @@
 .title {
     font-size: 30px;
     font-weight: 600;
+    margin: 2rem 0;
     /* font-family: ; */
 }
 
@@ -157,3 +158,68 @@
     transition: .3s;
     cursor: pointer;
 }
+
+.checkbox-btn input[type="checkbox"] {
+    appearance: none; /* Remove default styles */
+    -webkit-appearance: none; /* Remove default styles on some older browsers */
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    border: 2px solid #fff; /* Set border color to white */
+    background-color: transparent; /* Set background color to transparent */
+    outline: none; /* Remove focus outline */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+
+  /* Style the checkbox when checked */
+  .checkbox-btn input[type="checkbox"]:checked {
+    background-color: #fff; /* Set background color to white when checked */
+  }
+
+  /* Style the checkmark/indicator */
+ .checkbox-btn input[type="checkbox"]::before {
+    content: "\2713"; /* Unicode checkmark character */
+    display: block;
+    text-align: center;
+    line-height: 20px; /* Match the height of the checkbox */
+    color: transparent; /* Set the color to transparent */
+  }
+
+  /* Style the checkmark/indicator when checked */
+  .checkbox-btn input[type="checkbox"]:checked::before {
+    color: #000; /* Set the color to black when checked */
+  }
+
+
+
+  .checkbox-btn input[type="radio"] {
+    appearance: none; /* Remove default styles */
+    -webkit-appearance: none; /* Remove default styles on some older browsers */
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    border: 2px solid #fff; /* Set border color to white */
+    background-color: transparent; /* Set background color to transparent */
+    border-radius: 50%; /* Make it a circle */
+    outline: none; /* Remove focus outline */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+
+  /* Style the radio button when checked */
+  .checkbox-btn input[type="radio"]:checked {
+    background-color: #fff; /* Set background color to white when checked */
+  }
+
+  /* Style the radio dot/indicator */
+  .checkbox-btn input[type="radio"]::before {
+    content: ""; /* Empty content */
+    display: block;
+    width: 20px; /* Adjust the width of the dot */
+    height: 20px; /* Adjust the height of the dot */
+    margin: 5px; /* Center the dot within the circle */
+    border-radius: 50%; /* Make it a circle */
+    background-color: transparent; /* Set dot color to transparent */
+  }
+
+  /* Style the radio dot/indicator when checked */
+  .checkbox-btn input[type="radio"]:checked::before {
+    background-color: #fff; /* Set dot color to white when checked */
+  }

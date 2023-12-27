@@ -18,20 +18,20 @@
 
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
-            
+
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarzero"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                   
+
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    
+
                     <div class="nav-content">
                         <h2>Baby's Name</h2>
                         <p>Type your baby's full name in the given field</p>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -46,128 +46,87 @@
             <div class="container text-center text-white">
 
 
-                <!-- -------------first slide ----------------->
+                <!-- -------------First slide ----------------->
 
                 <div id="step1" class="form-step active">
                     <!-- Your Step 1 content here -->
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(2)"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarzero"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(1)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarzero"></i>
                     </div>
                     <label for="baby_name" class="title">Baby's Name</label>
-                    <input type="text" placeholder="Enter Your Baby's Name" class="form-control mt-5 input-edit mb-5"
+                    <input type="text" placeholder="Enter Your Baby's Name" class="form-control input-edit mb-5"
                         name="baby_name" id="baby_name" required>
                     <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(1)"></i>
                 </div>
 
-                <!-- -------------second slide ----------------->
+                <!-- -------------Second slide ----------------->
 
-                <div id="step2" class="form-step">
+                <div id="step2" class="form-step ">
+
                     <div class="top-bar">
                         <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(2)"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
                     </div>
-                    <label for="baby_gender" class="title">Choose Gender Of Your Baby</label><br>
-                    <div class="radios-btn mt-5 mb-5">
-                        <div>
-                            <input type="radio" class="form-check-input" name="baby_gender" id="baby_girl" value="Girl"
-                                required>
-                            <label for="baby_girl">Girl</label><br>
-                        </div>
-                        <div>
-                            <input type="radio" class="form-check-input" name="baby_gender" id="baby_boy" value="Boy"
-                                required>
-                            <label for="baby_boy">Boy</label><br><br>
-                        </div>
-                    </div>
+                    <label for="model_sample" class="title">Sample of your Model</label>
+                    <input type="file" name="model_sample" id="model_sample"
+                        class="form-control input-edit mb-5 text-white" required>
 
-                    <div class="navigation-buttons">
-
-                        <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(2)"></i>
-                    </div>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(2)"></i>
                 </div>
+
 
                 <!-- -------------Third slide ----------------->
 
-                <div id="step3" class="form-step">
+                <div id="step3" class="form-step ">
+
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(2)"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(3)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
                     </div>
-                    <label for="first_name" class="title">First Name:</label>
-                    <input type="text" class="form-control mt-5 input-edit mb-5" name="first_name" id="first_name"
-                        required>
+                    <label class="title">Embroidery Work:</label>
+                    <div class="checkbox-btn">
+                        <div class="d-flex">
+                            <input type="checkbox" name="embroidery_work[]" value="On Dress">&nbsp;&nbsp;<h4>On Dress</h4>
+                        </div>
+
+                        <div class="d-flex">
+                            <input type="checkbox" name="embroidery_work[]" value="On Quilt">&nbsp;&nbsp;<h4>On Quilt</h4>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(3)"></i>
                 </div>
 
-                <!-- -------------Fourth slide ----------------->
+                <!-- -------------Forth slide ----------------->
 
-                <div id="step4" class="form-step">
+                <div id="step4" class="form-step ">
+
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(2)"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(4)"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarone"></i>
                     </div>
-                    <label for="last_name" class="title">Last Name:</label>
-                    <input type="text" class="form-control mt-5 input-edit mb-5" name="last_name" id="last_name"
-                        required><br><br>
+                    <label class="title">Select a Dress</label>
+
+                    <div class="checkbox-btn">
+                        <div class="d-flex">
+                            <input type="radio" name="select_dress" value="Pure White">&nbsp;&nbsp;<h4>Pure White</h4>
+                        </div>
+
+                        <div class="d-flex">
+                            <input type="radio" name="select_dress" value="Off White">&nbsp;&nbsp;<h4>Off White</h4>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(4)"></i>
                 </div>
 
-                <!-- -------------Fifth slide ----------------->
+                <!-- -------------second slide ----------------->
 
-                <div id="step5" class="form-step">
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(2)"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn"></i>
-                    </div>
-                    <label for="phone_number" class="title">Phone (WhatsApp No.):</label>
-                    <input type="number" class="form-control mt-5 input-edit mb-5" name="phone_number" id="phone_number"
-                        required><br><br>
-                </div>
-
-                <!-- -------------Sixth slide ----------------->
-
-                <div id="step6" class="form-step">
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(2)"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn"></i>
-                    </div>
-                    <label for="email" class="title">Email address:</label>
-                    <input type="email" class="form-control mt-5 input-edit mb-5" name="email" id="email"
-                        required><br><br>
-                </div>
-
-                <!-- -------------Seventh slide ----------------->
-
-                <div id="step7" class="form-step">
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(2)"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn"></i>
-                    </div>
-                    <label for="shipping_address" class="title">Shipping Address:</label>
-                    <textarea name="shipping_address" class="form-control mt-5 input-edit mb-5" id="shipping_address"
-                        required></textarea><br><br>
-                </div>
-
-                <!-- -------------Eighth slide ----------------->
-
-                <div id="step8" class="form-step">
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(2)"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn"></i>
-                    </div>
-                    <label for="city" class="title">City:</label>
-                    <input type="text" class="form-control mt-5 input-edit mb-5" name="city" id="city" required>
-                </div>
-
-                <!-- -------------Nineth slide ----------------->
-
-                <div id="step9" class="form-step">
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn" onclick="prevStep(2)"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn"></i>
-                    </div>
-                    <label for="pincode" class="title">Pincode:</label>
-                    <input type="number" class="form-control mt-5 input-edit mb-5" name="pincode" id="pincode" required>
-                </div>
 
                 <!---------------- Navigation Buttons ------------>
                 <!-- <div style="display: flex; justify-content: space-evenly; margin-top: 2rem;">
