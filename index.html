@@ -298,11 +298,11 @@
                 <div class="offcanvas-body">
 
                     <div class="nav-content">
-                        <h2>Foot length</h2>
-                        <br>
+                        <h2>Shoulder to crotch length</h2>
+                        <!-- <br>
                         <img src="./images/image 5 (2).jpg" alt="" width="100%">
                         <br><br>
-                        <p>Step by step method to measure the shoulder to shoulder length of your baby.</p>
+                        <p>Step by step method to measure the shoulder to shoulder length of your baby.</p> -->
 
                     </div>
 
@@ -322,8 +322,8 @@
                 <div class="offcanvas-body">
 
                     <div class="nav-content">
-                        <h2>Expected Delivery</h2>
-                        <p>Please provude a date in which you're expecting the order to be delivered.</p>
+                        <h2>Length of thedress
+                            required</h2>
 
                     </div>
 
@@ -364,11 +364,9 @@
                 <div class="offcanvas-body">
 
                     <div class="nav-content">
-                        <h2>Combo</h2>
-                        <p>Thisef will be a combo Purchase, including the selected outfit for your baby and a
-                            complimentary
-                            we provide the following items for you. <br>If you want to remove a specific product you can
-                            just click the clear button and the item will be automatically removed.</p>
+                       <h2>Foot Length</h2>
+                       <img src="./images/image 5 (2).jpg" alt="">
+                       <p>Step by step method to measure the shoulder to shoulder length of your baby.</p>
 
                     </div>
 
@@ -388,12 +386,9 @@
                 <div class="offcanvas-body">
 
                     <div class="nav-content">
-                        <h2>Other Accessories</h2>
-                        <p>If you want any other accessories for you baby's baptism other than the dress, we provide
-                            these
-                            ready to used products. <br>Please select the item from the screen and it automatically
-                            added to
-                            the list. </p>
+                        <h2>Expected Delivery
+                            </h2>
+                        <p>Please provude a date in which you're expecting the order to be delivered.</p>
 
                     </div>
 
@@ -1099,7 +1094,7 @@
 
                     <div class="top-bar">
                         <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content43', 'content44')"></i>
+                            onclick="toggleSlides('content43', 'content42')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarten"></i>
                     </div>
@@ -1199,6 +1194,7 @@
 
                 <!-- -------------sixteen slide ----------------->
 
+            
                 <div id="content16" class="form-step">
 
                     <div class="top-bar">
@@ -1210,11 +1206,11 @@
                     <label for="expected_delivery_date" class="title">Expected <span>Delivery Date</span></label>
                     <input type="date" name="expected_delivery_date" class="mb-5"
                         style="width: 100%; text-align: center;" id="expected_delivery_date" required
-                        onchange="toggleArrowButton3()">
+                      onchange="toggleArrowButton3()">
 
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content16', 'content17')"></i>
+                    <!-- <i class="bi bi-arrow-right-circle-fill arrowButtonContainerr" id="nextBtn" style="display: none;" 
+                        </i> -->
                 </div>
                 <!-- -------------seventeen slide ----------------->
 
@@ -1731,15 +1727,31 @@
             }
         }
 
-        function toggleArrowButton3() {
-            var deliveryInput = document.getElementById('expected_delivery_date');
-            var nextbtn = document.getElementById('nextBtn');
+        document.getElementById('expected_delivery_date').addEventListener('input', function () {
+        var dateInput = this.value;
+        var nextBtn = document.getElementById('nextBtn');
+
+        if (dateInput) {
+            // If a date is selected, show the right side arrow button
+            nextBtn.style.display = 'inline-block';
+        } else {
+            // If no date is selected, hide the right side arrow button
+            nextBtn.style.display = 'none';
+        }
+    });
+
+
+
+
+    function toggleArrowButton3() {
+            var birthdayInput = document.getElementById('expected_delivery_date');
+            var arrowButtonContainer = document.getElementsByClassName('arrowButtonContainerr');
 
             // Check if the birthday input has a value
-            if (deliveryInput.value.trim() !== "") {
-                nextbtn.style.display = 'block';
+            if (birthdayInput.value.trim() !== "") {
+                arrowButtonContainer.style.display = 'block';
             } else {
-                nextbtn.style.display = 'none';
+                arrowButtonContainer.style.display = 'none';
             }
         }
 
@@ -1754,8 +1766,6 @@
                 arrowButtonContainer.style.display = 'none';
             }
         }
-
-
 
     </script>
 </body>
