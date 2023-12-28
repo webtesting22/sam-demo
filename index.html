@@ -70,9 +70,8 @@
                 <div class="offcanvas-body">
 
                     <div class="nav-content">
-                        <h2>Outfit Modal</h2>
-                        <p>You can explore our Baby Boy's gallery to select a design and share it with us or if you have
-                            any other design please upload the image in the Choose file option</p>
+                        <h2>Choose Gender Of Your Baby</h2>
+
                     </div>
 
                 </div>
@@ -92,10 +91,10 @@
 
                     <div class="nav-content">
 
-                        <h2>Embroidery Work</h2>
-                        <p>This is an additional service we provide like, the name will be embroidered in the Quilt or
-                            in
-                            Dress. <br> Please click the checkbox to avail this service</p>
+
+                        <h2>Outfit Modal</h2>
+                        <p>You can explore our Baby Boy's gallery to select a design and share it with us or if you have
+                            any other design please upload the image in the Choose file option</p>
 
                     </div>
 
@@ -638,7 +637,7 @@
                         <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
                             onclick="toggleSlides('content26', 'content1')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbarone"></i>
+                            data-bs-target="#offcanvasNavbartwo"></i>
                     </div>
                     <label for="baby_gender" class="title">Choose Gender Of <span>Your Baby</span></label><br>
                     <div class="checkbox-btn">
@@ -656,6 +655,9 @@
                         onclick="toggleSlides('content26', 'content2')"></i>
                 </div>
 
+
+
+                <!-------------- boys slides ---------->
 
                 <div id="content2" class="form-step ">
 
@@ -676,25 +678,7 @@
                         onclick="toggleSlides('content2', 'content3')"></i>
                 </div>
 
-                <!----------------------------------- screens for girls ------------------------------------>
 
-                <div id="content35" class="form-step">
-
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content35', 'content26')"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbartwo"></i>
-                    </div>
-                    <label for="model_sample" class="form-label title">Sample of your <span>Model</span></label>
-                    <div class="d-flex justify-content-evenly">
-                        <!-- <a href="">Gallery</a> -->
-                        <input class="form-control" type="file" name="model_sample" id="model_sample">
-                    </div>
-                    <br><br>
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content35', 'content36')"></i>
-                </div>
                 <!-- boys 3 -->
                 <div id="content3" class="form-step ">
 
@@ -702,49 +686,28 @@
                         <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
                             onclick="toggleSlides('content3', 'content2')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbarthree"></i>
+                            data-bs-target="#offcanvasNavbarfour"></i>
                     </div>
                     <label class="title">Embroidery <span>Work</span></label>
                     <div class="checkbox-btn">
-                        <div class="d-flex" onclick="toggleSlides('content3', 'content4')">
+                        <div class="d-flex">
                             <input type="checkbox" name="embroidery_work[]" value="On Dress">&nbsp;&nbsp;<h4>On
                                 Dress
                             </h4>
                         </div>
 
-                        <div class="d-flex" onclick="toggleSlides('content3', 'content4')">
+                        <div class="d-flex">
                             <input type="checkbox" name="embroidery_work[]" value="On Quilt">&nbsp;&nbsp;<h4>On
                                 Quilt
                             </h4>
                         </div>
                     </div>
-                    <br><br><br>
+                    <br><br>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content3', 'content4')"></i>
                 </div>
 
-                <!-- ----- girl thirtysix screen------- -->
 
-                <div id="content36" class="form-step ">
-
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content36', 'content35')"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbarthree"></i>
-                    </div>
-                    <label class="title">Embroidery <span>Work</span></label>
-                    <div class="checkbox-btn">
-                        <div class="d-flex">
-                            <input type="checkbox" name="embroidery_work[]" value="On Dress">&nbsp;&nbsp;<h4>On Dress
-                            </h4>
-                        </div>
-
-                        <div class="d-flex" onclick="toggleSlides('content36', 'content37')">
-                            <input type="checkbox" name="embroidery_work[]" value="On Quilt">&nbsp;&nbsp;<h4>On Quilt
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <br><br><br>
                 <!-- boys 4 -->
                 <div id="content4" class="form-step ">
 
@@ -766,36 +729,11 @@
                             <input type="radio" name="select_dress" value="Off White">&nbsp;&nbsp;<h4>Off White</h4>
                         </div>
                     </div>
-                    <br><br><br>
+
 
                 </div>
 
-                <!-- ------------- girl thirtyseven slide ----------------->
 
-                <div id="content37" class="form-step ">
-
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content37', 'content36')"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbarfour"></i>
-                    </div>
-                    <label class="title">Select a <span>Dress</span></label>
-
-                    <div class="checkbox-btn">
-                        <div class="d-flex">
-                            <input type="radio" name="select_dress" value="Pure White">&nbsp;&nbsp;<h4>Pure White
-                            </h4>
-                        </div>
-
-                        <div class="d-flex">
-                            <input type="radio" name="select_dress" value="Off White">&nbsp;&nbsp;<h4>Off White</h4>
-                        </div>
-                    </div>
-                    <br><br><br>
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content37', 'content38')"></i>
-                </div>
 
                 <!-- boys 5 -->
                 <div id="content5" class="form-step">
@@ -825,6 +763,209 @@
                     <br><br><br>
                     <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                         onclick="toggleSlides('content5', 'content6')"></i>
+                </div>
+
+
+
+                <!-- boys six -->
+
+                <div id="content6" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content6', 'content5')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarsix"></i>
+                    </div>
+                    <label for="age_of_baby" class="title">Age of <span>Baby Girl</span> (In Months)</label>
+                    <input type="number" name="age_of_baby" placeholder="Enter in Months"
+                        class="form-control input-edit mb-5 text-white input3" id="age_of_baby" required
+                        oninput="toggleButton('input3', 'button3')">
+                    <br>
+                    <i class="bi bi-arrow-right-circle-fill button3" style="display: none;" id="nextBtn"
+                        onclick="toggleSlides('content6', 'content7')"></i>
+                </div>
+
+
+
+                <!-- boys 7 slide -->
+                <div id="content7" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content7', 'content6')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarseven"></i>
+                    </div>
+                    <label for="size_required" class="title">Size Required <span>for the Dress</span>:</label>
+                    <br>
+                    <select name="size_required" required id="monthSelect">
+                        <option value="" disabled selected hidden>Select an option</option>
+                        <option value="0-3 Months">0-3 Months</option>
+                        <option value="3-6 Months">3-6 Months</option>
+                        <option value="6-12 Months">6-12 Months</option>
+                        <option value="12-18 Months">12-18 Months</option>
+                        <option value="18-24 Months">18-24 Months</option>
+                        <option value="Custom Measurements">Custom Measurements</option>
+                    </select>
+                    <br><br><br>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content7', 'content8')"></i>
+                </div>
+
+
+
+                <!-- eight boys slide -->
+                <div id="content8" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content8', 'content7')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbareight"></i>
+                    </div>
+                    <label class="title">Do you want <span>custom measurement</span></label>
+                    <br>
+                    <div class="checkbox-btn">
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content8', 'content9')">
+                            <input type="radio" name="select_dress" value="yes"
+                                onclick="showCustomFields(this)">&nbsp;&nbsp;<h4>Yes</h4>
+                        </div>
+
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content8', 'content16')">
+                            <input type="radio" name="select_dress" value="no"
+                                onclick="hideCustomFields(this)">&nbsp;&nbsp;<h4>No</h4>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+
+
+
+                <!-- boys 9 slide -->
+                <div id="content9" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content9', 'content8')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarnine"></i>
+                    </div>
+                    <label for="chest_circumference" class="title">Chest <span>Circumference</span></label>
+                    <input type="text" name="chest_circumference" placeholder="Enter your value"
+                        class="form-control input-edit mb-5 text-white" id="chest_circumference">
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content9', 'content10')"></i>
+                </div>
+
+
+                <!-- boys 10 slide -->
+                <div id="content10" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content10', 'content9')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarten"></i>
+                    </div>
+                    <label for="shoulder_length" class="title">Shoulder to <span>Shoulder Length</span></label>
+                    <input type="text" name="shoulder_length" placeholder="Enter your value"
+                        class="form-control input-edit mb-5 text-white" id="shoulder_length">
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content10', 'content11')"></i>
+                </div>
+
+
+
+                <!-- boys 11 slide -->
+                <div id="content11" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content11', 'content10')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbareleven"></i>
+                    </div>
+                    <label for="neck_circumference" class="title">Neck <span>Circumference</span></label>
+                    <input type="text" name="neck_circumference" placeholder="Enter your value"
+                        class="form-control input-edit mb-5 text-white" id="neck_circumference">
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content11', 'content12')"></i>
+                </div>
+
+
+                <!----------------------------------- screens for girls ------------------------------------>
+
+                <div id="content35" class="form-step">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content35', 'content26')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarthree"></i>
+                    </div>
+                    <label for="model_sample" class="form-label title">Sample of your <span>Model</span></label>
+                    <div class="d-flex justify-content-evenly">
+                        <!-- <a href="">Gallery</a> -->
+                        <input class="form-control" type="file" name="model_sample" id="model_sample">
+                    </div>
+                    <br><br>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content35', 'content36')"></i>
+                </div>
+
+                <!-- ----- girl thirtysix screen------- -->
+
+                <div id="content36" class="form-step ">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content36', 'content35')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarthree"></i>
+                    </div>
+                    <label class="title">Embroidery <span>Work</span></label>
+                    <div class="checkbox-btn">
+                        <div class="d-flex">
+                            <input type="checkbox" name="embroidery_work[]" value="On Dress">&nbsp;&nbsp;<h4>On Dress
+                            </h4>
+                        </div>
+
+                        <div class="d-flex" onclick="toggleSlides('content36', 'content37')">
+                            <input type="checkbox" name="embroidery_work[]" value="On Quilt">&nbsp;&nbsp;<h4>On Quilt
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------- girl thirtyseven slide ----------------->
+
+                <div id="content37" class="form-step ">
+
+                    <div class="top-bar">
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
+                            onclick="toggleSlides('content37', 'content36')"></i>
+                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarfour"></i>
+                    </div>
+                    <label class="title">Select a <span>Dress</span></label>
+
+                    <div class="checkbox-btn">
+                        <div class="d-flex">
+                            <input type="radio" name="select_dress" value="Pure White">&nbsp;&nbsp;<h4>Pure White
+                            </h4>
+                        </div>
+
+                        <div class="d-flex">
+                            <input type="radio" name="select_dress" value="Off White">&nbsp;&nbsp;<h4>Off White</h4>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content37', 'content38')"></i>
                 </div>
 
                 <!-- ------------- girl thirty eight slide ----------------->
@@ -858,25 +999,6 @@
                         onclick="toggleSlides('content38', 'content39')"></i>
                 </div>
 
-                <!-- boys six -->
-
-                <div id="content6" class="form-step">
-
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content6', 'content5')"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbarsix"></i>
-                    </div>
-                    <label for="age_of_baby" class="title">Age of <span>Baby Girl</span> (In Months)</label>
-                    <input type="number" name="age_of_baby" placeholder="Enter in Months"
-                        class="form-control input-edit mb-5 text-white input3" id="age_of_baby" required
-                        oninput="toggleButton('input3', 'button3')">
-                    <br>
-                    <i class="bi bi-arrow-right-circle-fill button3" style="display: none;" id="nextBtn"
-                        onclick="toggleSlides('content6', 'content7')"></i>
-                </div>
-
 
                 <!-- ------------- girl thiry nine slide ----------------->
 
@@ -895,31 +1017,6 @@
                     <br>
                     <i class="bi bi-arrow-right-circle-fill button2" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content39', 'content40')"></i>
-                </div>
-
-                <!-- boys 7 slide -->
-                <div id="content7" class="form-step">
-
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content7', 'content6')"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbarseven"></i>
-                    </div>
-                    <label for="size_required" class="title">Size Required <span>for the Dress</span>:</label>
-                    <br>
-                    <select name="size_required" required id="monthSelect">
-                        <option value="" disabled selected hidden>Select an option</option>
-                        <option value="0-3 Months">0-3 Months</option>
-                        <option value="3-6 Months">3-6 Months</option>
-                        <option value="6-12 Months">6-12 Months</option>
-                        <option value="12-18 Months">12-18 Months</option>
-                        <option value="18-24 Months">18-24 Months</option>
-                        <option value="Custom Measurements">Custom Measurements</option>
-                    </select>
-                    <br><br><br>
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content7', 'content8')"></i>
                 </div>
 
                 <!-- -------------girl fourty slide ----------------->
@@ -946,31 +1043,6 @@
                     <br><br><br>
                     <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                         onclick="toggleSlides('content40', 'content41')"></i>
-                </div>
-
-                <!-- eight boys slide -->
-                <div id="content8" class="form-step">
-
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content8', 'content7')"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbareight"></i>
-                    </div>
-                    <label class="title">Do you want <span>custom measurement</span></label>
-                    <br>
-                    <div class="checkbox-btn">
-                        <div class="d-flex align-items-center" onclick="toggleSlides('content8', 'content9')">
-                            <input type="radio" name="select_dress" value="yes"
-                                onclick="showCustomFields(this)">&nbsp;&nbsp;<h4>Yes</h4>
-                        </div>
-
-                        <div class="d-flex align-items-center" onclick="toggleSlides('content8', 'content16')">
-                            <input type="radio" name="select_dress" value="no"
-                                onclick="hideCustomFields(this)">&nbsp;&nbsp;<h4>No</h4>
-                        </div>
-                    </div>
-                    <br><br>
                 </div>
 
 
@@ -1001,24 +1073,6 @@
                     <!-- <i class="bi bi-arrow-right-circle-fill" id="nextBtn" onclick="nextStep(8)"></i> -->
                 </div>
 
-                <!-- boys 9 slide -->
-                <div id="content9" class="form-step">
-
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content9', 'content8')"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbarnine"></i>
-                    </div>
-                    <label for="chest_circumference" class="title">Chest <span>Circumference</span></label>
-                    <input type="text" name="chest_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white" id="chest_circumference">
-
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content9', 'content10')"></i>
-                </div>
-
-
                 <!-- -------------girl fourtytwo slide ----------------->
 
                 <div id="content42" class="form-step">
@@ -1036,23 +1090,6 @@
                     <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                         onclick="toggleSlides('content42', 'content43')"></i>
                 </div>
-                <!-- boys 10 slide -->
-                <div id="content10" class="form-step">
-
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content10', 'content9')"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbarten"></i>
-                    </div>
-                    <label for="shoulder_length" class="title">Shoulder to <span>Shoulder Length</span></label>
-                    <input type="text" name="shoulder_length" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white" id="shoulder_length">
-
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content10', 'content11')"></i>
-                </div>
-
                 <!-- -------------girl fourtythree slide ----------------->
 
                 <div id="content43" class="form-step">
@@ -1069,23 +1106,6 @@
 
                     <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                         onclick="toggleSlides('content43', 'content44')"></i>
-                </div>
-
-                <!-- boys 11 slide -->
-                <div id="content11" class="form-step">
-
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content11', 'content10')"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbareleven"></i>
-                    </div>
-                    <label for="neck_circumference" class="title">Neck <span>Circumference</span></label>
-                    <input type="text" name="neck_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white" id="neck_circumference">
-
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content11', 'content12')"></i>
                 </div>
 
                 <!-- -------------girl fourtyfour slide ----------------->
@@ -1190,7 +1210,7 @@
                         onchange="toggleArrowButton3()">
 
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" style="display: none;"
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                         onclick="toggleSlides('content16', 'content17')"></i>
                 </div>
                 <!-- -------------seventeen slide ----------------->
@@ -1276,37 +1296,47 @@
                     <br>
                     <br>
                     <div class="accesories-container">
-                        <div>
-                            <input type="checkbox" name="optional_accessories[]" class="item-checkbox"
-                                value="Decorated Basket" id="decorated_basket">
-                            <label for="decorated_basket">
+                        <div style="display: flex; flex-direction: row;">
+                            <div class="checkbox-btn me-5">
+                                <input type="checkbox" name="optional_accessories[]" class="item-checkbox"
+                                    value="Decorated Basket" id="decorated_basket">
+                            </div>
+                            <label for="decorated_basket"
+                                style="display: flex; justify-content: center; align-items: center;">
                                 <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/IMG_1014-1-400x300-1.webp"
                                     alt="Decorated Basket Image"
                                     style="width: 100px; height: 100px; object-fit: cover;">
-                                Decorated Basket: ₹1050.00 - ₹1850.00 + Shipping
+                                <p>Decorated Basket: ₹1050.00 - ₹1850.00 + Shipping</p>
                             </label>
                         </div>
                         <br>
                         <br>
 
-                        <div>
-                            <input type="checkbox" name="optional_accessories[]" class="item-checkbox"
-                                value="Acrylic Box" id="acrylic_box">
-                            <label for="acrylic_box">
+                        <div style="display: flex; flex-direction: row;">
+                            <div class="checkbox-btn me-5">
+                                <input type="checkbox" name="optional_accessories[]" class="item-checkbox"
+                                    value="Acrylic Box" id="acrylic_box">
+                            </div>
+
+                            <label for="acrylic_box"
+                                style="display: flex; justify-content: center; align-items: center;">
                                 <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/PHOTO-2022-04-02-09-07-09-1.jpg"
                                     alt="Acrylic Box Image" style="width: 100px; height: 100px; object-fit: cover;">
                                 Acrylic
                                 box
                                 with baby’s name: ₹1250.00 - ₹1850.00
                             </label>
-                        </div>
+                        </div style="display: flex; flex-direction: row;">
                         <br>
                         <br>
 
-                        <div>
-                            <input type="checkbox" name="optional_accessories[]" class="item-checkbox"
-                                value="Custom Candle" id="custom_candle">
-                            <label for="custom_candle">
+                        <div style="display: flex; flex-direction: row;">
+                            <div class="checkbox-btn me-5">
+                                <input type="checkbox" name="optional_accessories[]" class="item-checkbox"
+                                    value="Custom Candle" id="custom_candle">
+                            </div>
+                            <label for="custom_candle"
+                                style="display: flex; justify-content: center; align-items: center;">
                                 <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/IMG_1262-2-400x300-1.webp"
                                     alt="Custom Candle Image" style="width: 100px; height: 100px; object-fit: cover;">
                                 Custom-made name-printed candle: ₹ 1200 - ₹1850.00
@@ -1315,10 +1345,13 @@
                         <br>
                         <br>
 
-                        <div>
-                            <input type="checkbox" name="optional_accessories[]" class="item-checkbox"
-                                value="Baby Pillow" id="baby_pillow">
-                            <label for="baby_pillow">
+                        <div style="display: flex; flex-direction: row;">
+                            <div class="checkbox-btn me-5">
+                                <input type="checkbox" name="optional_accessories[]" class="item-checkbox"
+                                    value="Baby Pillow" id="baby_pillow">
+                            </div>
+                            <label for="baby_pillow"
+                                style="display: flex; justify-content: center; align-items: center;">
                                 <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/Pillow-4-400x300-1.webp"
                                     alt="Baby Pillow Image" style="width: 100px; height: 100px; object-fit: cover;">
                                 Pillow
@@ -1329,10 +1362,13 @@
                         <br>
                         <br>
 
-                        <div>
-                            <input type="checkbox" name="optional_accessories[]" class="item-checkbox"
-                                value="Wooden Box" id="wooden_box">
-                            <label for="wooden_box">
+                        <div style="display: flex; flex-direction: row;">
+                            <div class="checkbox-btn me-5">
+                                <input type="checkbox" name="optional_accessories[]" class="item-checkbox"
+                                    value="Wooden Box" id="wooden_box">
+                            </div>
+                            <label for="wooden_box"
+                                style="display: flex; justify-content: center; align-items: center;">
                                 <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/241392270_831506927731543_4270040596047820136_n-400x300-1-1.webp"
                                     alt="Wooden Box Image" style="width: 100px; height: 100px; object-fit: cover;">
                                 Wooden
@@ -1690,14 +1726,14 @@
         }
 
         function toggleArrowButton3() {
-            var birthdayInput = document.getElementById('expected_delivery_date');
-            var arrowButtonContainer = document.getElementById('arrowButtonContainerr');
+            var deliveryInput = document.getElementById('expected_delivery_date');
+            var nextbtn = document.getElementById('nextBtn');
 
             // Check if the birthday input has a value
-            if (birthdayInput.value.trim() !== "") {
-                arrowButtonContainer.style.display = 'block';
+            if (deliveryInput.value.trim() !== "") {
+                nextbtn.style.display = 'block';
             } else {
-                arrowButtonContainer.style.display = 'none';
+                nextbtn.style.display = 'none';
             }
         }
 
