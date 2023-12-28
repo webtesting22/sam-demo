@@ -651,8 +651,8 @@
                         </div>
                     </div>
                     <br>
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content26', 'content2')"></i>
+                    <!-- <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content26', 'content2')"></i> -->
                 </div>
 
 
@@ -663,9 +663,9 @@
 
                     <div class="top-bar">
                         <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content2', 'content1')"></i>
+                            onclick="toggleSlides('content2', 'content26')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbartwo"></i>
+                            data-bs-target="#offcanvasNavbarthree"></i>
                     </div>
                     <label for="model_sample" class="form-label title">Sample of your <span>Model</span></label>
                     <div class="d-flex justify-content-evenly">
@@ -934,11 +934,14 @@
                             </h4>
                         </div>
 
-                        <div class="d-flex" onclick="toggleSlides('content36', 'content37')">
+                        <div class="d-flex" >
                             <input type="checkbox" name="embroidery_work[]" value="On Quilt">&nbsp;&nbsp;<h4>On Quilt
                             </h4>
                         </div>
                     </div>
+                    <br><br>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content36', 'content37')"></i>
                 </div>
 
                 <!-- ------------- girl thirtyseven slide ----------------->
@@ -1284,15 +1287,15 @@
                 </div>
                 <!-- -------------nineteen slide ----------------->
 
-                <div id="content19" class="form-step">
+                <div id="content19" class="form-step" style="margin-top: 60px;">
 
-                    <div class="top-bar">
+                    <div class="top-bar m-0 p-0">
                         <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
                             onclick="toggleSlides('content19', 'content27')"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarnineteen"></i>
                     </div>
-                    <label class="title">Optional <span>accessories</span></label>
+                    <label class="title m-0">Optional <span>accessories</span></label>
                     <br>
                     <br>
                     <div class="accesories-container">
@@ -1305,7 +1308,7 @@
                                 style="display: flex; justify-content: center; align-items: center;">
                                 <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/IMG_1014-1-400x300-1.webp"
                                     alt="Decorated Basket Image"
-                                    style="width: 100px; height: 100px; object-fit: cover;">
+                                    style="width: 120px; height: 120px; object-fit: cover;">
                                 <p>Decorated Basket: ₹1050.00 - ₹1850.00 + Shipping</p>
                             </label>
                         </div>
@@ -1321,7 +1324,7 @@
                             <label for="acrylic_box"
                                 style="display: flex; justify-content: center; align-items: center;">
                                 <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/PHOTO-2022-04-02-09-07-09-1.jpg"
-                                    alt="Acrylic Box Image" style="width: 100px; height: 100px; object-fit: cover;">
+                                    alt="Acrylic Box Image" style="width: 120px; height: 120px; object-fit: cover;">
                                 Acrylic
                                 box
                                 with baby’s name: ₹1250.00 - ₹1850.00
@@ -1338,7 +1341,7 @@
                             <label for="custom_candle"
                                 style="display: flex; justify-content: center; align-items: center;">
                                 <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/IMG_1262-2-400x300-1.webp"
-                                    alt="Custom Candle Image" style="width: 100px; height: 100px; object-fit: cover;">
+                                    alt="Custom Candle Image" style="width: 120px; height: 120px; object-fit: cover;">
                                 Custom-made name-printed candle: ₹ 1200 - ₹1850.00
                             </label>
                         </div>
@@ -1353,7 +1356,7 @@
                             <label for="baby_pillow"
                                 style="display: flex; justify-content: center; align-items: center;">
                                 <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/Pillow-4-400x300-1.webp"
-                                    alt="Baby Pillow Image" style="width: 100px; height: 100px; object-fit: cover;">
+                                    alt="Baby Pillow Image" style="width: 120px; height: 120px; object-fit: cover;">
                                 Pillow
                                 with
                                 baby’s name: ₹850.00
@@ -1370,7 +1373,7 @@
                             <label for="wooden_box"
                                 style="display: flex; justify-content: center; align-items: center;">
                                 <img src="https://baptismdressindia.com/wp-content/uploads/2023/12/241392270_831506927731543_4270040596047820136_n-400x300-1-1.webp"
-                                    alt="Wooden Box Image" style="width: 100px; height: 100px; object-fit: cover;">
+                                    alt="Wooden Box Image" style="width: 120px; height: 120px; object-fit: cover;">
                                 Wooden
                                 Box:
                                 ₹ 2500.00
@@ -1500,11 +1503,11 @@
                     <label for="mode_of_delivery" class="title">Get Reminder
                         <span>WhatsApp No. *</span></label>
                     <input type="number" name="whatsapp_number" placeholder="Enter you number"
-                        class="form-control input-edit mb-5 text-white" id="whatsapp_number" required>
+                        class="form-control input-edit mb-5 text-white input4" id="whatsapp_number" oninput="toggleButton('input4', 'button4')" required>
                     <br>
 
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button4" id="nextBtn" style="display: none;"
                         onclick="toggleSlides('content25', 'content28')"></i>
                 </div>
                 <!-- -------------twentyeight slide ----------------->

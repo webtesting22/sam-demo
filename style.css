@@ -222,9 +222,9 @@
   /* Remove default styles */
   -webkit-appearance: none;
   /* Remove default styles on some older browsers */
-  width: 20px;
+  width: 30px;
   /* Adjust the width as needed */
-  height: 20px;
+  height: 30px;
   /* Adjust the height as needed */
   border: 2px solid #fff;
   /* Set border color to white */
@@ -284,7 +284,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 40vh;
+  height: 55vh;
   overflow: auto;
 }
 
