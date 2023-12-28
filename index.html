@@ -663,9 +663,14 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbartwo"></i>
                     </div>
-                    <label for="model_sample" class="title">Sample of your <span>Model</span></label>
-                    <input type="file" name="model_sample" id="model_sample"
-                        class="form-control input-edit mb-5 text-white" required>
+                    <label for="model_sample" class="form-label title">Sample of your <span>Model</span></label>
+                    <div class="d-flex justify-content-evenly">
+                        <a href="">Gallery</a>
+                        <input class="form-control" type="file" name="model_sample" id="model_sample" style="background-color: transparent; color: white;">
+                    </div>
+                  
+                    <!-- <label for="model_sample" class="title">Sample of your <span>Model</span></label>
+                    <input type="file" name="model_sample" id="model_sample" required> -->
 
                     <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                         onclick="toggleSlides('content2', 'content3')"></i>

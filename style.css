@@ -275,3 +275,12 @@
     display: flex;
     align-items: center;
   }
+
+  .file-selected {
+    background-color: #2ecc71; /* Change the background color when a file is selected */
+  }
+
+  #model_sample::file-selector-button{
+    background-color: transparent;
+    color: white;
+  }
