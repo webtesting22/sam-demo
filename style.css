@@ -16,7 +16,7 @@
 }
 
 .main-container .container {
-  width: 30%;
+  width: 50%;
 }
 
 @media(max-width:800px) {
@@ -111,15 +111,14 @@
 #offcanvasNavbarfiftyone,
 #offcanvasNavbarfiftytwo,
 #offcanvasNavbarfiftythree,
-#offcanvasNavbarfiftyfour
- {
+#offcanvasNavbarfiftyfour {
   --bs-offcanvas-bg: none;
   backdrop-filter: blur(14px);
   box-shadow: rgba(11, 11, 11, 0.2) 0px 7px 29px 0px;
 }
 
 .title {
-  font-size: 35px;
+  font-size: 39px;
   font-weight: 400;
   margin: 3rem 0;
   /* font-family: ; */
@@ -136,8 +135,11 @@
   border-top: none;
   border-left: none;
   border-right: none;
+  border-bottom: 2px solid white;
   border-radius: 0px;
   text-align: center;
+  width: 300px;
+  margin: auto;
 }
 
 .input-edit:focus,
@@ -148,7 +150,7 @@
   border-right: none;
   border-radius: 0px;
   box-shadow: none;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 .input-edit::placeholder {
@@ -163,7 +165,7 @@
 #nextBtn,
 #prevBtn,
 #infoBtn {
-  font-size: 30px;
+  font-size: 35px;
   cursor: pointer;
   transition: .3s;
 
@@ -262,16 +264,37 @@
   /* Set dot color to white when checked */
 }
 
-#colorSelect option,
-#monthSelect option {
+/* #girl_colorSelect option,
+#boy_colorSelect option,
+#girl_monthSelect option {
   background-color: black;
   backdrop-filter: blur(14px);
   box-shadow: rgba(11, 11, 11, 0.2) 0px 7px 29px 0px;
 
+} */
+#monthSelect {
+  background-color: transparent;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  text-align: center;
 }
 
-#colorSelect,
-#monthSelect {
+
+#monthSelect option {
+  background-color: black;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  text-align: center;
+}
+
+
+#colorSelect {
   background-color: transparent;
   border-right: none;
   border-left: none;
@@ -282,14 +305,26 @@
 
 }
 
-#colorSelect:focus,
-#colorSelect:active {
+
+#colorSelect option {
+  background-color: black;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  text-align: center;
+
+}
+
+/* #boy_colorSelect:focus,
+#girl_colorSelect:active {
   background-color: transparent;
   border-right: none;
   border-left: none;
   border-top: none;
   color: rgb(255, 255, 255);
-}
+} */
 
 .accesories-container {
   display: flex;
@@ -326,6 +361,7 @@
 #image_of_specific_accessories,
 #image_of_optional_accessories,
 #model_sample,
+
 #name_printed_candle_model {
   width: 280px;
   background-color: transparent;
@@ -335,6 +371,7 @@
 
 #image_of_specific_accessories::file-selector-button,
 #model_sample::file-selector-button,
+
 #image_of_optional_accessories::file-selector-button,
 #name_printed_candle_model::file-selector-button {
   background-color: transparent;
@@ -357,11 +394,20 @@
   }
 }
 
-#Submit_btn{
+#Submit_btn {
   background: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 10px 20px;
-    backdrop-filter: blur(106px);
-    border-radius: 30px;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  backdrop-filter: blur(106px);
+  border-radius: 30px;
+}
+
+.carousel-item h1 {
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.carousel-item .design p {
+  font-size: 18px;
 }
