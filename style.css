@@ -150,7 +150,7 @@
   border-right: none;
   border-radius: 0px;
   box-shadow: none;
-  border-bottom: 2px solid white;
+  /* border-bottom: 2px solid white; */
 }
 
 .input-edit::placeholder {
@@ -273,6 +273,16 @@
 
 } */
 #monthSelect {
+  background-color: transparent;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  text-align: center;
+  width: 300px;
+}
+#monthSelect:focus {
   background-color: transparent;
   border-right: none;
   border-left: none;
