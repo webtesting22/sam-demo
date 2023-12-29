@@ -334,8 +334,8 @@
 #content0 {
   position: absolute;
   top: 24%;
-  right: 30%;
-  left: 30%;
+  right: 25%;
+  left: 25%;
 }
 
 @media (max-width:600px) {
