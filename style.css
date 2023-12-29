@@ -363,4 +363,5 @@
     color: white;
     padding: 10px 20px;
     backdrop-filter: blur(106px);
+    border-radius: 30px;
 }
