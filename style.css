@@ -206,6 +206,7 @@
   line-height: 20px;
   /* Match the height of the checkbox */
   color: transparent;
+  font-size: 33px;
   /* Set the color to transparent */
 }
 
