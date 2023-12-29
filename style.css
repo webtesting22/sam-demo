@@ -170,7 +170,13 @@
   transition: .3s;
 
 }
-#submitButtonContainer{
+#submitButtonContainer,
+#submitButtonContainerr,
+#submitButtonContainerrr,
+#submitButtonContainerrrr,
+#submitButtonContainerrrrr,
+#submitButtonContainerrrrrr,
+#submitButtonContainerrrrrrr{
   font-size: 35px;
   cursor: pointer;
   transition: .3s;
@@ -296,6 +302,7 @@
   color: rgb(255, 255, 255);
   width: 80%;
   text-align: center;
+  outline: none;
   width: 300px;
 }
 
@@ -325,19 +332,45 @@
   color: rgb(255, 255, 255);
   width: 80%;
   text-align: center;
-  width: 300px;
+  width: 300px; outline: none;
+  box-shadow: none;
 
 }
-
-
-#colorSelect option {
-  background-color: black;
+#colorSelect:focus,
+#colorSelect:active {
+  background-color: transparent;
   border-right: none;
   border-left: none;
   border-top: none;
   color: rgb(255, 255, 255);
   width: 80%;
   text-align: center;
+  width: 300px; outline: none;  box-shadow: none;
+
+}
+#colorSelect option:focus,
+#colorSelect option:active {
+  background-color: transparent;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  text-align: center;
+  width: 300px;
+  outline: none;  box-shadow: none;
+}
+
+
+#colorSelect option {
+  background-color: black;
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  text-align: center;  box-shadow: none;
 
 }
 
@@ -454,4 +487,38 @@
     width: 100%;
   
   }
+}
+
+#expected_delivery_date,
+#function_date{
+  text-align: center;
+  height: 40px;
+  background-color: #f8f8f8;
+  backdrop-filter: blur(14px); 
+  color: rgb(0, 0, 0);
+  box-shadow: none'';
+  border-bottom: 2px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.custom-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* border-radius: 5px; */
+  background-color: #fff;
+  backdrop-filter: blur(14px); /* Add backdrop filter with blur effect */
+  color: #333;
+}
+
+/* Style the select options */
+.custom-select option {
+  background-color: #fff;
+  backdrop-filter: blur(50px);
+  color: #333;
 }

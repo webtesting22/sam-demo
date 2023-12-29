@@ -946,11 +946,15 @@
                     <div class="d-flex justify-content-evenly">
                         <!-- <a href="">Gallery</a> -->
                         <input class="form-control" type="file" name="model_sample" id="model_sample"
-                            style="background-color: transparent; color: white; width: 280px;" accept="image/*">
+                            style="background-color: transparent; color: white; width: 280px;"
+                            onchange="showuploadFileButton()">
 
                     </div>
-                    <br><br>
-                    <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content2', 'content3')"></i>
+                    <br>
+                    <div style="display: none;" id="submitButtonContainerrrrr">
+                        <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content2', 'content3')"></i>
+                    </div>
+
                 </div>
 
 
@@ -978,7 +982,7 @@
                             </h4>
                         </div>
                     </div>
-                    <br><br>
+                    <br>
                     <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                         onclick="toggleSlides('content3', 'content4')"></i>
                 </div>
@@ -1027,7 +1031,7 @@
                     <label for="highlight_color" class="title">Select <span>Highlight Colour <span
                                 style="color: red; font-size: 35px;">*</span></span></label>
                     <br>
-                    <select name="highlight_color" id="colorSelect" onchange="showSubmitButton()">
+                    <select name="highlight_color" id="colorSelect" class="mb-5 custom-select" onchange="showSubmitButton()">
                         <option value="" disabled selected hidden>Select an option</option>
                         <option value="pink">Pink</option>
                         <option value="light_yellow">Light Yellow</option>
@@ -1041,7 +1045,7 @@
                         <option value="other">Other</option>
 
                     </select>
-                    <br><br><br>
+                    <br>
                     <div style="display: none;" id="submitButtonContainer">
                         <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content5', 'content6')"></i>
                     </div>
@@ -1084,7 +1088,7 @@
                     <label for="size_required" class="title">Size Required <span>for the Dress <span
                                 style="color: red; font-size: 35px;">*</span></span></label>
                     <br>
-                    <select name="size_required" id="monthSelect" onchange="showSubmitButtonn()">
+                    <select name="size_required" class="mb-5 custom-select" id="monthSelect" onchange="showSubmitButtonn()">
                         <option value="" disabled selected hidden>Select an option</option>
                         <option value="0-3 Months">0-3 Months</option>
                         <option value="3-6 Months">3-6 Months</option>
@@ -1093,9 +1097,9 @@
                         <option value="18-24 Months">18-24 Months</option>
                         <option value="Custom Measurements">Custom Measurements</option>
                     </select>
-                    <br><br><br>
+                    <br>
                     <div style="display: none;" id="submitButtonContainerr">
-                        <i class="bi bi-arrow-right-circle-fill" id="nextBtn" 
+                        <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                             onclick="toggleSlides('content7', 'content8')"></i>
                     </div>
                     <!-- <i class="bi bi-arrow-right-circle-fill" id="nextBtn" style="display: none;"
@@ -1261,7 +1265,7 @@
 
 
 
-              
+
                 <!-- boys expected delivery -->
 
                 <div id="content16" class="form-step">
@@ -1276,15 +1280,16 @@
                         <label for="expected_delivery_date" class="title">Expected <span>Delivery Date <span
                                     style="color: red; font-size: 35px;">*</span></span></label>
                         <input type="date" name="expected_delivery_date" class="mb-5"
-                            style="text-align: center; height: 30px;" id="expected_delivery_date" onchange="showCalenderButton()">
+                             id="expected_delivery_date"
+                            onchange="showCalenderButton()">
                     </div>
 
 
                     <div style="display: none;" id="submitButtonContainerrr">
                         <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content16', 'content17')"></i>
+                            onclick="toggleSlides('content16', 'content17')"></i>
                     </div>
-                    
+
                 </div>
 
 
@@ -1301,13 +1306,13 @@
                     <div style="display: flex; flex-direction: column;">
                         <label for="function_date" class="title">Function <span>Date <span
                                     style="color: red; font-size: 35px;">*</span></span></label>
-                        <input type="date" name="function_date" class="mb-5" style=" text-align: center; height: 30px;"
+                        <input type="date" name="function_date" class="mb-5" 
                             id="function_date" onchange="showCalenderButtonn()">
                     </div>
                     <div style="display: none;" id="submitButtonContainerrrr">
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content17', 'content18')"></i>
-                        </div>
+                        <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                            onclick="toggleSlides('content17', 'content18')"></i>
+                    </div>
                 </div>
                 <!-- -------------eighteen slide ----------------->
 
@@ -1361,15 +1366,17 @@
                         accessories required</label>
                     <div style="display: flex; justify-content: center;">
                         <input type="file" class="form-control" name="image_of_specific_accessories"
-                            id="image_of_specific_accessories" accept="image/*">
+                            id="image_of_specific_accessories" onchange="showuploadFileButtonn()">
                         <br><br>
                     </div>
 
                     <br>
 
-
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <div style="display: none;" id="submitButtonContainerrrrrr">
+                        <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                         onclick="toggleSlides('content27', 'content19')"></i>
+                    </div>
+                    
                 </div>
                 <!-- -------------nineteen slide ----------------->
 
@@ -1488,14 +1495,16 @@
                         the <br><span>optional accessories</span></label>
                     <div style="display: flex; justify-content: center;">
                         <input type="file" class="form-control" name="image_of_optional_accessories"
-                            id="image_of_optional_accessories" accept="image/*">
+                            id="image_of_optional_accessories" onchange="showuploadFileButtonnn()">
 
                     </div>
                     <br><br>
 
-
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <div style="display: none;" id="submitButtonContainerrrrrrr">
+                        <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                         onclick="toggleSlides('content20', 'content21')"></i>
+                    </div>
+                    
                 </div>
                 <!-- -------------twentyone slide ----------------->
                 <div id="content21" class="form-step">
@@ -1510,14 +1519,16 @@
                         Upload the model of the <br><span>name-printed candle here</span></label>
                     <div style="display: flex; justify-content: center;">
                         <input type="file" class="form-control" name="name_printed_candle_model"
-                            id="name_printed_candle_model" accept="image/*">
+                            id="name_printed_candle_model" onchange="showuploadFileButtonnnn()">
 
                     </div>
                     <br><br>
 
-
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <div style="display: none;" id="submitButtonContainerrrrrrrr">
+                        <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                         onclick="toggleSlides('content21', 'content22')"></i>
+                    </div>
+                   
                 </div>
                 <!-- -------------twentytwo slide ----------------->
                 <div id="content22" class="form-step">
@@ -1584,26 +1595,7 @@
                     </div>
                     <br>
                 </div>
-                <!-- -------------twentyfour slide ----------------->
-                <!-- <div id="content25" class="form-step">
-
-                    <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content25', 'content24')"></i>
-                        <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbartwentythree"></i>
-                    </div>
-                    <label for="mode_of_delivery" class="title">Get Reminder
-                        <span>WhatsApp No. *</span></label>
-                    <input type="number" name="whatsapp_number" placeholder="Enter you number"
-                        class="form-control input-edit mb-5 text-white input4" id="whatsapp_number"
-                        oninput="toggleButton('input4', 'button4')" required>
-                    <br>
-
-
-                    <i class="bi bi-arrow-right-circle-fill button4" id="nextBtn" style="display: none;"
-                        onclick="toggleSlides('content25', 'content28')"></i>
-                </div> -->
+                
                 <!-- -------------twentyeight slide ----------------->
                 <div id="content28" class="form-step">
 
@@ -1749,19 +1741,35 @@
             var submitButtonContainer = document.getElementById('submitButtonContainer');
             submitButtonContainer.style.display = 'block';
         }
-        
+
         function showSubmitButtonn() {
             var submitButtonContainerr = document.getElementById('submitButtonContainerr');
             submitButtonContainerr.style.display = 'block';
         }
         function showCalenderButton() {
-        var submitButtonContainerrr = document.getElementById('submitButtonContainerrr');
-        submitButtonContainerrr.style.display = 'block';
-    }
+            var submitButtonContainerrr = document.getElementById('submitButtonContainerrr');
+            submitButtonContainerrr.style.display = 'block';
+        }
         function showCalenderButtonn() {
-        var submitButtonContainerrrr = document.getElementById('submitButtonContainerrrr');
-        submitButtonContainerrrr.style.display = 'block';
-    }
+            var submitButtonContainerrrr = document.getElementById('submitButtonContainerrrr');
+            submitButtonContainerrrr.style.display = 'block';
+        }
+        function showuploadFileButton() {
+            var submitButtonContainerrrrr = document.getElementById('submitButtonContainerrrrr');
+            submitButtonContainerrrrr.style.display = 'block';
+        }
+        function showuploadFileButtonn() {
+            var submitButtonContainerrrrrr = document.getElementById('submitButtonContainerrrrrr');
+            submitButtonContainerrrrrr.style.display = 'block';
+        }
+        function showuploadFileButtonnn() {
+            var submitButtonContainerrrrrrr = document.getElementById('submitButtonContainerrrrrrr');
+            submitButtonContainerrrrrrr.style.display = 'block';
+        }
+        function showuploadFileButtonnnn() {
+            var submitButtonContainerrrrrrrr = document.getElementById('submitButtonContainerrrrrrrr');
+            submitButtonContainerrrrrrrr.style.display = 'block';
+        }
         function toggleRadio(radioId) {
             var radio = document.getElementById(radioId);
             radio.checked = true;
