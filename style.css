@@ -282,6 +282,7 @@
   text-align: center;
   width: 300px;
 }
+
 #monthSelect:focus {
   background-color: transparent;
   border-right: none;
@@ -294,10 +295,11 @@
 }
 
 #expected_delivery_date,
-#function_date{
+#function_date {
   width: 300px;
   margin: auto;
 }
+
 #monthSelect option {
   background-color: black;
   border-right: none;
@@ -306,7 +308,7 @@
   color: rgb(255, 255, 255);
   width: 80%;
   text-align: center;
-  
+
 }
 
 
@@ -427,4 +429,24 @@
 
 .carousel-item .design p {
   font-size: 18px;
+}
+
+.flex-manage {
+  flex-direction: column;
+  width: 50%;
+
+}
+
+@media (max-width:600px) {
+  .flex-manage-mobile {
+    flex-direction: column;
+    width: 100%;
+
+
+  }
+  .flex-manage {
+    flex-direction: column;
+    width: 100%;
+  
+  }
 }

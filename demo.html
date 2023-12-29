@@ -988,9 +988,8 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasEmbroidery"></i>
                     </div>
-                    <label class="title" style="margin-bottom: 0px;">Embroidery <span>Work</span></label><br>
-                    <span>(Name will be embroidered in the cloths)</span>
-                    <div class="checkbox-btn mt-5">
+                    <label class="title">Embroidery <span>Work</span></label>
+                    <div class="checkbox-btn">
                         <div class="d-flex">
                             <input type="checkbox" name="embroidery_work[]" value="On Dress">&nbsp;&nbsp;<h4>On
                                 Dress
@@ -1085,8 +1084,8 @@
                     </div>
                     <label for="age_of_baby" class="title">Age of <span>Baby Boy</span> (In Months) <span
                             style="color: red; font-size: 35px;">*</span></label>
-                    <input type="number" name="boy_age_of_baby" placeholder="Enter in Months"
-                        class="form-control input-edit mb-5 text-white input3" id="boy_age_of_baby"
+                    <input type="number" name="age_of_baby" placeholder="Enter in Months"
+                        class="form-control input-edit mb-5 text-white input3" id="age_of_baby"
                         oninput="toggleButton('input3', 'button3')">
                     <br>
                     <i class="bi bi-arrow-right-circle-fill button3" style="display: none;" id="nextBtn"
@@ -1332,8 +1331,8 @@
                     </div>
                     <label for="age_of_baby" class="title">Age of <span>Baby Girl</span> (In Months) <span
                             style="color: red; font-size: 35px;">*</span></label>
-                    <input type="number" name="girl_age_of_baby" placeholder="Enter in Months"
-                        class="form-control input-edit mb-5 text-white input2" id="girl_age_of_baby"
+                    <input type="number" name="age_of_baby" placeholder="Enter in Months"
+                        class="form-control input-edit mb-5 text-white input2" id="age_of_baby"
                         oninput="toggleButton('input2', 'button2')">
                     <br>
                     <i class="bi bi-arrow-right-circle-fill button2" style="display: none;" id="nextBtn"
@@ -1669,22 +1668,18 @@
                             data-bs-target="#offcanvasNavbareightteen"></i>
                     </div>
                     <label for="mode_of_delivery" class="title">Select <span>the Package</span></label>
-                    <div class="checkbox-btn flex-manage-mobile">
-                        <div class="d-flex align-items-center p-2 flex-manage" onclick="toggleSlides('content18', 'content27')">
+                    <div class="checkbox-btn">
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content18', 'content27')">
                             <input type="radio" name="select_the_package" value="Dress Set"
                                 id="DressSet">&nbsp;&nbsp;<label for="" onclick="toggleRadio('DressSet')">Dress
                                 Set</label>
-                            <p style="font-size: 13px;">(Under Dress Set, include Dress, Booties & Cap)</p>
 
                         </div>
 
-                        <div class="d-flex align-items-center p-2 flex-manage"  onclick="toggleSlides('content18', 'content27')">
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content18', 'content27')">
                             <input type="radio" name="select_the_package" value="Combo Set"
                                 id="ComboSet">&nbsp;&nbsp;<label for="" onclick="toggleRadio('ComboSet')">Combo
                                 Set</label>
-                            <p style="font-size: 13px;">Under Combo Set, include the full set with Main Dress, Booties, Cap, Decorated Candle,
-                                Crown, Baby Wipes, Baby Quilt with "God Bless" and baby's name embroidery, and Blessing
-                                Dress.</p>
 
                         </div>
                     </div>
