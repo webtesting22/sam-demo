@@ -1017,17 +1017,17 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarfour"></i>
                     </div>
-                    <label class="title">Select a <span>Dress <span
+                    <label class="title">Select a <span>Dress Color<span
                         style="color: red; font-size: 35px;">*</span></span></label>
-
+                        
                     <div class="checkbox-btn">
-                        <div class="d-flex" onclick="toggleSlides('content4', 'content5')">
-                            <input type="radio" name="select_dress" value="Pure White">&nbsp;&nbsp;<h4>Pure White
-                            </h4>
+                        <div class="d-flex" >
+                            <input type="radio" name="select_dress" id="purewhite" value="Pure White" onclick="toggleSlides('content4', 'content5')">&nbsp;&nbsp;<h4 onclick="toggleSlides('content4', 'content5')">PureWhite</h4>
+                            
                         </div>
 
-                        <div class="d-flex" onclick="toggleSlides('content4', 'content5')">
-                            <input type="radio" name="select_dress" value="Off White">&nbsp;&nbsp;<h4>Off White</h4>
+                        <div class="d-flex" onclick="toggleSlides('content4', 'content5')" >
+                            <input type="radio" name="select_dress" id="offwhite" value="Off White" onclick="toggleSlides('content4', 'content5')">&nbsp;&nbsp;<h4 onclick="toggleSlides('content4', 'content5')">Off white</h4>
                         </div>
                     </div>
 
@@ -1048,7 +1048,7 @@
                     <label for="highlight_color" class="title">Select <span>Highlight Colour <span
                         style="color: red; font-size: 35px;">*</span></span></label>
                     <br>
-                    <select name="highlight_color" id="colorSelect">
+                    <select name="highlight_color" id="colorSelect" onchange="toggleArrowVisibility()">
                         <option value="" disabled selected hidden>Select an option</option>
                         <option value="pink">Pink</option>
                         <option value="light_yellow">Light Yellow</option>
@@ -1058,13 +1058,11 @@
                         <option value="blue">Blue</option>
                         <option value="silver">Silver</option>
                         <option value="gold">Gold</option>
-                        <option value="beidge">Beidge</option>
+                        <option value="beidge">Beige</option>
                         <option value="other">Other</option>
-
                     </select>
                     <br><br><br>
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content5', 'content6')"></i>
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn" style="display: none;" onclick="toggleSlides('content5', 'content6')"></i>
                 </div>
 
 
@@ -1967,6 +1965,17 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script>
+
+function toggleArrowVisibility() {
+        var colorSelect = document.getElementById("colorSelect");
+        var nextBtn = document.getElementById("nextBtn");
+
+        if (colorSelect.value !== "") {
+            nextBtn.style.display = "inline-block";
+        } else {
+            nextBtn.style.display = "none";
+        }
+    }
 
 
         var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
