@@ -118,7 +118,7 @@
 }
 
 .title {
-  font-size: 39px;
+  font-size: 38px;
   font-weight: 400;
   margin: 3rem 0;
   /* font-family: ; */
@@ -280,9 +280,14 @@
   color: rgb(255, 255, 255);
   width: 80%;
   text-align: center;
+  width: 300px;
 }
 
-
+#expected_delivery_date,
+#function_date{
+  width: 300px;
+  margin: auto;
+}
 #monthSelect option {
   background-color: black;
   border-right: none;
@@ -291,6 +296,7 @@
   color: rgb(255, 255, 255);
   width: 80%;
   text-align: center;
+  
 }
 
 
@@ -302,6 +308,7 @@
   color: rgb(255, 255, 255);
   width: 80%;
   text-align: center;
+  width: 300px;
 
 }
 
