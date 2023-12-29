@@ -88,7 +88,10 @@
 #offcanvasNavbareight,
 #offcanvasNavbarfifthteen,
 #offcanvasNavbareightteen,
-#offcanvasNavbarfifty {
+#offcanvasNavbarfifty,
+#offcanvasNavbarfiftyone,
+#offcanvasNavbarfiftytwo,
+#offcanvasNavbarfiftythree {
   --bs-offcanvas-bg: none;
   backdrop-filter: blur(14px);
   box-shadow: rgba(11, 11, 11, 0.2) 0px 7px 29px 0px;
