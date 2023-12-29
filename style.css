@@ -170,6 +170,11 @@
   transition: .3s;
 
 }
+#submitButtonContainer{
+  font-size: 35px;
+  cursor: pointer;
+  transition: .3s;
+}
 
 /* #nextBtn:hover{
     font-size: 30px;
