@@ -1021,17 +1021,16 @@
                                 style="color: red; font-size: 35px;">*</span></span></label>
 
                     <div class="checkbox-btn">
-                        <div class="d-flex">
-                            <input type="radio" name="select_dress" id="purewhite" value="Pure White"
-                                onclick="toggleSlides('content4', 'content5')">&nbsp;&nbsp;<h4
-                                onclick="toggleSlides('content4', 'content5')">PureWhite</h4>
+                        <div class="d-flex" onclick="toggleSlides('content4', 'content5')">
+                            <input type="radio" name="select_dress" id="purewhite" value="Pure White">&nbsp;&nbsp;<label
+                                for="" onclick="toggleRadio('Pure White')">Pure White</label>
+
 
                         </div>
 
                         <div class="d-flex" onclick="toggleSlides('content4', 'content5')">
-                            <input type="radio" name="select_dress" id="offwhite" value="Off White"
-                                onclick="toggleSlides('content4', 'content5')">&nbsp;&nbsp;<h4
-                                onclick="toggleSlides('content4', 'content5')">Off white</h4>
+                            <input type="radio" name="select_dress" id="offwhite" value="Off White">&nbsp;&nbsp;<label
+                                for="" onclick="toggleRadio('Off White')">Off White</label>
                         </div>
                     </div>
 
@@ -1136,12 +1135,14 @@
                     <div class="checkbox-btn">
                         <div class="d-flex align-items-center" onclick="toggleSlides('content8', 'content9')">
                             <input type="radio" name="select_dress" value="yes"
-                                onclick="showCustomFields(this)">&nbsp;&nbsp;<h4>Yes</h4>
+                                onclick="showCustomFields(this)">&nbsp;&nbsp;<label
+                                onclick="toggleRadio('Yes')">Yes</label>
                         </div>
 
                         <div class="d-flex align-items-center" onclick="toggleSlides('content8', 'content16')">
                             <input type="radio" name="select_dress" value="no"
-                                onclick="hideCustomFields(this)">&nbsp;&nbsp;<h4>No</h4>
+                                onclick="hideCustomFields(this)">&nbsp;&nbsp;<label
+                                onclick="toggleRadio('No')">No</label>
                         </div>
                     </div>
                     <br><br>
@@ -1265,17 +1266,18 @@
                                 style="color: red; font-size: 35px;">*</span></span></label>
 
                     <div class="checkbox-btn">
-                        <div class="d-flex">
-                            <input type="radio" name="select_dress" value="Pure White"
-                                onclick="toggleSlides('content37', 'content38')">&nbsp;&nbsp;<h4
-                                onclick="toggleSlides('content37', 'content38')">Pure White
-                            </h4>
+                        <div class="d-flex" style="align-items: center;">
+                            <input type="radio" name="select_dress" value="Pure White" id="pureWhiteRadio"
+                                onclick="toggleSlides('content37', 'content38')">
+                            <label for="pureWhiteRadio" onclick="toggleRadio('pureWhiteRadio')">&nbsp;&nbsp;Pure
+                                White</label>
                         </div>
 
-                        <div class="d-flex">
-                            <input type="radio" name="select_dress" value="Off White"
-                                onclick="toggleSlides('content37', 'content38')">&nbsp;&nbsp;<h4
-                                onclick="toggleSlides('content37', 'content38')">Off White</h4>
+                        <div class="d-flex" style="align-items: center;">
+                            <input type="radio" name="select_dress" value="Off White" id="offWhiteRadio"
+                                onclick="toggleSlides('content37', 'content38')">
+                            <label for="offWhiteRadio" onclick="toggleRadio('offWhiteRadio')">&nbsp;&nbsp;Off
+                                White</label>
                         </div>
                     </div>
                     <br><br><br>
@@ -1567,19 +1569,15 @@
                     </div>
                     <label for="mode_of_delivery" class="title">Select <span>the Package</span></label>
                     <div class="checkbox-btn">
-                        <div class="d-flex align-items-center">
-                            <input type="radio" name="select_the_package" value="Dress Set"
-                                onclick="toggleSlides('content18', 'content27')">&nbsp;&nbsp;<h4
-                                onclick="toggleSlides('content18', 'content27')">Dress
-                                Set
-                            </h4>
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content18', 'content27')">
+                            <input type="radio" name="select_the_package" value="Dress Set">&nbsp;&nbsp;<label for="" onclick="toggleRadio('Dress Set')">Dress
+                                Set</label> 
+                            
                         </div>
 
-                        <div class="d-flex align-items-center">
-                            <input type="radio" name="select_the_package" value="Combo Set"
-                                onclick="toggleSlides('content18', 'content27')">&nbsp;&nbsp;<h4
-                                onclick="toggleSlides('content18', 'content27')">Combo
-                                Set
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content18', 'content27')">
+                            <input type="radio" name="select_the_package" value="Combo Set">&nbsp;&nbsp;<label for="" onclick="toggleRadio('Combo Set')">Combo
+                                Set</label>
                             </h4>
                         </div>
                     </div>
@@ -1982,15 +1980,9 @@
         crossorigin="anonymous"></script>
     <script>
 
-        function toggleArrowVisibility() {
-            var colorSelect = document.getElementById("colorSelect");
-            var nextBtn = document.getElementById("nextBtn");
-
-            if (colorSelect.value !== "") {
-                nextBtn.style.display = "inline-block";
-            } else {
-                nextBtn.style.display = "none";
-            }
+        function toggleRadio(radioId) {
+            var radio = document.getElementById(radioId);
+            radio.checked = true;
         }
 
 
