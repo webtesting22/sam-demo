@@ -356,3 +356,11 @@
     width: 100%;
   }
 }
+
+#Submit_btn{
+  background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    backdrop-filter: blur(106px);
+}
