@@ -1214,9 +1214,9 @@
                     </div>
                     <label for="neck_circumference" class="title">Neck <span>Circumference</span></label>
                     <input type="text" name="neck_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white" id="neck_circumference" oninput="('input11', 'button11')">
+                        class="form-control input-edit mb-5 text-white input13" id="neck_circumference" oninput="toggleButton('input13', 'button13')">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button13" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content11', 'content12')"></i>
                 </div>
 
@@ -1235,7 +1235,7 @@
                     <div class="d-flex justify-content-evenly">
                         <!-- <a href="">Gallery</a> -->
                         <input class="form-control modal-sample" type="file" name="model_sample" id="model_sample"
-                            oninput="updateSharedInput(this)" onchange="samplebtn2()">
+                            oninput="updateSharedInput(this) " onchange="samplebtn2()">
                     </div>
                     <br><br>
                     <div style="display: none;" id="samplebtn2">
@@ -1430,10 +1430,10 @@
                     </div>
                     <label for="chest_circumference" class="title">Chest <span>Circumference</span></label>
                     <input type="text" name="chest_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white chest_circumference" id="chest_circumference"
-                        oninput="updateSharedInput(this)">
+                        class="form-control input-edit mb-5 text-white chest_circumference input14" id="chest_circumference"
+                        oninput="updateSharedInput(this),toggleButton('input14', 'button14')">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button14" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content42', 'content43')"></i>
                 </div>
                 <!-- -------------girl fourtythree slide ----------------->
@@ -1448,10 +1448,10 @@
                     </div>
                     <label for="shoulder_length" class="title">Shoulder to <span>Shoulder Length</span></label>
                     <input type="text" name="shoulder_length" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white shoulder_length" id="shoulder_length"
-                        oninput="updateSharedInput(this)">
+                        class="form-control input-edit mb-5 text-white shoulder_length input15" id="shoulder_length"
+                        oninput="updateSharedInput(this),toggleButton('input15', 'button15')">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button15" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content43', 'content44')"></i>
                 </div>
 
@@ -1467,10 +1467,10 @@
                     </div>
                     <label for="length_to_foot" class="title">Length from <span>Shoulder to Foot</span></label>
                     <input type="text" name="length_to_foot" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white length_to_foot" id="length_to_foot"
-                        oninput="updateSharedInput(this)">
+                        class="form-control input-edit mb-5 text-white length_to_foot input16" id="length_to_foot"
+                        oninput="updateSharedInput(this), toggleButton('input16', 'button16')">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button16" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content44', 'content55')"></i>
                 </div>
 
@@ -1485,9 +1485,9 @@
                     </div>
                     <label for="shoulder_crotch_length" class="title">Shoulder to <span>crotch length</span></label>
                     <input type="text" name="shoulder_crotch_length" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white" id="shoulder_crotch_length">
+                        class="form-control input-edit mb-5 text-white input17" id="shoulder_crotch_length" oninput="toggleButton('input17', 'button17')">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button17" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content12', 'content13')"></i>
                 </div>
 
@@ -1502,9 +1502,9 @@
                     <label for="length_of_dress_required" class="title">Length of the <span>dress
                             required</span></label>
                     <input type="text" name="length_of_dress_required" placeholder="Enter you value"
-                        class="form-control input-edit mb-5 text-white" id="length_of_dress_required">
+                        class="form-control input-edit mb-5 text-white input18" id="length_of_dress_required" oninput="toggleButton('input18', 'button18')">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button18" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content13', 'content55')"></i>
                 </div>
                 <!-- -------------fourteen slide ----------------->
@@ -1519,9 +1519,9 @@
                     </div>
                     <label for="head_circumference" class="title">Head <span>Circumference</span></label>
                     <input type="text" name="head_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white" id="head_circumference">
+                        class="form-control input-edit mb-5 text-white input19" id="head_circumference" oninput="toggleButton('input19', 'button19')">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button19" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content14', 'content15')"></i>
                 </div>
                 <!-- -------------fifthteen slide ----------------->
@@ -1536,10 +1536,10 @@
                     </div>
                     <label for="foot_length" class="title">Foot <span>Length</span></label>
                     <input type="text" name="foot_length" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white foot_lenght" id="foot_length"
-                        oninput="updateSharedInput(this)">
+                        class="form-control input-edit mb-5 text-white foot_lenght input20" id="foot_length"
+                        oninput="updateSharedInput(this), toggleButton('input20', 'button20') ">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button20" style="display:none;" id="nextBtn"
                         onclick="toggleSlides('content15', 'content16')"></i>
                 </div>
 
@@ -1558,9 +1558,9 @@
                     </div>
                     <label for="head_circumference" class="title">Head <span>Circumference</span></label>
                     <input type="text" name="head_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white" id="head_circumference">
+                        class="form-control input-edit mb-5 text-white input22" id="head_circumference" oninput="toggleButton('input22', 'button22')">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button22" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content55', 'content56')"></i>
                 </div>
                 <div id="content56" class="form-step">
@@ -1573,10 +1573,10 @@
                     </div>
                     <label for="head_circumference" class="title">Foot <span>Length</span></label>
                     <input type="text" name="head_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white foot_lenght" id="foot_lenght"
-                        oninput="updateSharedInput(this)">
+                        class="form-control input-edit mb-5 text-white foot_lenght input21" id="foot_lenght"
+                        oninput="updateSharedInput(this), toggleButton('input21', 'button21')">
 
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button21" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content56', 'content16')"></i>
                 </div>
 
