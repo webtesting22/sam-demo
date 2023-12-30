@@ -9,6 +9,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://beacon.madeofeffort.de/scss/beacon-settings.css">
+    <link rel="stylesheet" href="https://beacon.madeofeffort.de/scss/beacon.css">
 </head>
 
 <body>
@@ -2073,6 +2075,126 @@
             </div>
         </div>
     </form>
+    <section class="wrap wrap-vertical">
+        <div class="checkbox-complete toggle">
+            <input type="checkbox" name="dark-light-mode" class="checkbox toggle">
+            <label> Dark Mode</label>
+        </div>
+    </section>
+
+    <div id="toast-container" class="toast-container">
+        <div class="toast">
+            <div class="toast-status-icon">
+                <svg>
+                    <use xlink:href="#neutralToastIcon">
+                </svg>
+            </div>
+            <div class="toast-content">
+                <span>Neutral</span>
+                <p>This is just a text.</p>
+            </div>
+            <button class="toast-close" onclick="closeToast(event)">
+                <svg>
+                    <use xlink:href="#closeToastIcon">
+                </svg>
+            </button>
+            <div class="toast-duration"></div>
+        </div>
+        <div class="toast info">
+            <div class="toast-status-icon">
+                <svg>
+                    <use xlink:href="#infoToastIcon">
+                </svg>
+            </div>
+            <div class="toast-content">
+                <span>Information</span>
+                <p>There are some Informations for you.</p>
+            </div>
+            <button class="toast-close" onclick="closeToast(event)">
+                <svg>
+                    <use xlink:href="#closeToastIcon">
+                </svg>
+            </button>
+            <div class="toast-duration"></div>
+        </div>
+        <div class="toast success">
+            <div class="toast-status-icon">
+                <svg>
+                    <use xlink:href="#successToastIcon">
+                </svg>
+            </div>
+            <div class="toast-content">
+                <span>Success</span>
+                <p>Your changes are saved successfully.</p>
+            </div>
+            <button class="toast-close" onclick="closeToast(event)">
+                <svg>
+                    <use xlink:href="#closeToastIcon">
+                </svg>
+            </button>
+            <div class="toast-duration"></div>
+        </div>
+        <div class="toast alert">
+            <div class="toast-status-icon">
+                <svg>
+                    <use xlink:href="#alertToastIcon">
+                </svg>
+            </div>
+            <div class="toast-content">
+                <span>Alert</span>
+                <p>Please confirm with your password.</p>
+            </div>
+            <button class="toast-close" onclick="closeToast(event)">
+                <svg>
+                    <use xlink:href="#closeToastIcon">
+                </svg>
+            </button>
+            <div class="toast-duration"></div>
+        </div>
+        <div class="toast error">
+            <div class="toast-status-icon">
+                <svg>
+                    <use xlink:href="#errorToastIcon">
+                </svg>
+            </div>
+            <div class="toast-content">
+                <span>Error</span>
+                <p>Something went wrong.</p>
+            </div>
+            <button class="toast-close" onclick="closeToast(event)">
+                <svg>
+                    <use xlink:href="#closeToastIcon">
+                </svg>
+            </button>
+            <div class="toast-duration"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="neutralToastIcon">
+                <path fill="var(--color-status)"
+                    d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="infoToastIcon">
+                <path fill="var(--color-status)"
+                    d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="successToastIcon">
+                <path fill="var(--color-status)"
+                    d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="alertToastIcon">
+                <path fill="var(--color-status)"
+                    d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zm32 224c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="errorToastIcon">
+                <path fill="var(--color-status)"
+                    d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm97.9-320l-17 17-47 47 47 47 17 17L320 353.9l-17-17-47-47-47 47-17 17L158.1 320l17-17 47-47-47-47-17-17L192 158.1l17 17 47 47 47-47 17-17L353.9 192z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" id="closeToastIcon">
+                <path fill="var(--color-status)"
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+            </symbol>
+        </svg>
+    </div>
 
 
 
@@ -2080,8 +2202,40 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script></script>
     <script>
 
+        //  TOASTS 
+        function closeToast(event) {
+            let toastClose = event.target;
+            toastClose.closest('.toast').remove();
+        }
+        function closeToastDuration() {
+            if (document.querySelectorAll('.toast')) {
+                let toasts = document.querySelectorAll('.toast');
+                toasts.forEach(toast => {
+                    setTimeout(() => {
+                        toast.remove();
+                    }, 10000);
+                });
+            }
+        }
+        closeToastDuration();
+        if (document.getElementById('toast-container')) {
+            let mutationObserver = new MutationObserver(function (mutations) {
+                mutations.forEach(function (mutation) {
+                    closeToastDuration();
+                });
+            });
+            mutationObserver.observe(document.getElementById('toast-container'), {
+                attributes: true,
+                characterData: true,
+                childList: true,
+                subtree: true,
+                attributeOldValue: true,
+                characterDataOldValue: true
+            });
+        }
         function toggleRadio(radioId) {
             var radio = document.getElementById(radioId);
             radio.checked = true;
