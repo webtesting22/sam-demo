@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload Example</title>
+</head>
+<body>
+
+  <h1>File Upload Example</h1>
+
+  <!-- First File Upload Input -->
+  <label for="modal-sample1">Upload File 1:</label>
+  <input type="file" id="modal-sample" class="modal-sample" onchange="handleFileUpload(this)">
+  <br>
+
+  <!-- Second File Upload Input -->
+  <label for="modal-sample2">Upload File 2:</label>
+  <input type="file" id="modal-sample" class="modal-sample" onchange="handleFileUpload(this)">
+  <br>
+
+  <script>
+    function handleFileUpload(input) {
+      const fileInput = input;
+      const file = fileInput.files[0];
+
+      if (file) {
+        // Set the same file for all elements with class 'modal-sample'
+        const fileInputs = document.querySelectorAll('.modal-sample');
+        fileInputs.forEach(otherInput => {
+          if (otherInput !== fileInput) {
+            otherInput.files = fileInput.files;
+            uploadFile(otherInput);
+          }
+        });
+      }
+    }
+
+    function uploadFile(fileInput) {
+      const file = fileInput.files[0];
+
+      if (file) {
+        // In a real scenario, you would perform the file upload here
+        console.log(`Uploading file: ${file.name}`);
+        // You can use AJAX or other methods to upload the file to the server
+      }
+    }
+  </script>
+
+</body>
+</html>

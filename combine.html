@@ -544,7 +544,7 @@
             </div>
         </div>
     </nav>
-    
+
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
 
@@ -592,7 +592,7 @@
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarnameprinteds"
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarnameprinted"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
 
@@ -810,7 +810,7 @@
                                         <h1>1</h1>
                                         <p>Enter the Details like name date age etc. in the field provided</p>
 
-                                        <i class="bi bi-arrow-right-circle-fill slide-button" id="nextBtn"
+                                        <i class="bi bi-arrow-right-circle-fill slide-button" id="Next"
                                             data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></i>
                                         <!-- <button >Next Slide</button> -->
                                     </div>
@@ -825,9 +825,9 @@
                                             or select a design from our gallery.</p>
 
                                         <div class="d-flex justify-content-evenly">
-                                            <i class="bi bi-arrow-left-circle-fill slide-button" id="prevBtn"
+                                            <i class="bi bi-arrow-left-circle-fill slide-button" id="Prev" 
                                                 data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
-                                            <i class="bi bi-arrow-right-circle-fill slide-button" id="nextBtn"
+                                            <i class="bi bi-arrow-right-circle-fill slide-button"   id="Next"
                                                 data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></i>
                                         </div>
                                     </div>
@@ -840,9 +840,9 @@
                                         <p>If any other accessories needed please add the item and it will be
                                             automatically added to the list.</p>
                                         <div class="d-flex justify-content-evenly">
-                                            <i class="bi bi-arrow-left-circle-fill slide-button" id="prevBtn"
+                                            <i class="bi bi-arrow-left-circle-fill slide-button" id="Prev" 
                                                 data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
-                                            <i class="bi bi-arrow-right-circle-fill slide-button" id="nextBtn"
+                                            <i class="bi bi-arrow-right-circle-fill slide-button"  id="Next"
                                                 data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></i>
                                         </div>
                                     </div>
@@ -856,9 +856,9 @@
                                         <p>For taking the measurements of your baby take a tape and follow the
                                             instrutions that we have provided.</p>
                                         <div class="d-flex justify-content-evenly">
-                                            <i class="bi bi-arrow-left-circle-fill slide-button" id="prevBtn"
+                                            <i class="bi bi-arrow-left-circle-fill slide-button" id="Prev" 
                                                 data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
-                                            <i class="bi bi-arrow-right-circle-fill slide-button" id="nextBtn"
+                                            <i class="bi bi-arrow-right-circle-fill slide-button"  id="Next"
                                                 data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></i>
                                         </div>
                                     </div>
@@ -872,9 +872,9 @@
                                         <p>That's all submit a request our team will reach back to you about the
                                             details.</p>
                                         <div class="d-flex justify-content-evenly">
-                                            <i class="bi bi-arrow-left-circle-fill slide-button" id="prevBtn"
+                                            <i class="bi bi-arrow-left-circle-fill slide-button"  id="Prev" 
                                                 data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
-                                            <i class="bi bi-arrow-right-circle-fill slide-button" id="nextBtn"
+                                            <i class="bi bi-arrow-right-circle-fill slide-button"  id="Next"
                                                 data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></i>
                                         </div>
                                     </div>
@@ -898,9 +898,9 @@
                                         <p>Hey, little bit confused ! Don't worry, click the <b>i</b> button on the
                                             right corner of your of screen for instant support.</p>
                                         <div class="d-flex justify-content-evenly">
-                                            <i class="bi bi-arrow-left-circle-fill slide-button" id="prevBtn"
+                                            <i class="bi bi-arrow-left-circle-fill slide-button" id="Prev" 
                                                 data-bs-target="#carouselExampleCaptions" data-bs-slide-to=""></i>
-                                            <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                                            <i class="bi bi-arrow-right-circle-fill"  id="Next"
                                                 onclick="toggleSlides('content0', 'content1')"></i>
                                         </div>
                                     </div>
@@ -924,8 +924,10 @@
                     </div>
                     <label for="baby_name" class="title">Baby's <span>Name <span
                                 style="color: red; font-size: 35px;">*</span></span></label>
+
                     <input type="text" placeholder="Enter Your Baby's Name" class="form-control input1 input-edit mb-5"
                         name="baby_name" id="baby_name" oninput="toggleButton('input1', 'button1')">
+
                     <i class="bi bi-arrow-right-circle-fill button1" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content1', 'content26')"></i>
                 </div>
@@ -943,12 +945,14 @@
                                 style="color: red; font-size: 35px;">*</span></span></label><br>
                     <div class="checkbox-btn">
                         <div class="d-flex align-items-center" onclick="toggleSlides('content26', 'content35')">
-                            <input type="radio" name="baby_gender" id="baby_girl" value="Girl">&nbsp;&nbsp;
-                            <label for="baby_girl">Girl</label><br>
+                            <input type="radio" name="baby_gender" id="baby_gender" value="Girl">&nbsp;&nbsp;
+                            <label for="baby_girl" style="cursor: pointer;"
+                                onclick="toggleRadio('baby_girl')">Girl</label><br>
                         </div>
                         <div class="d-flex align-items-center" onclick="toggleSlides('content26', 'content2')">
-                            <input type="radio" name="baby_gender" id="baby_boy" value="Boy">&nbsp;&nbsp;
-                            <label for="baby_boy">Boy</label><br><br>
+                            <input type="radio" name="baby_gender" id="baby_gender" value="Boy">&nbsp;&nbsp;
+                            <label for="baby_boy" style="cursor: pointer;"
+                                onclick="toggleRadio('baby_boy')">Boy</label><br><br>
                         </div>
                     </div>
                     <br>
@@ -997,13 +1001,15 @@
                     <span>(Name will be embroidered in the cloths)</span>
                     <div class="checkbox-btn mt-5">
                         <div class="d-flex">
-                            <input type="checkbox" name="embroidery_work[]" value="On Dress">&nbsp;&nbsp;<h4>On
+                            <input type="checkbox" name="embroidery_work[]" id="On-Dress" value="On Dress">&nbsp;&nbsp;
+                            <h4 style="cursor: pointer;">On
                                 Dress
                             </h4>
                         </div>
 
                         <div class="d-flex">
-                            <input type="checkbox" name="embroidery_work[]" value="On Quilt">&nbsp;&nbsp;<h4>On
+                            <input type="checkbox" name="embroidery_work[]" id="On-quilt" value="On Quilt">&nbsp;&nbsp;
+                            <h4 style="cursor: pointer;">On
                                 Quilt
                             </h4>
                         </div>
@@ -1023,20 +1029,20 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarselectdress"></i>
                     </div>
-                    <label class="title">Select a <span>Dress Color<span
+                    <label class="title">Select a <span>Dress Colour<span
                                 style="color: red; font-size: 35px;">*</span></span></label>
 
                     <div class="checkbox-btn">
                         <div class="d-flex" onclick="toggleSlides('content4', 'content5')">
                             <input type="radio" name="select_dress" id="purewhite" value="Pure White">&nbsp;&nbsp;<label
-                                for="" onclick="toggleRadio('purewhite')">Pure White</label>
+                                for="" onclick="toggleRadio('purewhite')" style="cursor: pointer;">Pure White</label>
 
 
                         </div>
 
                         <div class="d-flex" onclick="toggleSlides('content4', 'content5')">
                             <input type="radio" name="select_dress" id="offwhite" value="Off White">&nbsp;&nbsp;<label
-                                for="" onclick="toggleRadio('offwhite')">Off White</label>
+                                for="" onclick="toggleRadio('offwhite')" style="cursor: pointer;">Off White</label>
                         </div>
                     </div>
 
@@ -1091,15 +1097,18 @@
                     </div>
                     <label for="age_of_baby" class="title">Age of <span>Baby Boy</span> (In Months) <span
                             style="color: red; font-size: 35px;">*</span></label>
-                    <input type="number" name="boy_age_of_baby" placeholder="Enter in Months"
-                        class="form-control input-edit mb-5 text-white ageof-baby input3" id="boy_age_of_baby"
-                        oninput="updateSharedInput(this), toggleButton('input3', 'button3')">
+                    <input type="number" placeholder="Enter Your Age of baby"
+                        class="form-control input-edit mb-5 text-white ageof-baby input23 shared-input3"
+                        name="age_of_baby" id="age_of_baby" oninput="handleInput3(this)">
                     <br>
-                   
-                        <i class="bi bi-arrow-right-circle-fill button3" style="display: none;" id="nextBtn"
+
+
+                    <i class="bi bi-arrow-right-circle-fill button23" id="nextBtn"
                         onclick="toggleSlides('content6', 'content7')"></i>
-                   
-                    
+
+
+
+
                 </div>
 
 
@@ -1128,9 +1137,9 @@
                     <br><br><br>
                     <div style="display: none;" id="showmonthButtontwo">
                         <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content7', 'content8')"></i>
+                            onclick="toggleSlides('content7', 'content8')"></i>
                     </div>
-                    
+
                 </div>
 
 
@@ -1148,15 +1157,15 @@
                     <br>
                     <div class="checkbox-btn">
                         <div class="d-flex align-items-center" onclick="toggleSlides('content8', 'content9')">
-                            <input type="radio" name="select_dress" value="yes"
-                                onclick="showCustomFields(this)">&nbsp;&nbsp;<label
-                                onclick="toggleRadio('Yes')">Yes</label>
+                            <input type="radio" name="select_dress" value="yes" id="Yes"
+                                onclick="showCustomFields(this)">&nbsp;&nbsp;<label onclick="toggleRadio('Yes')"
+                                style="cursor: pointer;">Yes</label>
                         </div>
 
                         <div class="d-flex align-items-center" onclick="toggleSlides('content8', 'content16')">
-                            <input type="radio" name="select_dress" value="no"
-                                onclick="hideCustomFields(this)">&nbsp;&nbsp;<label
-                                onclick="toggleRadio('No')">No</label>
+                            <input type="radio" name="select_dress" value="no" id="No"
+                                onclick="hideCustomFields(this)">&nbsp;&nbsp;<label onclick="toggleRadio('No')"
+                                style="cursor: pointer;">No</label>
                         </div>
                     </div>
                     <br><br>
@@ -1173,13 +1182,14 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarchestcurcum"></i>
                     </div>
-                    <label for="chest_circumference" class="title">Chest <span>Circumference</span></label>
+                    <label for="chest_circumference" class="title">Chest <span>Circumference<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <input type="text" name="chest_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white chest_circumference input11" id="chest_circumference"
-                        oninput="updateSharedInput(this),toggleButton('input11', 'button11')" >
+                        class="form-control input-edit mb-5 text-white chest_circumference shared-input6 input11"
+                        id="chest_circumference" oninput="handleInput6(this)">
 
-                    <i class="bi bi-arrow-right-circle-fill button11" style="display: none;" id="nextBtn" 
-                        onclick="toggleSlides('content9', 'content10')" ></i>
+                    <i class="bi bi-arrow-right-circle-fill button11" id="nextBtn"
+                        onclick="toggleSlides('content9', 'content10')"></i>
                 </div>
 
 
@@ -1192,12 +1202,13 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarshoulderlenght"></i>
                     </div>
-                    <label for="shoulder_length" class="title">Shoulder to <span>Shoulder Length</span></label>
+                    <label for="shoulder_length" class="title">Shoulder to <span>Shoulder Length<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <input type="text" name="shoulder_length" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white shoulder_length input12" id="shoulder_length"
-                        oninput="updateSharedInput(this),toggleButton('input12', 'button12')">
+                        class="form-control input-edit mb-5 text-white shoulder_length input12 shared-input4"
+                        id="shoulder_length" oninput="handleInput4(this)">
 
-                    <i class="bi bi-arrow-right-circle-fill button12" style="display: none;" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button12" id="nextBtn"
                         onclick="toggleSlides('content10', 'content11')"></i>
                 </div>
 
@@ -1212,11 +1223,12 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarelneckcircum"></i>
                     </div>
-                    <label for="neck_circumference" class="title">Neck <span>Circumference</span></label>
+                    <label for="neck_circumference" class="title">Neck <span>Circumference<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <input type="text" name="neck_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white input13" id="neck_circumference" oninput="toggleButton('input13', 'button13')">
+                        class="form-control input-edit mb-5 text-white" id="neck_circumference">
 
-                    <i class="bi bi-arrow-right-circle-fill button13" style="display: none;" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button13" id="nextBtn"
                         onclick="toggleSlides('content11', 'content12')"></i>
                 </div>
 
@@ -1231,7 +1243,8 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarthree"></i>
                     </div>
-                    <label for="model_sample" class="form-label title">Sample of your <span>Model</span></label>
+                    <label for="model_sample" class="form-label title">Sample of your <span>Model<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <div class="d-flex justify-content-evenly">
                         <!-- <a href="">Gallery</a> -->
                         <input class="form-control modal-sample" type="file" name="model_sample" id="model_sample"
@@ -1241,7 +1254,7 @@
                     <div style="display: none;" id="samplebtn2">
                         <i class="bi bi-arrow-right-circle-fill" onclick="toggleSlides('content35', 'content36')"></i>
                     </div>
-                               </div>
+                </div>
 
                 <!-- ----- girl thirtysix screen------- -->
 
@@ -1253,7 +1266,9 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarEmbroidery"></i>
                     </div>
-                    <label class="title" style="margin-bottom: 10px;">Embroidery <span>Work</span></label><br><span>(Name will be embroidered in the cloths)</span>
+                    <label class="title" style="margin-bottom: 10px;">Embroidery
+                        <span>Work<span style="color: red; font-size: 35px;"></span></span></label><br><span>(Name will
+                        be embroidered in the cloths)</span>
                     <div class="checkbox-btn mt-5">
                         <div class="d-flex">
                             <input type="checkbox" name="embroidery_work[]" value="On Dress">&nbsp;&nbsp;<h4>On Dress
@@ -1287,14 +1302,16 @@
                         <div class="d-flex" style="align-items: center;">
                             <input type="radio" name="select_dress" value="Pure White" id="pureWhiteRadio"
                                 onclick="toggleSlides('content37', 'content38')">
-                            <label for="pureWhiteRadio" onclick="toggleRadio('pureWhiteRadio')">&nbsp;&nbsp;Pure
+                            <label for="pureWhiteRadio" onclick="toggleRadio('pureWhiteRadio')"
+                                style="cursor: pointer;">&nbsp;&nbsp;Pure
                                 White</label>
                         </div>
 
                         <div class="d-flex" style="align-items: center;">
                             <input type="radio" name="select_dress" value="Off White" id="offWhiteRadio"
                                 onclick="toggleSlides('content37', 'content38')">
-                            <label for="offWhiteRadio" onclick="toggleRadio('offWhiteRadio')">&nbsp;&nbsp;Off
+                            <label for="offWhiteRadio" onclick="toggleRadio('offWhiteRadio')"
+                                style="cursor: pointer;">&nbsp;&nbsp;Off
                                 White</label>
                         </div>
                     </div>
@@ -1350,15 +1367,15 @@
                     </div>
                     <label for="age_of_baby" class="title">Age of <span>Baby Girl</span> (In Months) <span
                             style="color: red; font-size: 35px;">*</span></label>
-                    <input type="number" name="girl_age_of_baby" placeholder="Enter in Months"
-                        class="form-control input-edit mb-5 text-white ageof-baby input4" id="girl_age_of_baby" 
-                        oninput="updateSharedInput(this),toggleButton('input4', 'button4')" >
+                    <input type="number" name="age_of_baby" placeholder="Enter in age of baby" id="age_of_baby"
+                        class="form-control input-edit mb-5 text-white ageof-baby shared-input3"
+                        oninput="handleInput3(this)">
                     <br>
-                    
-                        <i class="bi bi-arrow-right-circle-fill button4" style="display: none;" id="nextBtn"
+
+                    <i class="bi bi-arrow-right-circle-fill button4" id="nextBtn"
                         onclick="toggleSlides('content39', 'content40')"></i>
-                    
-                    
+
+
                 </div>
 
                 <!-- -------------girl fourty slide ----------------->
@@ -1385,8 +1402,8 @@
                     </select>
                     <br><br><br>
                     <div style="display: none;" id="submitButtonContainerrrrr">
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content40', 'content41')"></i>
+                        <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                            onclick="toggleSlides('content40', 'content41')"></i>
                     </div>
                 </div>
 
@@ -1405,13 +1422,15 @@
                     <br>
                     <div class="checkbox-btn">
                         <div class="d-flex align-items-center" onclick="toggleSlides('content41', 'content42')">
-                            <input type="radio" name="select_dress" value="yes"
-                                onclick="showCustomFields(this)">&nbsp;&nbsp;<h4>Yes</h4>
+                            <input type="radio" name="select_dress" value="yes" id="Yes"
+                                onclick="showCustomFields(this)">&nbsp;&nbsp;<h4 style="cursor: pointer;"
+                                onclick="toggleRadio('Yes')">Yes</h4>
                         </div>
 
                         <div class="d-flex align-items-center" onclick="toggleSlides('content41', 'content16')">
-                            <input type="radio" name="select_dress" value="no"
-                                onclick="hideCustomFields(this)">&nbsp;&nbsp;<h4>No</h4>
+                            <input type="radio" name="select_dress" value="no" id="No"
+                                onclick="hideCustomFields(this)">&nbsp;&nbsp;<h4 style="cursor: pointer;"
+                                onclick="toggleRadio('No')">No</h4>
                         </div>
                     </div>
                     <br><br>
@@ -1428,12 +1447,13 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarchestcurcum"></i>
                     </div>
-                    <label for="chest_circumference" class="title">Chest <span>Circumference</span></label>
+                    <label for="chest_circumference" class="title">Chest <span>Circumference<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <input type="text" name="chest_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white chest_circumference input14" id="chest_circumference"
-                        oninput="updateSharedInput(this),toggleButton('input14', 'button14')">
+                        class="form-control input-edit mb-5 text-white chest_circumference input14 shared-input6"
+                        id="chest_circumference" oninput="handleInput6(this)">
 
-                    <i class="bi bi-arrow-right-circle-fill button14" style="display: none;" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button14" id="nextBtn"
                         onclick="toggleSlides('content42', 'content43')"></i>
                 </div>
                 <!-- -------------girl fourtythree slide ----------------->
@@ -1446,12 +1466,13 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarshoulderlenght"></i>
                     </div>
-                    <label for="shoulder_length" class="title">Shoulder to <span>Shoulder Length</span></label>
+                    <label for="shoulder_length" class="title">Shoulder to <span>Shoulder Length<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <input type="text" name="shoulder_length" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white shoulder_length input15" id="shoulder_length"
-                        oninput="updateSharedInput(this),toggleButton('input15', 'button15')">
+                        class="form-control input-edit mb-5 text-white shoulder_length shared-input4 input15"
+                        id="shoulder_length" oninput="handleInput4(this)">
 
-                    <i class="bi bi-arrow-right-circle-fill button15" style="display: none;" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button15" id="nextBtn"
                         onclick="toggleSlides('content43', 'content44')"></i>
                 </div>
 
@@ -1465,10 +1486,11 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarshoulderFoot"></i>
                     </div>
-                    <label for="length_to_foot" class="title">Length from <span>Shoulder to Foot</span></label>
+                    <label for="length_to_foot" class="title">Length from <span>Shoulder to Foot<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <input type="text" name="length_to_foot" placeholder="Enter your value"
                         class="form-control input-edit mb-5 text-white length_to_foot input16" id="length_to_foot"
-                        oninput="updateSharedInput(this), toggleButton('input16', 'button16')">
+                        oninput="handleInput('input16', 'button16', this)">
 
                     <i class="bi bi-arrow-right-circle-fill button16" style="display: none;" id="nextBtn"
                         onclick="toggleSlides('content44', 'content55')"></i>
@@ -1483,11 +1505,12 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarshouldertoCrotch"></i>
                     </div>
-                    <label for="shoulder_crotch_length" class="title">Shoulder to <span>crotch length</span></label>
+                    <label for="shoulder_crotch_length" class="title">Shoulder to <span>crotch length<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <input type="text" name="shoulder_crotch_length" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white input17" id="shoulder_crotch_length" oninput="toggleButton('input17', 'button17')">
+                        class="form-control input-edit mb-5 text-white input17" id="shoulder_crotch_length">
 
-                    <i class="bi bi-arrow-right-circle-fill button17" style="display: none;" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button17" id="nextBtn"
                         onclick="toggleSlides('content12', 'content13')"></i>
                 </div>
 
@@ -1500,12 +1523,12 @@
                             data-bs-target="#offcanvasNavbarlenghDress"></i>
                     </div>
                     <label for="length_of_dress_required" class="title">Length of the <span>dress
-                            required</span></label>
+                            required<span style="color: red; font-size: 35px;">*</span></span></label>
                     <input type="text" name="length_of_dress_required" placeholder="Enter you value"
-                        class="form-control input-edit mb-5 text-white input18" id="length_of_dress_required" oninput="toggleButton('input18', 'button18')">
+                        class="form-control input-edit mb-5 text-white input18" id="length_of_dress_required">
 
-                    <i class="bi bi-arrow-right-circle-fill button18" style="display: none;" id="nextBtn"
-                        onclick="toggleSlides('content13', 'content55')"></i>
+                    <i class="bi bi-arrow-right-circle-fill button18" id="nextBtn"
+                        onclick="toggleSlides('content13', 'content14')"></i>
                 </div>
                 <!-- -------------fourteen slide ----------------->
 
@@ -1517,11 +1540,13 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarheadCircum"></i>
                     </div>
-                    <label for="head_circumference" class="title">Head <span>Circumference</span></label>
+                    <label for="head_circumference" class="title">Head <span>Circumference<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <input type="text" name="head_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white input19" id="head_circumference" oninput="toggleButton('input19', 'button19')">
+                        class="form-control input-edit mb-5 text-white input19" id="head_circumference"
+                        oninput="handleInput7(this)">
 
-                    <i class="bi bi-arrow-right-circle-fill button19" style="display: none;" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button19" id="nextBtn"
                         onclick="toggleSlides('content14', 'content15')"></i>
                 </div>
                 <!-- -------------fifthteen slide ----------------->
@@ -1534,12 +1559,13 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarfootLenght"></i>
                     </div>
-                    <label for="foot_length" class="title">Foot <span>Length</span></label>
+                    <label for="foot_length" class="title">Foot <span>Length<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <input type="text" name="foot_length" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white foot_lenght input20" id="foot_length"
-                        oninput="updateSharedInput(this), toggleButton('input20', 'button20') ">
+                        class="form-control input-edit mb-5 text-white foot_lenght shared-input5" id="foot_length"
+                        oninput="handleInput5(this)">
 
-                    <i class="bi bi-arrow-right-circle-fill button20" style="display:none;" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button20" id="nextBtn"
                         onclick="toggleSlides('content15', 'content16')"></i>
                 </div>
 
@@ -1556,13 +1582,19 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarheadCircum"></i>
                     </div>
-                    <label for="head_circumference" class="title">Head <span>Circumference</span></label>
+                    <label for="head_circumference" class="title">Head <span>Circumference<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <input type="text" name="head_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white input22" id="head_circumference" oninput="toggleButton('input22', 'button22')">
+                        class="form-control input-edit mb-5 text-white input22" id="head_circumference"
+                        oninput="handleInput7(this)">
 
-                    <i class="bi bi-arrow-right-circle-fill button22" style="display: none;" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button22"  id="nextBtn"
                         onclick="toggleSlides('content55', 'content56')"></i>
                 </div>
+
+
+
+
                 <div id="content56" class="form-step">
 
                     <div class="top-bar">
@@ -1571,16 +1603,17 @@
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarfootLenght"></i>
                     </div>
-                    <label for="head_circumference" class="title">Foot <span>Length</span></label>
-                    <input type="text" name="head_circumference" placeholder="Enter your value"
-                        class="form-control input-edit mb-5 text-white foot_lenght input21" id="foot_lenght"
-                        oninput="updateSharedInput(this), toggleButton('input21', 'button21')">
+                    <label for="foot_length" class="title">Foot <span>Length<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
+                    <input type="text" name="foot_length" placeholder="Enter your value"
+                        class="form-control input-edit mb-5 text-white foot_lenght shared-input5" id="foot_length"
+                        oninput="handleInput5(this)">
 
-                    <i class="bi bi-arrow-right-circle-fill button21" style="display: none;" id="nextBtn"
+                    <i class="bi bi-arrow-right-circle-fill button21" id="nextBtn"
                         onclick="toggleSlides('content56', 'content16')"></i>
                 </div>
 
-                
+
 
                 <!-- -------------sixteen slide ----------------->
                 <!-- boys expected delivery -->
@@ -1588,8 +1621,7 @@
                 <div id="content16" class="form-step">
 
                     <div class="top-bar">
-                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"
-                            onclick="toggleSlides('content16', 'content15')"></i>
+                        <i class="bi bi-arrow-left-circle-fill" id="prevBtn"></i>
                         <i class="bi bi-info-circle-fill" id="infoBtn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbarExpectedDelivery"></i>
                     </div>
@@ -1625,9 +1657,9 @@
                             id="function_date" onchange="showCalenderButtonntwo()">
                     </div>
                     <div style="display: none;" id="showCalenderButtonntwo">
-                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content17', 'content18')"></i>
-                        </div>
+                        <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                            onclick="toggleSlides('content17', 'content18')"></i>
+                    </div>
                 </div>
                 <!-- -------------eighteen slide ----------------->
 
@@ -1641,19 +1673,28 @@
                     </div>
                     <label for="mode_of_delivery" class="title">Select <span>the Package</span></label>
                     <div class="checkbox-btn" id="check-btns">
-                        <div class="d-flex flex-column mb-5 mobile align-items-center" onclick="toggleSlides('content18', 'content27')">
+                        <div class="d-flex flex-column mb-5 mobile align-items-center"
+                            onclick="toggleSlides('content18', 'content27')">
                             <input type="radio" name="select_the_package" value="Dress Set"
-                                id="DressSet">&nbsp;&nbsp;<label for="" onclick="toggleRadio('DressSet')">Dress
+                                id="DressSet">&nbsp;&nbsp;<label for="" onclick="toggleRadio('DressSet')"
+                                style="cursor: pointer;">Dress
                                 Set</label><br>
-                                <span onclick="toggleRadio('DressSet')">(Under Dress Set, include Dress, Booties & Cap)</span>
+                            <span onclick="toggleRadio('DressSet')" style="cursor: pointer;">(Under Dress Set, include
+                                Dress, Booties &
+                                Cap)</span>
 
                         </div>
-
-                        <div class="d-flex flex-column mobile align-items-center" onclick="toggleSlides('content18', 'content27')">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="d-flex flex-column mobile align-items-center"
+                            onclick="toggleSlides('content18', 'content27')">
                             <input type="radio" name="select_the_package" value="Combo Set"
-                                id="ComboSet">&nbsp;&nbsp;<label for="" onclick="toggleRadio('ComboSet')">Combo
+                                id="ComboSet">&nbsp;&nbsp;<label for="" onclick="toggleRadio('ComboSet')"
+                                style="cursor: pointer;">Combo
                                 Set</label><br>
-                                <span onclick="toggleRadio('ComboSet')">Under Combo Set, include the full set with Main Dress, Booties, Cap, Decorated Candle, Crown, Baby Wipes, Baby Quilt with "God Bless" and baby's name embroidery, and Blessing Dress.</span>
+                            <span onclick="toggleRadio('ComboSet')" style="cursor: pointer;">Under Combo Set, include
+                                the full set with Main
+                                Dress, Booties, Cap, Decorated Candle, Crown, Baby Wipes, Baby Quilt with "God Bless"
+                                and baby's name embroidery, and Blessing Dress.</span>
 
                         </div>
                     </div>
@@ -1675,16 +1716,16 @@
                         accessories required</label>
                     <div style="display: flex; justify-content: center;">
                         <input type="file" class="form-control" name="image_of_specific_accessories"
-                            id="image_of_specific_accessories" accept="image/*" onchange="uploadfilebtn()">
+                            id="image_of_specific_accessories" accept="image/*">
                         <br><br>
                     </div>
 
                     <br>
 
-                    <div style="display: none;" id="uploadfilebtn">
-                        <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
                         onclick="toggleSlides('content27', 'content19')"></i>
-                    </div>
+
                 </div>
                 <!-- -------------nineteen slide ----------------->
 
@@ -1800,7 +1841,8 @@
                     </div>
                     <label for="image_of_optional_accessories" id="image_upload_label" class="title">Upload the
                         image of
-                        the <br><span>optional accessories</span></label>
+                        the <br><span>optional accessories <span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <div style="display: flex; justify-content: center;">
                         <input type="file" class="form-control" name="image_of_optional_accessories"
                             id="image_of_optional_accessories" accept="image/*" onchange="uploadoptional()">
@@ -1810,9 +1852,9 @@
 
                     <div style="display: none;" id="uploadoptional">
                         <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content20', 'content21')"></i>
+                            onclick="toggleSlides('content20', 'content21')"></i>
                     </div>
-                   
+
                 </div>
                 <!-- -------------twentyone slide ----------------->
                 <div id="content21" class="form-step">
@@ -1824,7 +1866,8 @@
                             data-bs-target="#offcanvasNavbarnameprinted"></i>
                     </div>
                     <label for="name_printed_candle_model" class="title">
-                        Upload the model of the <br><span>name-printed candle here</span></label>
+                        Upload the model of the <br><span>name-printed candle here<span
+                                style="color: red; font-size: 35px;">*</span></span></label>
                     <div style="display: flex; justify-content: center;">
                         <input type="file" class="form-control" name="name_printed_candle_model"
                             id="name_printed_candle_model" accept="image/*" onchange="uploadnameprinted()">
@@ -1834,9 +1877,9 @@
 
                     <div style="display: none;" id="uploadnameprinted">
                         <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                        onclick="toggleSlides('content21', 'content22')"></i>
+                            onclick="toggleSlides('content21', 'content22')"></i>
                     </div>
-                    
+
                 </div>
                 <!-- -------------twentytwo slide ----------------->
                 <div id="content22" class="form-step">
@@ -1850,14 +1893,14 @@
                     <label for="candle_content" id="candle_content_label" class="title">
                         Candle <span>Content</span></label>
                     <input type="text" name="candle_content" placeholder="Enter here "
-                        class="form-control input-edit mb-5 text-white" id="candle_content" >
+                        class="form-control input-edit mb-5 text-white" id="candle_content">
                     <br>
 
-                     
-                            <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
-                            onclick="toggleSlides('content22', 'content23')"></i>
-                       
-                   
+
+                    <i class="bi bi-arrow-right-circle-fill" id="nextBtn"
+                        onclick="toggleSlides('content22', 'content23')"></i>
+
+
                 </div>
                 <!-- -------------twentythree slide ----------------->
                 <div id="content23" class="form-step">
@@ -1890,24 +1933,23 @@
                     <label for="mode_of_delivery" class="title">Mode of <span>Delivery <span
                                 style="color: red; font-size: 35px;">*</span></span></label>
                     <div class="checkbox-btn">
-                        <div class="d-flex align-items-center">
-                            <input type="radio" name="mode_of_delivery" value="Courier"
-                                onclick="toggleSlides('content24', 'content28')">&nbsp;&nbsp;<h4
-                                onclick="toggleSlides('content24', 'content28')">Courier
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content24', 'content28')">
+                            <input type="radio" name="mode_of_delivery" value="Courier" id="Courier">&nbsp;&nbsp;<h4
+                                onclick="toggleRadio('Courier')" style="cursor: pointer;">Courier</h4>
                             </h4>
                         </div>
 
-                        <div class="d-flex align-items-center" onclick="toggleSlides('content24', 'content28')"
-                            onclick="toggleSlides('content24', 'content28')">
-                            <input type="radio" name="mode_of_delivery" value="Direct Collection">&nbsp;&nbsp;<h4
-                                onclick="toggleSlides('content24', 'content28')">
-                                Direct collection
+                        <div class="d-flex align-items-center" onclick="toggleSlides('content24', 'content28')">
+                            <input type="radio" name="mode_of_delivery" value="Direct Collection"
+                                id="Direct">&nbsp;&nbsp;<h4 style="cursor: pointer;" onclick="toggleRadio('Direct')">
+                                Direct collection</h4>
+
                             </h4>
                         </div>
                     </div>
                     <br>
                 </div>
-                
+
                 <!-- -------------twentyeight slide ----------------->
                 <div id="content28" class="form-step">
 
@@ -1920,7 +1962,8 @@
                     <label for="first_name" class="title">First <span>Name</span> <span
                             style="color: red; font-size: 35px;">*</span></label>
                     <input type="text" name="first_name" id="first_name" placeholder="Enter your first name"
-                        class="form-control input-edit mb-5 text-white input5" oninput="toggleButton('input5', 'button5')">
+                        class="form-control input-edit mb-5 text-white input5"
+                        oninput="toggleButton('input5', 'button5')">
 
 
                     <i class="bi bi-arrow-right-circle-fill button5" style="display: none;" id="nextBtn"
@@ -1937,8 +1980,9 @@
                     </div>
                     <label for="last_name" class="title">Last <span>Name</span> <span
                             style="color: red; font-size: 35px;">*</span></label>
-                    <input type="text" name="last_name" id="last_name" class="form-control input-edit mb-5 text-white input6"
-                        placeholder="Enter your last name" oninput="toggleButton('input6', 'button6')">
+                    <input type="text" name="last_name" id="last_name"
+                        class="form-control input-edit mb-5 text-white input6" placeholder="Enter your last name"
+                        oninput="toggleButton('input6', 'button6')">
 
 
                     <i class="bi bi-arrow-right-circle-fill button6" style="display: none;" id="nextBtn"
@@ -1956,7 +2000,8 @@
                     <label for="phone_number" class="title">Phone <span>(WhatsApp No.)</span> <span
                             style="color: red; font-size: 35px;">*</span></label>
                     <input type="number" name="phone_number" class="form-control input-edit mb-5 text-white input7"
-                        placeholder="Enter your phone number" id="phone_number" oninput="toggleButton('input7', 'button7')">
+                        placeholder="Enter your phone number" id="phone_number"
+                        oninput="toggleButton('input7', 'button7')">
 
 
                     <i class="bi bi-arrow-right-circle-fill button7" style="display: none;" id="nextBtn"
@@ -1992,7 +2037,8 @@
                     <label for="shipping_address" class="title">Shipping <span>Address</span> <span
                             style="color: red; font-size: 35px;">*</span></label>
                     <textarea name="shipping_address" id="shipping_address"
-                        class="form-control input-edit mb-5 text-white input9" placeholder="Enter your massege" oninput="toggleButton('input9', 'button9')"></textarea>
+                        class="form-control input-edit mb-5 text-white input9" placeholder="Enter your massege"
+                        oninput="toggleButton('input9', 'button9')"></textarea>
 
 
                     <i class="bi bi-arrow-right-circle-fill button9" style="display: none;" id="nextBtn"
@@ -2030,7 +2076,8 @@
                         placeholder="Enter your area pincode">
 
 
-                    <input type="submit" name="submit_order" value="Submit Order" id="Submit_btn">
+                    <input type="submit" name="submit_order" value="Submit Order" onclick="submitForm()"
+                        id="Submit_btn">
                 </div>
             </div>
         </div>
@@ -2041,6 +2088,51 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script>
+
+
+        // Add a variable to keep track of the current active slide
+        let currentSlide = 'content16';
+
+        function toggleSlides(current, previous) {
+            // Your existing code for toggleSlides function
+
+            // Update the currentSlide variable
+            currentSlide = current;
+        }
+
+        // // Modify the event handler for the previous button in slide 16
+        // document.getElementById('prevBtn').addEventListener('click', function () {
+        //     // Check the current active slide and navigate to the previous one
+        //     switch (currentSlide) {
+        //         case 'content16':
+        //             // If you are in slide 16, navigate to the previous slide (e.g., content55)
+        //             toggleSlides('content16', 'content55');
+        //             break;
+        //         // Add more cases as needed for other slides
+
+        //         default:
+        //             // If currentSlide doesn't match any case, do nothing
+        //             break;
+        //     }
+        // });
+
+
+        // function handleInput2(activeInput) {
+        //     Get all input elements with the same class
+        //     var allInputs = document.querySelectorAll('.' + activeInput.classList[4]);
+
+        //     Loop through each input element and set its value
+        //     allInputs.forEach(function (input) {
+        //         input.value = activeInput.value;
+        //     });
+        // }
+       
+        function submitForm() {
+            // Your form submission logic here
+
+            // For example, showing an alert
+            alert('Your order has been successfully placed!');
+        }
 
         function updateSharedInput(input) {
             // Get the value of the input
@@ -2053,7 +2145,10 @@
 
                 // Get all elements with the same class
                 const elementsWithSameClass = document.getElementsByClassName('modal-sample, ageof-baby, chest_circumference, shoulder_length, foot_lenght, length_to_foot, expected_delivery_date');
+                var sourceValue = source.value;
 
+                // Update the target input field with the same value
+                document.getElementById(targetId).value = sourceValue;
                 // Update the value of all elements with the same class
                 for (let i = 0; i < elementsWithSameClass.length; i++) {
                     elementsWithSameClass[i].value = inputValue;
@@ -2061,6 +2156,35 @@
             }
         }
 
+        function handleInput(inputId, buttonId, inputElement) {
+            toggleButton(inputId, buttonId);
+            updateSharedInput(inputElement);
+        }
+
+        function toggleButton(inputId, buttonId) {
+            // Your toggleButton logic here
+        }
+
+        function handleInput1(activeInput) {
+            // Get all input elements with the specified name
+            var allInputs = document.querySelectorAll('[name="' + activeInput.name + '"]');
+
+            // Loop through each input element and set its value
+            allInputs.forEach(function (input) {
+                input.value = activeInput.value;
+            });
+
+            // Your saving logic here (e.g., save input.value)
+            var inputValue = activeInput.value;
+        }
+        function handleInputAndToggle(inputId, buttonId, activeInput) {
+            toggleButton(inputId, buttonId);
+            handleInput1(activeInput);
+        }
+        function submitForm() {
+            // Your form submission logic here
+            // This function will be called when the form is submitted
+        }
 
         function showSubmitButton() {
             var submitButtonContainer = document.getElementById('submitButtonContainer');
@@ -2074,7 +2198,7 @@
             var submitButtonContainerrr = document.getElementById('submitButtonContainerrr');
             submitButtonContainerrr.style.display = 'block';
         }
-        
+
         function samplebtn2() {
             var samplebtn2 = document.getElementById('samplebtn2');
             samplebtn2.style.display = 'block';
@@ -2083,8 +2207,8 @@
             var samplebtn = document.getElementById('samplebtn');
             samplebtn.style.display = 'block';
         }
-      
-        
+
+
         function showmonthButton() {
             var submitButtonContainerrrrr = document.getElementById('submitButtonContainerrrrr');
             submitButtonContainerrrrr.style.display = 'block';
@@ -2116,6 +2240,10 @@
         function uploadnameprinted() {
             var uploadnameprinted = document.getElementById('uploadnameprinted');
             uploadnameprinted.style.display = 'block';
+        }
+        function ageofbaby() {
+            var ageofbaby = document.getElementById('ageofbaby');
+            ageofbaby.style.display = 'block';
         }
 
         function toggleRadio(radioId) {
@@ -2251,6 +2379,54 @@
                 arrowButtonContainer.style.display = 'none';
             }
         }
+
+
+        function handleInput3(activeInput) {
+            // Get all input elements with the same class
+            var allInputs = document.querySelectorAll('.' + activeInput.classList[4]);
+
+            // Loop through each input element and set its value
+            allInputs.forEach(function (input) {
+                input.value = activeInput.value;
+            });
+        }
+        function handleInput4(activeInput) {
+            // Get all input elements with the same class
+            var allInputs = document.querySelectorAll('.' + activeInput.classList[4]);
+
+            // Loop through each input element and set its value
+            allInputs.forEach(function (input) {
+                input.value = activeInput.value;
+            });
+        }
+        function handleInput5(activeInput) {
+            // Get all input elements with the same class
+            var allInputs = document.querySelectorAll('.' + activeInput.classList[4]);
+
+            // Loop through each input element and set its value
+            allInputs.forEach(function (input) {
+                input.value = activeInput.value;
+            });
+        }
+        function handleInput6(activeInput) {
+            // Get all input elements with the same class
+            var allInputs = document.querySelectorAll('.' + activeInput.classList[4]);
+
+            // Loop through each input element and set its value
+            allInputs.forEach(function (input) {
+                input.value = activeInput.value;
+            });
+        }
+        function handleInput7(activeInput) {
+            // Get all input elements with the same class
+            var allInputs = document.querySelectorAll('.' + activeInput.classList[4]);
+
+            // Loop through each input element and set its value
+            allInputs.forEach(function (input) {
+                input.value = activeInput.value;
+            });
+        }
+
 
     </script>
 </body>
